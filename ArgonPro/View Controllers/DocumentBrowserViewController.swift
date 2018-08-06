@@ -9,7 +9,7 @@
 import UIKit
 
 
-class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocumentBrowserViewControllerDelegate
+class DocumentBrowserViewController: UIDocumentBrowserViewController
 {
     override func viewDidLoad()
 	{
@@ -28,10 +28,17 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
-    // MARK: UIDocumentBrowserViewControllerDelegate
-    
+
+	private enum Segues: String, Segue
+	{
+		case presentDocument
+	}
+}
+
+// MARK: - UIDocumentBrowserViewControllerDelegate
+
+extension DocumentBrowserViewController: UIDocumentBrowserViewControllerDelegate
+{
     func documentBrowser(_ controller: UIDocumentBrowserViewController,
 						 didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void)
 	{
@@ -89,13 +96,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
     
     func presentDocument(at documentURL: URL)
 	{
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let documentViewController = storyBoard.instantiateViewController(withIdentifier: "DocumentViewController") as! DocumentViewController
-        documentViewController.document = Document(fileURL: documentURL)
-        
-        present(documentViewController, animated: true, completion: nil)
+        performSegue(Segues.presentDocument, sender: Document(fileURL: documentURL))
     }
-
-
 }
 
