@@ -24,6 +24,8 @@
 		15AA249E21177AF500A49C50 /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA249D21177AF500A49C50 /* CollectionConfig.swift */; };
 		15AA24A22117843F00A49C50 /* NSRegularExpression+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */; };
 		15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A3211785A400A49C50 /* String+FrontMatter.swift */; };
+		15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */; };
+		15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */; };
 		2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
 		491123F3A4C3B92939D5C83A /* Pods_ArgonProModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
@@ -82,6 +84,8 @@
 		15AA249D21177AF500A49C50 /* CollectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionConfig.swift; sourceTree = "<group>"; };
 		15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+FrontMatter.swift"; sourceTree = "<group>"; };
 		15AA24A3211785A400A49C50 /* String+FrontMatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FrontMatter.swift"; sourceTree = "<group>"; };
+		15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContextBus.swift"; sourceTree = "<group>"; };
+		15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Segues.swift"; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
 		86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,14 +151,12 @@
 		1514670821166D0F00B41F88 /* ArgonPro */ = {
 			isa = PBXGroup;
 			children = (
-				1514670921166D0F00B41F88 /* AppDelegate.swift */,
-				1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */,
-				1514670D21166D0F00B41F88 /* DocumentViewController.swift */,
-				1514670F21166D0F00B41F88 /* Document.swift */,
-				1514671121166D0F00B41F88 /* Main.storyboard */,
-				1514671421166D1000B41F88 /* Assets.xcassets */,
-				1514671621166D1000B41F88 /* LaunchScreen.storyboard */,
-				1514671921166D1000B41F88 /* Info.plist */,
+				15AA24AD21184EA400A49C50 /* Application */,
+				15AA24AE21184EAD00A49C50 /* Documents */,
+				15AA24AC21184E7E00A49C50 /* Supporting Files */,
+				15AA24AB21184E7000A49C50 /* Storyboards */,
+				15AA24AA21184E6100A49C50 /* View Controllers */,
+				15AA24A521184DE800A49C50 /* Extensions */,
 			);
 			path = ArgonPro;
 			sourceTree = "<group>";
@@ -189,6 +191,58 @@
 				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		15AA24A521184DE800A49C50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */,
+				15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15AA24AA21184E6100A49C50 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */,
+				1514670D21166D0F00B41F88 /* DocumentViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		15AA24AB21184E7000A49C50 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1514671121166D0F00B41F88 /* Main.storyboard */,
+				1514671621166D1000B41F88 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		15AA24AC21184E7E00A49C50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1514671421166D1000B41F88 /* Assets.xcassets */,
+				1514671921166D1000B41F88 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15AA24AD21184EA400A49C50 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1514670921166D0F00B41F88 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		15AA24AE21184EAD00A49C50 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				1514670F21166D0F00B41F88 /* Document.swift */,
+			);
+			path = Documents;
 			sourceTree = "<group>";
 		};
 		5E718F6C8F29F0F7DF36B321 /* Frameworks */ = {
@@ -439,7 +493,9 @@
 			files = (
 				1514671021166D0F00B41F88 /* Document.swift in Sources */,
 				1514670E21166D0F00B41F88 /* DocumentViewController.swift in Sources */,
+				15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */,
 				1514670C21166D0F00B41F88 /* DocumentBrowserViewController.swift in Sources */,
+				15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */,
 				1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,7 +680,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
-				INFOPLIST_FILE = ArgonPro/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ArgonPro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -644,7 +700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
-				INFOPLIST_FILE = ArgonPro/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ArgonPro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

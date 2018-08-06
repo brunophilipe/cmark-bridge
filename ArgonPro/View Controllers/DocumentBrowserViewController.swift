@@ -29,6 +29,23 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+	{
+		super.prepare(for: segue, sender: sender)
+
+		switch segue.identifier
+		{
+		case .some(Segues.presentDocument.rawValue):
+			if let document = sender as? Document
+			{
+				segue.destination.broadcastContext(DocumentViewController.DocumentContext(document: document))
+			}
+
+		default:
+			break
+		}
+	}
+
 	private enum Segues: String, Segue
 	{
 		case presentDocument

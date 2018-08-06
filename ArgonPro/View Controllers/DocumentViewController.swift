@@ -8,13 +8,14 @@
 
 import UIKit
 
-class DocumentViewController: UIViewController {
-    
+class DocumentViewController: UIViewController
+{
     @IBOutlet weak var documentNameLabel: UILabel!
     
     var document: UIDocument?
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool)
+	{
         super.viewWillAppear(animated)
         
         // Access the document
@@ -28,9 +29,26 @@ class DocumentViewController: UIViewController {
         })
     }
     
-    @IBAction func dismissDocumentViewController() {
-        dismiss(animated: true) {
+    @IBAction func dismissDocumentViewController()
+	{
+        dismiss(animated: true)
+		{
             self.document?.close(completionHandler: nil)
         }
     }
+
+	override func broadcastContext(_ context: Any)
+	{
+		super.broadcastContext(context)
+
+		if let documentContext = context as? DocumentContext
+		{
+			document = documentContext.document
+		}
+	}
+
+	struct DocumentContext
+	{
+		let document: Document
+	}
 }
