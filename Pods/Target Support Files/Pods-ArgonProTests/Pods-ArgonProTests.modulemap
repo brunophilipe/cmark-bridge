@@ -1,0 +1,6 @@
+framework module Pods_ArgonProTests {
+  umbrella header "Pods-ArgonProTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
