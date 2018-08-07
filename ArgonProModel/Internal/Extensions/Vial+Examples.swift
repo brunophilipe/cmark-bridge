@@ -8,17 +8,6 @@
 
 import Foundation
 
-extension Vial
-{
-	var blogExample: Vial
-	{
-		let vial = Vial(name: "My Blog", description: "ArgonPro Vial Template")
-		vial.add(collection: Collection(name: "Blog", producesOutput: true))
-		vial.add(node: Page.exampleHomepage)
-		return vial
-	}
-}
-
 extension Vial.Collection.Entry
 {
 	static func example(for collectionName: String) -> Vial.Collection.Entry

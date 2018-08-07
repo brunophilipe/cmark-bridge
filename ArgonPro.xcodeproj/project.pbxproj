@@ -10,7 +10,7 @@
 		150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3CD2118D819005BB11E /* VialViewController.swift */; };
 		150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */; };
 		150DB3D6211905AB005BB11E /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D421190595005BB11E /* Vial+Examples.swift */; };
-		150DB3D8211906F8005BB11E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D7211906F8005BB11E /* Page.swift */; };
+		150DB3D8211906F8005BB11E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D7211906F8005BB11E /* Node.swift */; };
 		150DB3DA2119073E005BB11E /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D92119073E005BB11E /* FrontMatterFile.swift */; };
 		1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670921166D0F00B41F88 /* AppDelegate.swift */; };
 		1514670C21166D0F00B41F88 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */; };
@@ -38,6 +38,7 @@
 		15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */; };
 		15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */; };
 		15F06141211A133A004DAE25 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */; };
+		15F0614A211A43F3004DAE25 /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06149211A43F3004DAE25 /* Vial+Templates.swift */; };
 		2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
 		491123F3A4C3B92939D5C83A /* Pods_ArgonProModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
@@ -78,7 +79,7 @@
 		150DB3CD2118D819005BB11E /* VialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VialViewController.swift; sourceTree = "<group>"; };
 		150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		150DB3D421190595005BB11E /* Vial+Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vial+Examples.swift"; sourceTree = "<group>"; };
-		150DB3D7211906F8005BB11E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		150DB3D7211906F8005BB11E /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		150DB3D92119073E005BB11E /* FrontMatterFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontMatterFile.swift; sourceTree = "<group>"; };
 		1514670621166D0F00B41F88 /* ArgonPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgonPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1514670921166D0F00B41F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContextBus.swift"; sourceTree = "<group>"; };
 		15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Segues.swift"; sourceTree = "<group>"; };
 		15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileWrapper+Codable.swift"; sourceTree = "<group>"; };
+		15F06149211A43F3004DAE25 /* Vial+Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vial+Templates.swift"; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
 		86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,8 +318,9 @@
 			children = (
 				1514673F211691B000B41F88 /* Vial.swift */,
 				15AA249B2117797000A49C50 /* Collection.swift */,
-				150DB3D7211906F8005BB11E /* Page.swift */,
+				150DB3D7211906F8005BB11E /* Node.swift */,
 				150DB3D92119073E005BB11E /* FrontMatterFile.swift */,
+				15F0614B211A4402004DAE25 /* Extensions */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -617,7 +620,8 @@
 				15AA249C2117797000A49C50 /* Collection.swift in Sources */,
 				15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */,
 				15F06141211A133A004DAE25 /* FileWrapper+Codable.swift in Sources */,
-				150DB3D8211906F8005BB11E /* Page.swift in Sources */,
+				150DB3D8211906F8005BB11E /* Node.swift in Sources */,
+				15F0614A211A43F3004DAE25 /* Vial+Templates.swift in Sources */,
 				150DB3DA2119073E005BB11E /* FrontMatterFile.swift in Sources */,
 				15146740211691B000B41F88 /* Vial.swift in Sources */,
 				150DB3D6211905AB005BB11E /* Vial+Examples.swift in Sources */,

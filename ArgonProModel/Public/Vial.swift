@@ -8,13 +8,6 @@
 
 import Foundation
 
-/// A node is any file present in the Vial package that is not part of the predefined Vial structure. They are
-/// accessible through the `nodes` property of the Vial object.
-public protocol VialNode: class
-{
-	var name: String { get set }
-}
-
 /// A Vial is the data structure of an Argon project. It organizes and provides I/O facilities for all the project's
 /// configurations and source files.
 public class Vial
@@ -63,8 +56,7 @@ public class Vial
 			vialCollections.append(contentsOf: collections)
 		}
 
-		vialNodes = []
-		vialNodes.append(contentsOf: try parseNodes(from: childrenWrappers, onRootLevel: true))
+		vialNodes = try [VialNode](fileWrapper: fileWrapper, ignoreUsing: InternalNodes.isInternalNode)
 	}
 
 	public init(name: String, description: String, baseUrl: String = "/")
@@ -88,11 +80,13 @@ public class Vial
 		}
 
 		let collectionFileWrappers = try vialCollections.writeFileWrappers(mappingKey: { $0.name })
+		var rootFileWrappers = try vialNodes.writeFileWrappers()
 
-		let vialWrapper = FileWrapper(directoryWithFileWrappers: [
-			InternalNodes.config: FileWrapper(regularFileWithContents: configData),
-			InternalNodes.collections: FileWrapper(directoryWithFileWrappers: collectionFileWrappers)
-		])
+		// Add internal nodes
+		rootFileWrappers[InternalNodes.config] = FileWrapper(regularFileWithContents: configData)
+		rootFileWrappers[InternalNodes.collections] = FileWrapper(directoryWithFileWrappers: collectionFileWrappers)
+
+		let vialWrapper = FileWrapper(directoryWithFileWrappers: rootFileWrappers)
 
 		do
 		{
@@ -102,31 +96,6 @@ public class Vial
 		{
 			throw WriteErrors.io(error)
 		}
-	}
-
-	private func parseNodes(from fileWrappers: [String: FileWrapper], onRootLevel: Bool = false) throws -> [Node]
-	{
-		var nodes = [Node]()
-
-		for (fileName, fileWrapper) in fileWrappers
-		{
-			// We ignore files with internal node names if they're on the root level.
-			guard !onRootLevel || !InternalNodes.isInternalNode(fileName) else
-			{
-				continue
-			}
-
-			if fileWrapper.isRegularFile
-			{
-				nodes.append(try Page(fileWrapper: fileWrapper))
-			}
-			else if fileWrapper.isDirectory, let childrenWrappers = fileWrapper.fileWrappers
-			{
-				nodes.append(Directory(name: fileName, children: try parseNodes(from: childrenWrappers)))
-			}
-		}
-
-		return nodes
 	}
 
 	public enum LoadErrors: Error
