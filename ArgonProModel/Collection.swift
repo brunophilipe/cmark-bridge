@@ -10,7 +10,7 @@ import Foundation
 
 extension Vial
 {
-	public class Collection: Hashable, Equatable
+	public class Collection: Hashable, Equatable, FileWrapperCodable
 	{
 		/// The configuration object of this collection.
 		var collectionConfig: CollectionConfig
@@ -21,12 +21,12 @@ extension Vial
 		/// Stores errors found while parsing entries in this collection.
 		public private(set) var entryParseErrors: [String: Error] = [:]
 
-		init(collectionWrapper: FileWrapper) throws
+		required init(fileWrapper: FileWrapper) throws
 		{
 			let jsonDecoder = JSONDecoder()
 
 			guard
-				let configFileWrapper = collectionWrapper.fileWrappers?[InternalNodes.config],
+				let configFileWrapper = fileWrapper.fileWrappers?[InternalNodes.config],
 				let vialConfigContents = configFileWrapper.regularFileContents
 			else
 			{
@@ -44,21 +44,10 @@ extension Vial
 
 			collectionEntries = [Entry]()
 
-			if let entriesDirectoryWrapper = collectionWrapper.fileWrappers?[InternalNodes.entries],
-				entriesDirectoryWrapper.isDirectory,
-				let entriesWrappers = entriesDirectoryWrapper.fileWrappers
+			if let entries: [Entry] = fileWrapper.mapCodableFileWappers(fromChild: InternalNodes.entries,
+																			  failedKeys: &entryParseErrors)
 			{
-				for entryWrapper in entriesWrappers
-				{
-					do
-					{
-						collectionEntries.append(try Entry(fileWrapper: entryWrapper.value))
-					}
-					catch
-					{
-						entryParseErrors[entryWrapper.key] = error
-					}
-				}
+				collectionEntries.append(contentsOf: entries)
 			}
 		}
 
@@ -81,19 +70,11 @@ extension Vial
 				throw WriteErrors.malformedCollectionConfigFile
 			}
 
-			var entryWrappers = [String: FileWrapper]()
-
-			for entry in entries
-			{
-				entryWrappers[entry.slug] = try entry.write()
-			}
-
-			let configFileWrapper = FileWrapper(regularFileWithContents: configData)
-			let entriesFileWrapper = FileWrapper(directoryWithFileWrappers: entryWrappers)
+			let entryFileWrappers = try entries.writeFileWrappers(mappingKey: { $0.slug })
 
 			return FileWrapper(directoryWithFileWrappers: [
-				InternalNodes.config: configFileWrapper,
-				InternalNodes.entries: entriesFileWrapper
+				InternalNodes.config: FileWrapper(regularFileWithContents: configData),
+				InternalNodes.entries: FileWrapper(directoryWithFileWrappers: entryFileWrappers)
 			])
 		}
 
@@ -102,7 +83,7 @@ extension Vial
 			/// A string used as the filename and also as the URL for this entry if it generates output.
 			let slug: String
 
-			override init(fileWrapper: FileWrapper) throws
+			required init(fileWrapper: FileWrapper) throws
 			{
 				guard let slug = fileWrapper.filename else
 				{
@@ -119,27 +100,6 @@ extension Vial
 				self.slug = slug
 				super.init(frontMatter: frontMatter, contents: contents)
 			}
-
-			func write() throws -> FileWrapper
-			{
-				let contentString: String
-
-				do
-				{
-					contentString = try self.contents.prepending(frontMatter: frontMatter)
-				}
-				catch
-				{
-					throw WriteErrors.malformedFrontMatter(error)
-				}
-
-				guard let contents = contentString.data(using: .utf8) else
-				{
-					throw WriteErrors.emptySerialization
-				}
-
-				return FileWrapper(regularFileWithContents: contents)
-			}
 		}
 
 		enum LoadErrors: Error
@@ -153,8 +113,6 @@ extension Vial
 		{
 			case parentNotDirectory
 			case malformedCollectionConfigFile
-			case malformedFrontMatter(Error)
-			case emptySerialization
 			case serializationError(Error)
 		}
 

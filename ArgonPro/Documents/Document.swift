@@ -70,8 +70,7 @@ extension Document
 	static func createEmptyBundle(with name: String) throws -> URL
 	{
 		let bundleUrl = try newBundlesUrl().appendingPathComponent("\(name).vial")
-		try Vial(name: name).write(to: bundleUrl)
-
+		try Vial(name: name, description: "").write(to: bundleUrl)
 		return bundleUrl
 	}
 }

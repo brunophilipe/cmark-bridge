@@ -37,6 +37,7 @@
 		15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A3211785A400A49C50 /* String+FrontMatter.swift */; };
 		15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */; };
 		15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */; };
+		15F06141211A133A004DAE25 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */; };
 		2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
 		491123F3A4C3B92939D5C83A /* Pods_ArgonProModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
@@ -109,6 +110,7 @@
 		15AA24A3211785A400A49C50 /* String+FrontMatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FrontMatter.swift"; sourceTree = "<group>"; };
 		15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContextBus.swift"; sourceTree = "<group>"; };
 		15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Segues.swift"; sourceTree = "<group>"; };
+		15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileWrapper+Codable.swift"; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
 		86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,11 +223,8 @@
 		151467412116937000B41F88 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				151467422116938300B41F88 /* VialConfig.swift */,
-				15AA249D21177AF500A49C50 /* CollectionConfig.swift */,
-				15AA24A3211785A400A49C50 /* String+FrontMatter.swift */,
-				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
-				150DB3D421190595005BB11E /* Vial+Examples.swift */,
+				15F0613E211A1303004DAE25 /* Configurations */,
+				15F0613F211A130E004DAE25 /* Extensions */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -294,6 +293,26 @@
 				1514670F21166D0F00B41F88 /* Document.swift */,
 			);
 			path = Documents;
+			sourceTree = "<group>";
+		};
+		15F0613E211A1303004DAE25 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				151467422116938300B41F88 /* VialConfig.swift */,
+				15AA249D21177AF500A49C50 /* CollectionConfig.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		15F0613F211A130E004DAE25 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15AA24A3211785A400A49C50 /* String+FrontMatter.swift */,
+				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
+				150DB3D421190595005BB11E /* Vial+Examples.swift */,
+				15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5E718F6C8F29F0F7DF36B321 /* Frameworks */ = {
@@ -581,6 +600,7 @@
 			files = (
 				15AA249C2117797000A49C50 /* Collection.swift in Sources */,
 				15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */,
+				15F06141211A133A004DAE25 /* FileWrapper+Codable.swift in Sources */,
 				150DB3D8211906F8005BB11E /* Page.swift in Sources */,
 				150DB3DA2119073E005BB11E /* FrontMatterFile.swift in Sources */,
 				15146740211691B000B41F88 /* Vial.swift in Sources */,

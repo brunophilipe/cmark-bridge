@@ -57,32 +57,21 @@ public class Vial
 
 		vialCollections = []
 
-		if let collectionsDirectoryWrapper = childrenWrappers[InternalNodes.collections],
-			collectionsDirectoryWrapper.isDirectory,
-			let collectionWrappers = collectionsDirectoryWrapper.fileWrappers
+		if let collections: [Collection] = fileWrapper.mapCodableFileWappers(fromChild: InternalNodes.collections,
+																			 failedKeys: &vialCollectionParseErrors)
 		{
-			for collectionWrapper in collectionWrappers
-			{
-				do
-				{
-					vialCollections.append(try Collection(collectionWrapper: collectionWrapper.value))
-				}
-				catch
-				{
-					vialCollectionParseErrors[collectionWrapper.key] = error
-				}
-			}
+			vialCollections.append(contentsOf: collections)
 		}
 
 		vialNodes = []
 		vialNodes.append(contentsOf: try parseNodes(from: childrenWrappers, onRootLevel: true))
 	}
 
-	public init(name: String)
+	public init(name: String, description: String, baseUrl: String = "/")
 	{
-		vialConfig = VialConfig(title: name, description: "My ArgonPro Vial", baseUrl: "/")
-		vialCollections = [Collection(name: "Blog", producesOutput: true)]
-		vialNodes = [Page.exampleHomepage]
+		vialConfig = VialConfig(title: name, description: description, baseUrl: baseUrl)
+		vialCollections = []
+		vialNodes = []
 	}
 
 	public func write(to url: URL) throws
@@ -98,19 +87,11 @@ public class Vial
 			throw WriteErrors.malformedConfigFile
 		}
 
-		var collectionFileWrappers = [String: FileWrapper]()
-
-		for collection in vialCollections
-		{
-			collectionFileWrappers[collection.name] = try collection.write()
-		}
-
-		let configFileWrapper = FileWrapper(regularFileWithContents: configData)
-		let collectionsFileWrapper = FileWrapper(directoryWithFileWrappers: collectionFileWrappers)
+		let collectionFileWrappers = try vialCollections.writeFileWrappers(mappingKey: { $0.name })
 
 		let vialWrapper = FileWrapper(directoryWithFileWrappers: [
-			InternalNodes.config: configFileWrapper,
-			InternalNodes.collections: collectionsFileWrapper
+			InternalNodes.config: FileWrapper(regularFileWithContents: configData),
+			InternalNodes.collections: FileWrapper(directoryWithFileWrappers: collectionFileWrappers)
 		])
 
 		do
@@ -232,5 +213,25 @@ public extension Vial
 	var nodes: [VialNode]
 	{
 		return vialNodes
+	}
+
+	/// Adds a new node to the receiver vial.
+	func add(node: VialNode)
+	{
+		guard vialNodes.firstIndex(where: { $0 === node }) == nil else
+		{
+			return
+		}
+
+		vialNodes.append(node)
+	}
+
+	/// Removes a node from the receiver vial.
+	func remove(node: VialNode)
+	{
+		if let index = vialNodes.firstIndex(where: { $0 === node })
+		{
+			vialNodes.remove(at: index)
+		}
 	}
 }

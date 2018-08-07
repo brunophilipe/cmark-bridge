@@ -15,7 +15,7 @@ extension Vial
 		/// The name of the receiver page, including the extension.
 		public var name: String
 
-		override init(fileWrapper: FileWrapper) throws
+		required init(fileWrapper: FileWrapper) throws
 		{
 			guard let name = fileWrapper.filename else
 			{

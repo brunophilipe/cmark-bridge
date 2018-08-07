@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FrontMatterFile
+public class FrontMatterFile: FileWrapperCodable
 {
 	/// The front matter contents found in the entry file.
 	let frontMatter: [String: Any]
@@ -16,7 +16,7 @@ public class FrontMatterFile
 	/// The contents of the entry file. This is everything else after the front matter closing line (`---`).
 	let contents: String
 
-	init(fileWrapper: FileWrapper) throws
+	required init(fileWrapper: FileWrapper) throws
 	{
 		let filename = fileWrapper.filename ?? "<unknown file name>"
 
@@ -48,10 +48,37 @@ public class FrontMatterFile
 		self.contents = contents
 	}
 
+	func write() throws -> FileWrapper
+	{
+		let contentString: String
+
+		do
+		{
+			contentString = try self.contents.prepending(frontMatter: frontMatter)
+		}
+		catch
+		{
+			throw WriteErrors.malformedFrontMatter(error)
+		}
+
+		guard let contents = contentString.data(using: .utf8) else
+		{
+			throw WriteErrors.emptySerialization
+		}
+
+		return FileWrapper(regularFileWithContents: contents)
+	}
+
 	public enum LoadErrors: Error
 	{
 		case malformedFrontMatter(Error)
 		case entryNotRegularFile(filename: String)
 		case entryNotUTF8(filename: String)
+	}
+
+	public enum WriteErrors: Error
+	{
+		case malformedFrontMatter(Error)
+		case emptySerialization
 	}
 }
