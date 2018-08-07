@@ -56,6 +56,7 @@ class ThemedTableView: UITableView
 	{
 		let cell = super.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
 		cell.registerForThemeChanges()
+		configureCell(cell, withCustomSelectionColor: tintColor)
 		return cell
 	}
 
@@ -63,7 +64,23 @@ class ThemedTableView: UITableView
 	{
 		let cell = super.dequeueReusableCell(withIdentifier: identifier)
 		cell?.registerForThemeChanges()
+		configureCell(cell, withCustomSelectionColor: tintColor)
 		return cell
+	}
+
+	private func configureCell(_ cell: UITableViewCell?, withCustomSelectionColor color: UIColor)
+	{
+		guard let cell = cell else { return }
+
+		if cell.selectionStyle == .none
+		{
+			cell.backgroundView?.removeFromSuperview()
+		}
+		else
+		{
+			cell.selectedBackgroundView = UIView()
+			cell.selectedBackgroundView?.backgroundColor = color
+		}
 	}
 }
 
