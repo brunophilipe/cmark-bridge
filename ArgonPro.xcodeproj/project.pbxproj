@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3CD2118D819005BB11E /* VialViewController.swift */; };
+		150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */; };
+		150DB3D6211905AB005BB11E /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D421190595005BB11E /* Vial+Examples.swift */; };
+		150DB3D8211906F8005BB11E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D7211906F8005BB11E /* Page.swift */; };
+		150DB3DA2119073E005BB11E /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D92119073E005BB11E /* FrontMatterFile.swift */; };
 		1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670921166D0F00B41F88 /* AppDelegate.swift */; };
 		1514670C21166D0F00B41F88 /* DocumentBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */; };
 		1514670E21166D0F00B41F88 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670D21166D0F00B41F88 /* DocumentViewController.swift */; };
@@ -20,6 +25,12 @@
 		1514673A2116919A00B41F88 /* ArgonProModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonProModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15146740211691B000B41F88 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514673F211691B000B41F88 /* Vial.swift */; };
 		151467432116938300B41F88 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151467422116938300B41F88 /* VialConfig.swift */; };
+		1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88A2118C59A003F0D75 /* AppTheming.swift */; };
+		1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */; };
+		1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88C2118C59A003F0D75 /* AppTheme.swift */; };
+		1526C8932118C59A003F0D75 /* UIResponder+Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88E2118C59A003F0D75 /* UIResponder+Theming.swift */; };
+		1526C8952118C669003F0D75 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C8942118C669003F0D75 /* Preferences.swift */; };
+		1526C8982118CE3B003F0D75 /* Document.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1526C8972118CE3B003F0D75 /* Document.storyboard */; };
 		15AA249C2117797000A49C50 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA249B2117797000A49C50 /* Collection.swift */; };
 		15AA249E21177AF500A49C50 /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA249D21177AF500A49C50 /* CollectionConfig.swift */; };
 		15AA24A22117843F00A49C50 /* NSRegularExpression+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */; };
@@ -63,6 +74,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		150DB3CD2118D819005BB11E /* VialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VialViewController.swift; sourceTree = "<group>"; };
+		150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		150DB3D421190595005BB11E /* Vial+Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vial+Examples.swift"; sourceTree = "<group>"; };
+		150DB3D7211906F8005BB11E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		150DB3D92119073E005BB11E /* FrontMatterFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontMatterFile.swift; sourceTree = "<group>"; };
 		1514670621166D0F00B41F88 /* ArgonPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgonPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1514670921166D0F00B41F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBrowserViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +96,13 @@
 		151467352116919A00B41F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1514673F211691B000B41F88 /* Vial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vial.swift; sourceTree = "<group>"; };
 		151467422116938300B41F88 /* VialConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VialConfig.swift; sourceTree = "<group>"; };
+		1526C88A2118C59A003F0D75 /* AppTheming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheming.swift; sourceTree = "<group>"; };
+		1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Theming.swift"; sourceTree = "<group>"; };
+		1526C88C2118C59A003F0D75 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		1526C88E2118C59A003F0D75 /* UIResponder+Theming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Theming.swift"; sourceTree = "<group>"; };
+		1526C8942118C669003F0D75 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		1526C8962118C6C2003F0D75 /* ArgonPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArgonPro.entitlements; sourceTree = "<group>"; };
+		1526C8972118CE3B003F0D75 /* Document.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Document.storyboard; sourceTree = "<group>"; };
 		15AA249B2117797000A49C50 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		15AA249D21177AF500A49C50 /* CollectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionConfig.swift; sourceTree = "<group>"; };
 		15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+FrontMatter.swift"; sourceTree = "<group>"; };
@@ -126,6 +149,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150DB3D12118FE75005BB11E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		151466FD21166D0F00B41F88 = {
 			isa = PBXGroup;
 			children = (
@@ -151,11 +182,14 @@
 		1514670821166D0F00B41F88 /* ArgonPro */ = {
 			isa = PBXGroup;
 			children = (
+				1526C8962118C6C2003F0D75 /* ArgonPro.entitlements */,
 				15AA24AD21184EA400A49C50 /* Application */,
+				1526C8892118C59A003F0D75 /* Theming */,
 				15AA24AE21184EAD00A49C50 /* Documents */,
 				15AA24AC21184E7E00A49C50 /* Supporting Files */,
 				15AA24AB21184E7000A49C50 /* Storyboards */,
 				15AA24AA21184E6100A49C50 /* View Controllers */,
+				150DB3D12118FE75005BB11E /* Views */,
 				15AA24A521184DE800A49C50 /* Extensions */,
 			);
 			path = ArgonPro;
@@ -177,6 +211,8 @@
 				151467352116919A00B41F88 /* Info.plist */,
 				1514673F211691B000B41F88 /* Vial.swift */,
 				15AA249B2117797000A49C50 /* Collection.swift */,
+				150DB3D7211906F8005BB11E /* Page.swift */,
+				150DB3D92119073E005BB11E /* FrontMatterFile.swift */,
 				151467412116937000B41F88 /* Internal */,
 			);
 			path = ArgonProModel;
@@ -189,8 +225,20 @@
 				15AA249D21177AF500A49C50 /* CollectionConfig.swift */,
 				15AA24A3211785A400A49C50 /* String+FrontMatter.swift */,
 				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
+				150DB3D421190595005BB11E /* Vial+Examples.swift */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		1526C8892118C59A003F0D75 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				1526C88A2118C59A003F0D75 /* AppTheming.swift */,
+				1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */,
+				1526C88C2118C59A003F0D75 /* AppTheme.swift */,
+				1526C88E2118C59A003F0D75 /* UIResponder+Theming.swift */,
+			);
+			path = Theming;
 			sourceTree = "<group>";
 		};
 		15AA24A521184DE800A49C50 /* Extensions */ = {
@@ -207,6 +255,7 @@
 			children = (
 				1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */,
 				1514670D21166D0F00B41F88 /* DocumentViewController.swift */,
+				150DB3CD2118D819005BB11E /* VialViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -215,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				1514671121166D0F00B41F88 /* Main.storyboard */,
+				1526C8972118CE3B003F0D75 /* Document.storyboard */,
 				1514671621166D1000B41F88 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -233,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				1514670921166D0F00B41F88 /* AppDelegate.swift */,
+				1526C8942118C669003F0D75 /* Preferences.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -353,6 +404,14 @@
 				TargetAttributes = {
 					1514670521166D0F00B41F88 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					1514671D21166D1000B41F88 = {
 						CreatedOnToolsVersion = 10.0;
@@ -390,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1514671821166D1000B41F88 /* LaunchScreen.storyboard in Resources */,
+				1526C8982118CE3B003F0D75 /* Document.storyboard in Resources */,
 				1514671521166D1000B41F88 /* Assets.xcassets in Resources */,
 				1514671321166D0F00B41F88 /* Main.storyboard in Resources */,
 			);
@@ -491,11 +551,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1526C8932118C59A003F0D75 /* UIResponder+Theming.swift in Sources */,
 				1514671021166D0F00B41F88 /* Document.swift in Sources */,
+				150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */,
 				1514670E21166D0F00B41F88 /* DocumentViewController.swift in Sources */,
 				15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */,
+				1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */,
+				1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */,
 				1514670C21166D0F00B41F88 /* DocumentBrowserViewController.swift in Sources */,
+				1526C8952118C669003F0D75 /* Preferences.swift in Sources */,
 				15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */,
+				150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */,
+				1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */,
 				1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +581,10 @@
 			files = (
 				15AA249C2117797000A49C50 /* Collection.swift in Sources */,
 				15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */,
+				150DB3D8211906F8005BB11E /* Page.swift in Sources */,
+				150DB3DA2119073E005BB11E /* FrontMatterFile.swift in Sources */,
 				15146740211691B000B41F88 /* Vial.swift in Sources */,
+				150DB3D6211905AB005BB11E /* Vial+Examples.swift in Sources */,
 				15AA24A22117843F00A49C50 /* NSRegularExpression+FrontMatter.swift in Sources */,
 				151467432116938300B41F88 /* VialConfig.swift in Sources */,
 				15AA249E21177AF500A49C50 /* CollectionConfig.swift in Sources */,
@@ -678,6 +748,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArgonPro/ArgonPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = "$(SRCROOT)/ArgonPro/Supporting Files/Info.plist";
@@ -698,6 +769,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ArgonPro/ArgonPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = "$(SRCROOT)/ArgonPro/Supporting Files/Info.plist";

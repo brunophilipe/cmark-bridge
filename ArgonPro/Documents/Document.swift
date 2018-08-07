@@ -13,7 +13,7 @@ class Document: UIDocument
 {
 	private var loadState: LoadState = .notLoaded
 
-	var bundle: Vial?
+	var vial: Vial?
 	{
 		guard case .loaded(let bundle) = loadState else
 		{

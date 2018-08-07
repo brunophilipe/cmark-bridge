@@ -13,20 +13,24 @@ import Foundation
 public class Vial
 {
 	/// The configuration object of this vial.
-	private var vialConfig: VialConfig
+	var vialConfig: VialConfig
 
 	/// The collections in this vial.
-	public private(set) var collections: [Collection]
+	var vialCollections: [Collection]
+
+	/// The pages in this vial.
+	var vialNodes: [Node]
 
 	/// Stores errors found while parsing collections in this vial.
-	var collectionParseErrors = [String: Error]()
+	var vialCollectionParseErrors = [String: Error]()
 
 	public init(from fileWrapper: FileWrapper) throws
 	{
 		let jsonDecoder = JSONDecoder()
 
 		guard
-			let configFileWrapper = fileWrapper.fileWrappers?[InternalNodes.config],
+			let childrenWrappers = fileWrapper.fileWrappers,
+			let configFileWrapper = childrenWrappers[InternalNodes.config],
 			let vialConfigContents = configFileWrapper.regularFileContents
 		else
 		{
@@ -42,9 +46,9 @@ public class Vial
 			throw LoadErrors.malformedVial(error)
 		}
 
-		collections = []
+		vialCollections = []
 
-		if let collectionsDirectoryWrapper = fileWrapper.fileWrappers?[InternalNodes.collections],
+		if let collectionsDirectoryWrapper = childrenWrappers[InternalNodes.collections],
 			collectionsDirectoryWrapper.isDirectory,
 			let collectionWrappers = collectionsDirectoryWrapper.fileWrappers
 		{
@@ -52,20 +56,24 @@ public class Vial
 			{
 				do
 				{
-					collections.append(try Collection(collectionWrapper: collectionWrapper.value))
+					vialCollections.append(try Collection(collectionWrapper: collectionWrapper.value))
 				}
 				catch
 				{
-					collectionParseErrors[collectionWrapper.key] = error
+					vialCollectionParseErrors[collectionWrapper.key] = error
 				}
 			}
 		}
+
+		vialNodes = []
+		vialNodes.append(contentsOf: try parseNodes(from: childrenWrappers, onRootLevel: true))
 	}
 
 	public init(name: String)
 	{
 		vialConfig = VialConfig(title: name, description: "My ArgonPro Vial", baseUrl: "/")
-		collections = [Collection(name: "Blog", producesOutput: true)]
+		vialCollections = [Collection(name: "Blog", producesOutput: true)]
+		vialNodes = [.page(Page.exampleHomepage)]
 	}
 
 	public func write(to url: URL) throws
@@ -83,7 +91,7 @@ public class Vial
 
 		var collectionFileWrappers = [String: FileWrapper]()
 
-		for collection in self.collections
+		for collection in vialCollections
 		{
 			collectionFileWrappers[collection.name] = try collection.write()
 		}
@@ -106,6 +114,31 @@ public class Vial
 		}
 	}
 
+	private func parseNodes(from fileWrappers: [String: FileWrapper], onRootLevel: Bool = false) throws -> [Node]
+	{
+		var nodes = [Node]()
+
+		for (fileName, fileWrapper) in fileWrappers
+		{
+			// We ignore files with internal node names if they're on the root level.
+			guard !onRootLevel || !InternalNodes.isInternalNode(fileName) else
+			{
+				continue
+			}
+
+			if fileWrapper.isRegularFile
+			{
+				nodes.append(.page(try Page(fileWrapper: fileWrapper)))
+			}
+			else if fileWrapper.isDirectory, let childrenWrappers = fileWrapper.fileWrappers
+			{
+				nodes.append(.directory(name: fileName, nodes: try parseNodes(from: childrenWrappers)))
+			}
+		}
+
+		return nodes
+	}
+
 	public enum LoadErrors: Error
 	{
 		case urlNotDirectory
@@ -123,6 +156,11 @@ public class Vial
 	{
 		static let config = "config.json"
 		static let collections = "collections"
+
+		static func isInternalNode(_ node: String) -> Bool
+		{
+			return [config, collections].contains(node)
+		}
 	}
 }
 
@@ -152,5 +190,44 @@ public extension Vial
 	{
 		get { return vialConfig.baseUrl }
 		set { vialConfig.baseUrl = newValue }
+	}
+
+	/// The collections of the receiver vial.
+	var collections: [Collection]
+	{
+		return vialCollections
+	}
+
+	/// Adds a new collection to the receiver vial.
+	func add(collection: Collection)
+	{
+		guard vialCollections.firstIndex(of: collection) == nil else
+		{
+			return
+		}
+
+		vialCollections.append(collection)
+	}
+
+	/// Removes a collection from the receiver vial.
+	func remove(collection: Collection)
+	{
+		if let index = vialCollections.firstIndex(of: collection)
+		{
+			vialCollections.remove(at: index)
+		}
+	}
+
+	/// The other files found in the receiver vial. These can be regular files (which will be compiled into pages), or
+	/// subdirectories.
+	var nodes: [Node]
+	{
+		return vialNodes
+	}
+
+	/// Adds a node under the given node level, if specified. If not, add under the root level
+	func add(node: Node, under: Node? = nil)
+	{
+
 	}
 }

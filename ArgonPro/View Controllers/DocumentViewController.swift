@@ -8,29 +8,39 @@
 
 import UIKit
 
-class DocumentViewController: UIViewController
+class DocumentViewController: ThemedNavigationController
 {
-    @IBOutlet weak var documentNameLabel: UILabel!
-    
-    var document: UIDocument?
-    
-    override func viewWillAppear(_ animated: Bool)
+    var document: Document?
 	{
-        super.viewWillAppear(animated)
-        
-        // Access the document
-        document?.open(completionHandler: { (success) in
-            if success {
-                // Display the content of the document, e.g.:
-                self.documentNameLabel.text = self.document?.fileURL.lastPathComponent
-            } else {
-                // Make sure to handle the failed import appropriately, e.g., by presenting an error message to the user.
-            }
-        })
-    }
+		didSet
+		{
+			guard let document = self.document, oldValue == nil else
+			{
+				// baaaaaad
+				return
+			}
+
+			// Access the document
+			document.open()
+			{
+				[weak self] success in
+
+				if success
+				{
+					self?.children.forEach({ ($0 as? DocumentChildViewController)?.documentDidOpen() })
+				}
+				else
+				{
+					// Make sure to handle the failed import appropriately, e.g., by presenting an error message to the user.
+				}
+			}
+		}
+	}
     
-    @IBAction func dismissDocumentViewController()
+    func closeDocumentViewController()
 	{
+		children.forEach({ ($0 as? DocumentChildViewController)?.documentWillClose() })
+
         dismiss(animated: true)
 		{
             self.document?.close(completionHandler: nil)
@@ -51,4 +61,18 @@ class DocumentViewController: UIViewController
 	{
 		let document: Document
 	}
+}
+
+extension UIViewController
+{
+	var documentViewController: DocumentViewController?
+	{
+		return navigationController as? DocumentViewController
+	}
+}
+
+protocol DocumentChildViewController
+{
+	func documentDidOpen()
+	func documentWillClose()
 }

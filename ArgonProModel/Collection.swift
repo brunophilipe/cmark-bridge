@@ -10,13 +10,13 @@ import Foundation
 
 extension Vial
 {
-	public class Collection
+	public class Collection: Hashable, Equatable
 	{
 		/// The configuration object of this collection.
 		var collectionConfig: CollectionConfig
 
 		/// The entries in this collection.
-		var entries: [Entry]
+		var collectionEntries: [Entry]
 
 		/// Stores errors found while parsing entries in this collection.
 		public private(set) var entryParseErrors: [String: Error] = [:]
@@ -42,7 +42,7 @@ extension Vial
 				throw LoadErrors.malformedCollection(error)
 			}
 
-			entries = [Entry]()
+			collectionEntries = [Entry]()
 
 			if let entriesDirectoryWrapper = collectionWrapper.fileWrappers?[InternalNodes.entries],
 				entriesDirectoryWrapper.isDirectory,
@@ -52,7 +52,7 @@ extension Vial
 				{
 					do
 					{
-						entries.append(try Entry(fileWrapper: entryWrapper.value))
+						collectionEntries.append(try Entry(fileWrapper: entryWrapper.value))
 					}
 					catch
 					{
@@ -64,15 +64,8 @@ extension Vial
 
 		init(name: String, producesOutput: Bool)
 		{
-			self.collectionConfig = CollectionConfig(name: name, producesOutput: producesOutput)
-
-			let exampleEntryContents = "This is an example entry. You can edit its contents by writting aftr the last `---` line. You can add as many entries as you want to the front matter by adding a \"key: value\" pair between the first and second `---` lines. These values can be accessed from other places in your Vial."
-			let exampleSlug = "1-example-entry.md"
-			let exampleEntry = Entry(frontMatter: ["title": "Example \(name) entry"],
-									 contents: exampleEntryContents,
-									 slug: exampleSlug)
-
-			self.entries = [exampleEntry]
+			self.collectionConfig = CollectionConfig(name: name, producesOutput: producesOutput, uuid: UUID())
+			self.collectionEntries = [Entry.example(for: name)]
 		}
 
 		func write() throws -> FileWrapper
@@ -104,54 +97,27 @@ extension Vial
 			])
 		}
 
-		class Entry
+		public class Entry: FrontMatterFile
 		{
-			/// The front matter contents found in the entry file.
-			let frontMatter: [String: Any]
-
 			/// A string used as the filename and also as the URL for this entry if it generates output.
 			let slug: String
 
-			/// The contents of the entry file. This is everything else after the front matter closing line (`---`).
-			let contents: String
-
-			init(fileWrapper: FileWrapper) throws
+			override init(fileWrapper: FileWrapper) throws
 			{
-				let filename = fileWrapper.filename ?? "<unknown file name>"
-
-				guard fileWrapper.isRegularFile, let contentsData = fileWrapper.regularFileContents else
-				{
-					throw LoadErrors.entryNotRegularFile(filename: filename)
-				}
-
-				guard var contents = String(data: contentsData, encoding: .utf8) else
-				{
-					throw LoadErrors.entryNotUTF8(filename: filename)
-				}
-
-				do
-				{
-					self.frontMatter = try contents.extractFrontMatter() ?? [:]
-				}
-				catch
-				{
-					throw LoadErrors.malformedFrontMatter(error)
-				}
-
 				guard let slug = fileWrapper.filename else
 				{
-					throw LoadErrors.unnamedEntry
+					throw Collection.LoadErrors.unnamedEntry
 				}
 
-				self.contents = contents
 				self.slug = slug
+
+				try super.init(fileWrapper: fileWrapper)
 			}
 
 			init(frontMatter: [String: Any], contents: String, slug: String)
 			{
-				self.frontMatter = frontMatter
-				self.contents = contents
 				self.slug = slug
+				super.init(frontMatter: frontMatter, contents: contents)
 			}
 
 			func write() throws -> FileWrapper
@@ -180,9 +146,6 @@ extension Vial
 		{
 			case collectionMissingConfigFile
 			case malformedCollection(Error)
-			case malformedFrontMatter(Error)
-			case entryNotRegularFile(filename: String)
-			case entryNotUTF8(filename: String)
 			case unnamedEntry
 		}
 
@@ -203,7 +166,7 @@ extension Vial
 	}
 }
 
-extension Vial.Collection
+public extension Vial.Collection
 {
 	/// The name of this collection.
 	var name: String
@@ -217,5 +180,30 @@ extension Vial.Collection
 	{
 		get { return collectionConfig.producesOutput }
 		set { collectionConfig.producesOutput = newValue }
+	}
+
+	/// The entries in this collection.
+	var entries: [Entry]
+	{
+		return collectionEntries
+	}
+
+	/// Adds an entry to a collection.
+	func add(entry: Entry)
+	{
+		collectionEntries.append(entry)
+	}
+}
+
+extension Vial.Collection
+{
+	public var hashValue: Int
+	{
+		return collectionConfig.uuid.hashValue
+	}
+
+	public static func ==(lhs: Vial.Collection, rhs: Vial.Collection) -> Bool
+	{
+		return lhs.collectionConfig.uuid == rhs.collectionConfig.uuid
 	}
 }

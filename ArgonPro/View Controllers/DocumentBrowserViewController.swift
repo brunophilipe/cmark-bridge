@@ -22,7 +22,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController
         
         // Update the style of the UIDocumentBrowserViewController
 		browserUserInterfaceStyle = .dark
-		view.tintColor = #colorLiteral(red: 0.7176470588, green: 0, blue: 1, alpha: 1)
+		view.tintColor = AppTheming.instance.currentTint
 
         // Specify the allowed content types of your application via the Info.plist.
         

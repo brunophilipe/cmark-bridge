@@ -12,4 +12,5 @@ struct CollectionConfig: Codable
 {
 	var name: String
 	var producesOutput: Bool
+	var uuid: UUID
 }
