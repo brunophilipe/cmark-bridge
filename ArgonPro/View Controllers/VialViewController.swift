@@ -139,7 +139,7 @@ class VialViewController: UITableViewController
 			let reuseIdentifier = (node is Vial.Directory) ? "rightdetail_icon_discl" : "title_icon_discl"
 			cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 			cell.textLabel?.text = node.name
-			cell.imageView?.image = (node is Vial.Page) ? #imageLiteral(resourceName: "page.pdf") : #imageLiteral(resourceName: "directory.pdf")
+			cell.imageView?.image = (node is Vial.Page) ? UIImage.image(forFilename: node.name) : #imageLiteral(resourceName: "directory.pdf")
 
 			if let directory = node as? Vial.Directory
 			{
