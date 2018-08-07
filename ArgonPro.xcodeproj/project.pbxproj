@@ -209,12 +209,8 @@
 		151467332116919A00B41F88 /* ArgonProModel */ = {
 			isa = PBXGroup;
 			children = (
-				151467342116919A00B41F88 /* ArgonProModel.h */,
-				151467352116919A00B41F88 /* Info.plist */,
-				1514673F211691B000B41F88 /* Vial.swift */,
-				15AA249B2117797000A49C50 /* Collection.swift */,
-				150DB3D7211906F8005BB11E /* Page.swift */,
-				150DB3D92119073E005BB11E /* FrontMatterFile.swift */,
+				15F06143211A336B004DAE25 /* Supporting Files */,
+				15F06142211A335E004DAE25 /* Public */,
 				151467412116937000B41F88 /* Internal */,
 			);
 			path = ArgonProModel;
@@ -307,12 +303,32 @@
 		15F0613F211A130E004DAE25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				15AA24A3211785A400A49C50 /* String+FrontMatter.swift */,
-				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
-				150DB3D421190595005BB11E /* Vial+Examples.swift */,
 				15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */,
+				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
+				15AA24A3211785A400A49C50 /* String+FrontMatter.swift */,
+				150DB3D421190595005BB11E /* Vial+Examples.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15F06142211A335E004DAE25 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				1514673F211691B000B41F88 /* Vial.swift */,
+				15AA249B2117797000A49C50 /* Collection.swift */,
+				150DB3D7211906F8005BB11E /* Page.swift */,
+				150DB3D92119073E005BB11E /* FrontMatterFile.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		15F06143211A336B004DAE25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				151467342116919A00B41F88 /* ArgonProModel.h */,
+				151467352116919A00B41F88 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5E718F6C8F29F0F7DF36B321 /* Frameworks */ = {
@@ -861,7 +877,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ArgonProModel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ArgonProModel/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -892,7 +908,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ArgonProModel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ArgonProModel/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
