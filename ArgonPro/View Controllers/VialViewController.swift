@@ -136,14 +136,14 @@ class VialViewController: UITableViewController
 
 		case (2, let row):
 			let node = vial.nodes[row]
-			let reuseIdentifier = node.isDirectory ? "rightdetail_icon_discl" : "title_icon_discl"
+			let reuseIdentifier = (node is Vial.Directory) ? "rightdetail_icon_discl" : "title_icon_discl"
 			cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 			cell.textLabel?.text = node.name
-			cell.imageView?.image = node.isFile ? #imageLiteral(resourceName: "page.pdf") : #imageLiteral(resourceName: "directory.pdf")
+			cell.imageView?.image = (node is Vial.Page) ? #imageLiteral(resourceName: "page.pdf") : #imageLiteral(resourceName: "directory.pdf")
 
-			if node.isDirectory
+			if let directory = node as? Vial.Directory
 			{
-				cell.detailTextLabel?.text = "\(node.detailCount) items"
+				cell.detailTextLabel?.text = directory.itemsDescription
 			}
 
 		default:
@@ -172,6 +172,16 @@ extension Vial.Collection
 {
 	var entriesDescription: String
 	{
-		return entries.count == 1 ? "1 entry" : "\(entries.count) entries"
+		let count = entries.count
+		return count == 1 ? "1 entry" : "\(count) entries"
+	}
+}
+
+extension Vial.Directory
+{
+	var itemsDescription: String
+	{
+		let count = children.count
+		return count == 1 ? "1 item" : "\(count) items"
 	}
 }

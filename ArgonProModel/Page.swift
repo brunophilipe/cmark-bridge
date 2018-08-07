@@ -10,9 +10,10 @@ import Foundation
 
 extension Vial
 {
-	public class Page: FrontMatterFile
+	public class Page: FrontMatterFile, VialNode
 	{
-		let name: String
+		/// The name of the receiver page, including the extension.
+		public var name: String
 
 		override init(fileWrapper: FileWrapper) throws
 		{
@@ -33,43 +34,32 @@ extension Vial
 		}
 	}
 
-	public enum Node
+	public class Directory: VialNode
 	{
-		case page(Page), directory(name: String, nodes: [Node])
-
+		/// The name of the receiver directory.
 		public var name: String
+
+		/// Th contents of the receiver directory.
+		public private(set) var children: [VialNode]
+
+		init(name: String, children: [VialNode])
 		{
-			switch self
-			{
-			case .page(let page): return page.name
-			case .directory(name: let name, _): return "\(name)/"
-			}
+			self.name = name
+			self.children = children
 		}
 
-		public var isFile: Bool
+		/// Appends a child to the children set of the receiver directory.
+		func add(child: VialNode)
 		{
-			switch self
-			{
-			case .page: return true
-			default: return false
-			}
+			children.append(child)
 		}
 
-		public var isDirectory: Bool
+		/// If the provided child is present in the children set of the receiver directory, removes it.
+		func remove(child: VialNode)
 		{
-			switch self
+			if let index = children.firstIndex(where: { $0 === child })
 			{
-			case .directory: return true
-			default: return false
-			}
-		}
-
-		public var detailCount: Int
-		{
-			switch self
-			{
-			case .directory(_, let nodes): return nodes.count
-			default: return 0
+				children.remove(at: index)
 			}
 		}
 	}

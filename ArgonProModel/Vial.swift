@@ -8,10 +8,19 @@
 
 import Foundation
 
+/// A node is any file present in the Vial package that is not part of the predefined Vial structure. They are
+/// accessible through the `nodes` property of the Vial object.
+public protocol VialNode: class
+{
+	var name: String { get set }
+}
+
 /// A Vial is the data structure of an Argon project. It organizes and provides I/O facilities for all the project's
 /// configurations and source files.
 public class Vial
 {
+	private typealias Node = VialNode
+
 	/// The configuration object of this vial.
 	var vialConfig: VialConfig
 
@@ -19,7 +28,7 @@ public class Vial
 	var vialCollections: [Collection]
 
 	/// The pages in this vial.
-	var vialNodes: [Node]
+	var vialNodes: [VialNode]
 
 	/// Stores errors found while parsing collections in this vial.
 	var vialCollectionParseErrors = [String: Error]()
@@ -73,7 +82,7 @@ public class Vial
 	{
 		vialConfig = VialConfig(title: name, description: "My ArgonPro Vial", baseUrl: "/")
 		vialCollections = [Collection(name: "Blog", producesOutput: true)]
-		vialNodes = [.page(Page.exampleHomepage)]
+		vialNodes = [Page.exampleHomepage]
 	}
 
 	public func write(to url: URL) throws
@@ -128,11 +137,11 @@ public class Vial
 
 			if fileWrapper.isRegularFile
 			{
-				nodes.append(.page(try Page(fileWrapper: fileWrapper)))
+				nodes.append(try Page(fileWrapper: fileWrapper))
 			}
 			else if fileWrapper.isDirectory, let childrenWrappers = fileWrapper.fileWrappers
 			{
-				nodes.append(.directory(name: fileName, nodes: try parseNodes(from: childrenWrappers)))
+				nodes.append(Directory(name: fileName, children: try parseNodes(from: childrenWrappers)))
 			}
 		}
 
@@ -220,14 +229,8 @@ public extension Vial
 
 	/// The other files found in the receiver vial. These can be regular files (which will be compiled into pages), or
 	/// subdirectories.
-	var nodes: [Node]
+	var nodes: [VialNode]
 	{
 		return vialNodes
-	}
-
-	/// Adds a node under the given node level, if specified. If not, add under the root level
-	func add(node: Node, under: Node? = nil)
-	{
-
 	}
 }
