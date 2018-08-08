@@ -1,15 +1,15 @@
 //
-//  TokomakTests.swift
-//  TokomakTests
+//  TokamakTests.swift
+//  TokamakTests
 //
 //  Created by Bruno Philipe on 8/8/18.
 //  Copyright © 2018 Bruno Philipe. All rights reserved.
 //
 
 import XCTest
-@testable import Tokomak
+@testable import Tokamak
 
-class TokomakTests: XCTestCase {
+class TokamakTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

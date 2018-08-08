@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TokomakVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TokomakVersionString[];
+FOUNDATION_EXPORT double Pods_TokamakVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TokamakVersionString[];
 
