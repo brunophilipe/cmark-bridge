@@ -54,6 +54,26 @@ public extension Dictionary where Key == String, Value == FileWrapper
 
 		return mappedResult
 	}
+
+	var asDirectoryFileWrapper: FileWrapper
+	{
+		return FileWrapper(directoryWithFileWrappers: self)
+	}
+}
+
+public extension Dictionary where Key == String, Value: FileWrapperCodable
+{
+	public func writeFileWrappers() throws -> [String: FileWrapper]
+	{
+		var fileWrappers = [String: FileWrapper]()
+
+		for (key, fileWrapperCodable) in self
+		{
+			fileWrappers[key] = try fileWrapperCodable.write()
+		}
+
+		return fileWrappers
+ 	}
 }
 
 public extension Collection where Element: FileWrapperCodable

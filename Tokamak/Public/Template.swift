@@ -11,7 +11,7 @@ import ArgonModel
 import Yams
 import GadgetKit
 
-public class Template
+public class Template: FileWrapperCodable
 {
 	/// The template configuration.
 	let templateConfig: TemplateConfig
@@ -25,7 +25,7 @@ public class Template
 	/// Resources include stylesheets, scripts, fonts, images, and any other resources used to render the template.
 	let resources: [String: [String: Data]]
 
-	public init(fileWrapper: FileWrapper) throws
+	required public init(fileWrapper: FileWrapper) throws
 	{
 		guard fileWrapper.isDirectory else
 		{
@@ -75,12 +75,53 @@ public class Template
 		self.resources = resources
 	}
 
-	enum LoadError: Error
+	public func write() throws -> FileWrapper
+	{
+		let yamlEncoder = YAMLEncoder()
+		let templateConfigData: Data
+
+		do
+		{
+			templateConfigData = try unwrap(try yamlEncoder.encode(templateConfig).data(using: .utf8))
+		}
+		catch
+		{
+			throw WriteError.malformedConfigFile(error)
+		}
+
+		var templateFileWrappers = [String: FileWrapper]()
+		templateFileWrappers[InternalNodes.config] = FileWrapper(regularFileWithContents: templateConfigData)
+
+		do
+		{
+			templateFileWrappers[InternalNodes.includes] = try includes.writeFileWrappers().asDirectoryFileWrapper
+			templateFileWrappers[InternalNodes.layouts] = try layouts.writeFileWrappers().asDirectoryFileWrapper
+
+			for (resourceDirectory, directoryFiles) in resources
+			{
+				templateFileWrappers[resourceDirectory] = try directoryFiles.writeFileWrappers().asDirectoryFileWrapper
+			}
+		}
+		catch
+		{
+			throw WriteError.malformedDataFile(error)
+		}
+
+		return FileWrapper(directoryWithFileWrappers: templateFileWrappers)
+	}
+
+	public enum LoadError: Error
 	{
 		case notDirectory
 		case emptyTemplate
 		case malformedTemplate
 		case malformedConfigFile(Error)
+	}
+
+	public enum WriteError: Error
+	{
+		case malformedConfigFile(Error)
+		case malformedDataFile(Error)
 	}
 
 	struct InternalNodes
