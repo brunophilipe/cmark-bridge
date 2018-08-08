@@ -27,4 +27,5 @@ target 'Tokomak' do
 	use_frameworks!
 
 	# Pods for ArgonProModel
+	pod 'Yams'
 end

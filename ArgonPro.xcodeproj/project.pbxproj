@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07CCEDDBCB35DE035B3FE5BA /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
 		150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3CD2118D819005BB11E /* VialViewController.swift */; };
 		150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */; };
 		150DB3D6211905AB005BB11E /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D421190595005BB11E /* Vial+Examples.swift */; };
@@ -54,6 +55,7 @@
 		15FC8224211A804300924FD4 /* GadgetKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15FC821C211A804300924FD4 /* GadgetKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15FC8228211A805B00924FD4 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */; };
 		15FC822A211A845500924FD4 /* FileWrapper+FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC8229211A845500924FD4 /* FileWrapper+FileLoader.swift */; };
+		15FC822C211A89DC00924FD4 /* Data+FileWrapperCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC822B211A89DC00924FD4 /* Data+FileWrapperCodable.swift */; };
 		3451B3BCB11C7013E943372D /* Pods_ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEE33EACD2DD6ACCEF230D6 /* Pods_ArgonModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
 		AEF7BBA69507C5ECB40D478F /* Pods_Tokomak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B363675A80A8DC1CC844C051 /* Pods_Tokomak.framework */; };
@@ -173,6 +175,7 @@
 		15FC821E211A804300924FD4 /* GadgetKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GadgetKit.h; sourceTree = "<group>"; };
 		15FC821F211A804300924FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15FC8229211A845500924FD4 /* FileWrapper+FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileWrapper+FileLoader.swift"; sourceTree = "<group>"; };
+		15FC822B211A89DC00924FD4 /* Data+FileWrapperCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+FileWrapperCodable.swift"; sourceTree = "<group>"; };
 		3669C179D73010333383198D /* Pods-ArgonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonModel/Pods-ArgonModel.debug.xcconfig"; sourceTree = "<group>"; };
 		439DA76D8232F50C199721A8 /* Pods-ArgonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonModel/Pods-ArgonModel.release.xcconfig"; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 				15F06168211A6805004DAE25 /* Tokomak.framework in Frameworks */,
 				151467392116919A00B41F88 /* ArgonModel.framework in Frameworks */,
 				15FC8223211A804300924FD4 /* GadgetKit.framework in Frameworks */,
+				07CCEDDBCB35DE035B3FE5BA /* Pods_ArgonPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 			isa = PBXGroup;
 			children = (
 				15FC8215211A7AC800924FD4 /* TemplateConfig.swift */,
+				15FC822B211A89DC00924FD4 /* Data+FileWrapperCodable.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -927,6 +932,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FC822C211A89DC00924FD4 /* Data+FileWrapperCodable.swift in Sources */,
 				15F06173211A6834004DAE25 /* Tokomak.swift in Sources */,
 				15F06175211A72A8004DAE25 /* Template.swift in Sources */,
 				15FC8216211A7AC800924FD4 /* TemplateConfig.swift in Sources */,
