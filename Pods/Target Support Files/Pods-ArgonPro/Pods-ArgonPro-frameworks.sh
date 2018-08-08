@@ -143,9 +143,15 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel/ArgonModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit/GadgetKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Tokamak/Tokamak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams/Yams.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel/ArgonModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit/GadgetKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Tokamak/Tokamak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams/Yams.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -1,0 +1,9 @@
+[submodule "Dependencies/GadgetKit"]
+	path = Dependencies/GadgetKit
+	url = bruno@nix.bruno.ph:git/GadgetKit.git
+[submodule "Dependencies/Tokamak"]
+	path = Dependencies/Tokamak
+	url = bruno@nix.bruno.ph:git/Tokamak.git
+[submodule "Dependencies/ArgonModel"]
+	path = Dependencies/ArgonModel
+	url = bruno@nix.bruno.ph:git/ArgonModel.git

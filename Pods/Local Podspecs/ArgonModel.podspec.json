@@ -1,0 +1,35 @@
+{
+  "name": "ArgonModel",
+  "version": "1.0",
+  "homepage": "https://github.com/brunophilipe/",
+  "source": {
+    "path": "."
+  },
+  "authors": {
+    "Bruno Philipe": "me@bruno.ph"
+  },
+  "summary": "Model structure for Argon Vials.",
+  "license": {
+    "type": "Closed Source"
+  },
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.12"
+  },
+  "ios": {
+    "frameworks": "Foundation"
+  },
+  "osx": {
+    "frameworks": "Foundation"
+  },
+  "source_files": [
+    "Public/**/*.swift",
+    "Internal/**/*.swift"
+  ],
+  "module_name": "ArgonModel",
+  "dependencies": {
+    "GadgetKit": [
+
+    ]
+  }
+}

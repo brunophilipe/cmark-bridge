@@ -1,16 +1,37 @@
 PODS:
+  - ArgonModel (1.0):
+    - GadgetKit
+  - GadgetKit (1.0):
+    - Yams
+  - Tokamak (1.0):
+    - ArgonModel
+    - GadgetKit
   - Yams (1.0.0)
 
 DEPENDENCIES:
+  - ArgonModel (from `Dependencies/ArgonModel`)
+  - GadgetKit (from `Dependencies/GadgetKit`)
+  - Tokamak (from `Dependencies/Tokamak`)
   - Yams
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Yams
 
+EXTERNAL SOURCES:
+  ArgonModel:
+    :path: Dependencies/ArgonModel
+  GadgetKit:
+    :path: Dependencies/GadgetKit
+  Tokamak:
+    :path: Dependencies/Tokamak
+
 SPEC CHECKSUMS:
+  ArgonModel: 70d610ae2eb35ec56e3b4bc8bb8259b436a6fd1d
+  GadgetKit: 9a056ddc917479456be6b6eab647df01fad4b403
+  Tokamak: d4dd779d9498b508505d81a8dc3cbb13b818e97a
   Yams: a01cdee527b3a82a3e192255b34ad5aacdf96b8c
 
-PODFILE CHECKSUM: b843542258644a3e63bf63086acf0294eefd5de9
+PODFILE CHECKSUM: 15dbce1bc9df4cf3650b6a21f96cc13c245d1698
 
 COCOAPODS: 1.5.3
