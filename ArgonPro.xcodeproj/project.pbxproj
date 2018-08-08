@@ -37,7 +37,6 @@
 		15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A3211785A400A49C50 /* String+FrontMatter.swift */; };
 		15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */; };
 		15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */; };
-		15F06141211A133A004DAE25 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */; };
 		15F06148211A33DF004DAE25 /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06147211A33DF004DAE25 /* String+Extractors.swift */; };
 		15F0614A211A43F3004DAE25 /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06149211A43F3004DAE25 /* Vial+Templates.swift */; };
 		15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */; };
@@ -49,6 +48,12 @@
 		15F06173211A6834004DAE25 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06172211A6834004DAE25 /* Tokomak.swift */; };
 		15F06175211A72A8004DAE25 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06174211A72A8004DAE25 /* Template.swift */; };
 		15FC8213211A75FE00924FD4 /* ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonModel.framework */; };
+		15FC8216211A7AC800924FD4 /* TemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC8215211A7AC800924FD4 /* TemplateConfig.swift */; };
+		15FC8220211A804300924FD4 /* GadgetKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FC821E211A804300924FD4 /* GadgetKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15FC8223211A804300924FD4 /* GadgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FC821C211A804300924FD4 /* GadgetKit.framework */; };
+		15FC8224211A804300924FD4 /* GadgetKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15FC821C211A804300924FD4 /* GadgetKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15FC8228211A805B00924FD4 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */; };
+		15FC822A211A845500924FD4 /* FileWrapper+FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC8229211A845500924FD4 /* FileWrapper+FileLoader.swift */; };
 		3451B3BCB11C7013E943372D /* Pods_ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEE33EACD2DD6ACCEF230D6 /* Pods_ArgonModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
 		AEF7BBA69507C5ECB40D478F /* Pods_Tokomak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B363675A80A8DC1CC844C051 /* Pods_Tokomak.framework */; };
@@ -90,6 +95,13 @@
 			remoteGlobalIDString = 15F06152211A6805004DAE25;
 			remoteInfo = Tokomak;
 		};
+		15FC8221211A804300924FD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15FC821B211A804300924FD4;
+			remoteInfo = GadgetKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,6 +113,7 @@
 			files = (
 				1514673A2116919A00B41F88 /* ArgonModel.framework in Embed Frameworks */,
 				15F06169211A6805004DAE25 /* Tokomak.framework in Embed Frameworks */,
+				15FC8224211A804300924FD4 /* GadgetKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +168,11 @@
 		15F06164211A6805004DAE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F06172211A6834004DAE25 /* Tokomak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokomak.swift; sourceTree = "<group>"; };
 		15F06174211A72A8004DAE25 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		15FC8215211A7AC800924FD4 /* TemplateConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateConfig.swift; sourceTree = "<group>"; };
+		15FC821C211A804300924FD4 /* GadgetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GadgetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FC821E211A804300924FD4 /* GadgetKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GadgetKit.h; sourceTree = "<group>"; };
+		15FC821F211A804300924FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15FC8229211A845500924FD4 /* FileWrapper+FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileWrapper+FileLoader.swift"; sourceTree = "<group>"; };
 		3669C179D73010333383198D /* Pods-ArgonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonModel/Pods-ArgonModel.debug.xcconfig"; sourceTree = "<group>"; };
 		439DA76D8232F50C199721A8 /* Pods-ArgonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonModel/Pods-ArgonModel.release.xcconfig"; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +195,7 @@
 			files = (
 				15F06168211A6805004DAE25 /* Tokomak.framework in Frameworks */,
 				151467392116919A00B41F88 /* ArgonModel.framework in Frameworks */,
+				15FC8223211A804300924FD4 /* GadgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +232,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15FC8219211A804300924FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -232,6 +258,7 @@
 				151467332116919A00B41F88 /* ArgonProModel */,
 				15F06154211A6805004DAE25 /* Tokomak */,
 				15F06161211A6805004DAE25 /* TokomakTests */,
+				15FC821D211A804300924FD4 /* GadgetKit */,
 				1514670721166D0F00B41F88 /* Products */,
 				E709D57DD1E863DB08BA2B55 /* Pods */,
 				5E718F6C8F29F0F7DF36B321 /* Frameworks */,
@@ -246,6 +273,7 @@
 				151467322116919A00B41F88 /* ArgonModel.framework */,
 				15F06153211A6805004DAE25 /* Tokomak.framework */,
 				15F0615B211A6805004DAE25 /* TokomakTests.xctest */,
+				15FC821C211A804300924FD4 /* GadgetKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -373,7 +401,6 @@
 		15F0613F211A130E004DAE25 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */,
 				15AA24A12117843F00A49C50 /* NSRegularExpression+FrontMatter.swift */,
 				15AA24A3211785A400A49C50 /* String+FrontMatter.swift */,
 				150DB3D421190595005BB11E /* Vial+Examples.swift */,
@@ -415,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				15F06171211A681E004DAE25 /* Public */,
+				15FC8214211A7A3900924FD4 /* Internal */,
 				15F06170211A680F004DAE25 /* Supporting Files */,
 			);
 			path = Tokomak;
@@ -445,6 +473,25 @@
 				15F06174211A72A8004DAE25 /* Template.swift */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		15FC8214211A7A3900924FD4 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				15FC8215211A7AC800924FD4 /* TemplateConfig.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		15FC821D211A804300924FD4 /* GadgetKit */ = {
+			isa = PBXGroup;
+			children = (
+				15FC821E211A804300924FD4 /* GadgetKit.h */,
+				15F06140211A133A004DAE25 /* FileWrapper+Codable.swift */,
+				15FC8229211A845500924FD4 /* FileWrapper+FileLoader.swift */,
+				15FC821F211A804300924FD4 /* Info.plist */,
+			);
+			path = GadgetKit;
 			sourceTree = "<group>";
 		};
 		5E718F6C8F29F0F7DF36B321 /* Frameworks */ = {
@@ -493,6 +540,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15FC8217211A804300924FD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FC8220211A804300924FD4 /* GadgetKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -512,6 +567,7 @@
 			dependencies = (
 				151467382116919A00B41F88 /* PBXTargetDependency */,
 				15F06167211A6805004DAE25 /* PBXTargetDependency */,
+				15FC8222211A804300924FD4 /* PBXTargetDependency */,
 			);
 			name = ArgonPro;
 			productName = ArgonPro;
@@ -594,6 +650,24 @@
 			productReference = 15F0615B211A6805004DAE25 /* TokomakTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		15FC821B211A804300924FD4 /* GadgetKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15FC8225211A804300924FD4 /* Build configuration list for PBXNativeTarget "GadgetKit" */;
+			buildPhases = (
+				15FC8217211A804300924FD4 /* Headers */,
+				15FC8218211A804300924FD4 /* Sources */,
+				15FC8219211A804300924FD4 /* Frameworks */,
+				15FC821A211A804300924FD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GadgetKit;
+			productName = GadgetKit;
+			productReference = 15FC821C211A804300924FD4 /* GadgetKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -631,6 +705,9 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 1514670521166D0F00B41F88;
 					};
+					15FC821B211A804300924FD4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 1514670121166D0F00B41F88 /* Build configuration list for PBXProject "ArgonPro" */;
@@ -648,6 +725,7 @@
 			targets = (
 				1514670521166D0F00B41F88 /* ArgonPro */,
 				1514671D21166D1000B41F88 /* ArgonProTests */,
+				15FC821B211A804300924FD4 /* GadgetKit */,
 				151467312116919A00B41F88 /* ArgonModel */,
 				15F06152211A6805004DAE25 /* Tokomak */,
 				15F0615A211A6805004DAE25 /* TokomakTests */,
@@ -689,6 +767,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		15F06159211A6805004DAE25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FC821A211A804300924FD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -827,7 +912,6 @@
 				15AA249C2117797000A49C50 /* Collection.swift in Sources */,
 				15F06148211A33DF004DAE25 /* String+Extractors.swift in Sources */,
 				15AA24A4211785A400A49C50 /* String+FrontMatter.swift in Sources */,
-				15F06141211A133A004DAE25 /* FileWrapper+Codable.swift in Sources */,
 				150DB3D8211906F8005BB11E /* Node.swift in Sources */,
 				15F0614A211A43F3004DAE25 /* Vial+Templates.swift in Sources */,
 				150DB3DA2119073E005BB11E /* FrontMatterFile.swift in Sources */,
@@ -845,6 +929,7 @@
 			files = (
 				15F06173211A6834004DAE25 /* Tokomak.swift in Sources */,
 				15F06175211A72A8004DAE25 /* Template.swift in Sources */,
+				15FC8216211A7AC800924FD4 /* TemplateConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +938,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				15F06163211A6805004DAE25 /* TokomakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15FC8218211A804300924FD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15FC822A211A845500924FD4 /* FileWrapper+FileLoader.swift in Sources */,
+				15FC8228211A805B00924FD4 /* FileWrapper+Codable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,6 +977,11 @@
 			isa = PBXTargetDependency;
 			target = 15F06152211A6805004DAE25 /* Tokomak */;
 			targetProxy = 15F06166211A6805004DAE25 /* PBXContainerItemProxy */;
+		};
+		15FC8222211A804300924FD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15FC821B211A804300924FD4 /* GadgetKit */;
+			targetProxy = 15FC8221211A804300924FD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1270,6 +1369,62 @@
 			};
 			name = Release;
 		};
+		15FC8226211A804300924FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GadgetKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.GadgetKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15FC8227211A804300924FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GadgetKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brunophilipe.GadgetKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1323,6 +1478,15 @@
 			buildConfigurations = (
 				15F0616E211A6805004DAE25 /* Debug */,
 				15F0616F211A6805004DAE25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15FC8225211A804300924FD4 /* Build configuration list for PBXNativeTarget "GadgetKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15FC8226211A804300924FD4 /* Debug */,
+				15FC8227211A804300924FD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

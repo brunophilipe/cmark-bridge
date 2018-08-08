@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GadgetKit
 
 extension Vial
 {
@@ -21,7 +22,7 @@ extension Vial
 		/// Stores errors found while parsing entries in this collection.
 		public private(set) var entryParseErrors: [String: Error] = [:]
 
-		required init(fileWrapper: FileWrapper) throws
+		required public init(fileWrapper: FileWrapper) throws
 		{
 			let jsonDecoder = JSONDecoder()
 
@@ -57,7 +58,7 @@ extension Vial
 			self.collectionEntries = [Entry.example(for: name)]
 		}
 
-		func write() throws -> FileWrapper
+		public func write() throws -> FileWrapper
 		{
 			let configData: Data
 

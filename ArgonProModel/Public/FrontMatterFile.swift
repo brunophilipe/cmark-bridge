@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GadgetKit
 
 public class FrontMatterFile: FileWrapperCodable
 {
@@ -16,7 +17,7 @@ public class FrontMatterFile: FileWrapperCodable
 	/// The contents of the entry file. This is everything else after the front matter closing line (`---`).
 	let contents: String
 
-	required init(fileWrapper: FileWrapper) throws
+	required public init(fileWrapper: FileWrapper) throws
 	{
 		let filename = fileWrapper.filename ?? "<unknown file name>"
 
@@ -48,7 +49,7 @@ public class FrontMatterFile: FileWrapperCodable
 		self.contents = contents
 	}
 
-	func write() throws -> FileWrapper
+	public func write() throws -> FileWrapper
 	{
 		let contentString: String
 

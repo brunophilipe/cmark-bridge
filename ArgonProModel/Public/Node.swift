@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GadgetKit
 
 /// A node is any file present in the Vial package that is not part of the predefined Vial structure. They are
 /// accessible through the `nodes` property of the Vial object.
@@ -60,7 +61,7 @@ extension Vial
 			self.children = children
 		}
 
-		required init(fileWrapper: FileWrapper) throws
+		required public init(fileWrapper: FileWrapper) throws
 		{
 			guard fileWrapper.isDirectory else
 			{
@@ -76,7 +77,7 @@ extension Vial
 			children = try [VialNode](fileWrapper: fileWrapper)
 		}
 
-		func write() throws -> FileWrapper
+		public func write() throws -> FileWrapper
 		{
 			return FileWrapper(directoryWithFileWrappers: try children.writeFileWrappers())
 		}
@@ -106,32 +107,12 @@ extension Vial
 
 extension Array where Element == VialNode
 {
-	init(fileWrapper: FileWrapper, ignoreUsing: ((String) -> Bool)? = nil) throws
+	init(fileWrapper: FileWrapper, ignoreUsing ignorerCallback: ((String) -> Bool)? = nil) throws
 	{
-		var nodes = [VialNode]()
-
-		if fileWrapper.isDirectory, let fileWrappers = fileWrapper.fileWrappers
-		{
-			for (fileName, fileWrapper) in fileWrappers
-			{
-				// Check if we should ignore this file by checking its filename with the check callback.
-				guard ignoreUsing == nil || ignoreUsing?(fileName) == false else
-				{
-					continue
-				}
-
-				if fileWrapper.isRegularFile
-				{
-					nodes.append(try Vial.Page(fileWrapper: fileWrapper))
-				}
-				else if fileWrapper.isDirectory
-				{
-					nodes.append(try Vial.Directory(fileWrapper: fileWrapper))
-				}
-			}
-		}
-
-		self.init(nodes)
+		let vialNodes: [VialNode] = try fileWrapper.loadFiles(fileType: Vial.Page.self,
+															  directoryType: Vial.Directory.self,
+															  ignoreUsing: ignorerCallback)
+		self.init(vialNodes)
 	}
 
 	func writeFileWrappers() throws -> [String: FileWrapper]
