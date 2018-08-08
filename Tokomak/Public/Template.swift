@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ArgonProModel
+import ArgonModel
 import Yams
 
 class Template

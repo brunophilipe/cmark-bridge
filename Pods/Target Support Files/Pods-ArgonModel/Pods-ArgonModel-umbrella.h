@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ArgonProModelVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ArgonProModelVersionString[];
+FOUNDATION_EXPORT double Pods_ArgonModelVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ArgonModelVersionString[];
 

@@ -14,10 +14,17 @@ target 'ArgonPro' do
   pod 'Yams'
 end
 
-target 'ArgonProModel' do
+target 'ArgonModel' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for ArgonProModel
   pod 'Yams'
+end
+
+target 'Tokomak' do
+	# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+	use_frameworks!
+
+	# Pods for ArgonProModel
 end

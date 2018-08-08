@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ArgonProModel
+import ArgonModel
 
 class Tokomak
 {

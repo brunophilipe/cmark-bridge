@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ArgonProModel
+import ArgonModel
 
 extension UIImage
 {

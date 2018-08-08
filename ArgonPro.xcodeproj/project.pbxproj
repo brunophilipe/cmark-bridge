@@ -48,9 +48,10 @@
 		15F06169211A6805004DAE25 /* Tokomak.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15F06153211A6805004DAE25 /* Tokomak.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15F06173211A6834004DAE25 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06172211A6834004DAE25 /* Tokomak.swift */; };
 		15F06175211A72A8004DAE25 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06174211A72A8004DAE25 /* Template.swift */; };
-		2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
-		491123F3A4C3B92939D5C83A /* Pods_ArgonProModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */; };
+		15FC8213211A75FE00924FD4 /* ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonModel.framework */; };
+		3451B3BCB11C7013E943372D /* Pods_ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEE33EACD2DD6ACCEF230D6 /* Pods_ArgonModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
+		AEF7BBA69507C5ECB40D478F /* Pods_Tokomak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B363675A80A8DC1CC844C051 /* Pods_Tokomak.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,14 +155,18 @@
 		15F06164211A6805004DAE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15F06172211A6834004DAE25 /* Tokomak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokomak.swift; sourceTree = "<group>"; };
 		15F06174211A72A8004DAE25 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		3669C179D73010333383198D /* Pods-ArgonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonModel/Pods-ArgonModel.debug.xcconfig"; sourceTree = "<group>"; };
+		439DA76D8232F50C199721A8 /* Pods-ArgonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonModel/Pods-ArgonModel.release.xcconfig"; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
 		86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96E3D6288E2FDD204AF7AD98 /* Pods-ArgonProModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProModel/Pods-ArgonProModel.debug.xcconfig"; sourceTree = "<group>"; };
 		9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2593BECED94BA87637F9319 /* Pods-Tokomak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokomak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tokomak/Pods-Tokomak.debug.xcconfig"; sourceTree = "<group>"; };
 		B332C412F6E2ECC513E91E02 /* Pods-ArgonProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.release.xcconfig"; sourceTree = "<group>"; };
-		B58F3395B91AB9201C99DA7F /* Pods-ArgonProModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProModel/Pods-ArgonProModel.release.xcconfig"; sourceTree = "<group>"; };
+		B363675A80A8DC1CC844C051 /* Pods_Tokomak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tokomak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55F554578D9B3DC9FBC5EBA /* Pods-Tokomak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokomak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tokomak/Pods-Tokomak.release.xcconfig"; sourceTree = "<group>"; };
 		D96BBA828BCA820A74A21FA7 /* Pods-ArgonPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.debug.xcconfig"; sourceTree = "<group>"; };
+		FBEE33EACD2DD6ACCEF230D6 /* Pods_ArgonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -172,7 +177,6 @@
 			files = (
 				15F06168211A6805004DAE25 /* Tokomak.framework in Frameworks */,
 				151467392116919A00B41F88 /* ArgonModel.framework in Frameworks */,
-				2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				491123F3A4C3B92939D5C83A /* Pods_ArgonProModel.framework in Frameworks */,
+				3451B3BCB11C7013E943372D /* Pods_ArgonModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +200,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15FC8213211A75FE00924FD4 /* ArgonModel.framework in Frameworks */,
+				AEF7BBA69507C5ECB40D478F /* Pods_Tokomak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +453,8 @@
 				FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */,
 				9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */,
 				86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */,
+				FBEE33EACD2DD6ACCEF230D6 /* Pods_ArgonModel.framework */,
+				B363675A80A8DC1CC844C051 /* Pods_Tokomak.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -456,10 +464,12 @@
 			children = (
 				D96BBA828BCA820A74A21FA7 /* Pods-ArgonPro.debug.xcconfig */,
 				6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */,
-				96E3D6288E2FDD204AF7AD98 /* Pods-ArgonProModel.debug.xcconfig */,
-				B58F3395B91AB9201C99DA7F /* Pods-ArgonProModel.release.xcconfig */,
 				56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */,
 				B332C412F6E2ECC513E91E02 /* Pods-ArgonProTests.release.xcconfig */,
+				3669C179D73010333383198D /* Pods-ArgonModel.debug.xcconfig */,
+				439DA76D8232F50C199721A8 /* Pods-ArgonModel.release.xcconfig */,
+				A2593BECED94BA87637F9319 /* Pods-Tokomak.debug.xcconfig */,
+				B55F554578D9B3DC9FBC5EBA /* Pods-Tokomak.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -550,6 +560,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F0616A211A6805004DAE25 /* Build configuration list for PBXNativeTarget "Tokomak" */;
 			buildPhases = (
+				AFE0FCEDAFE45BD2E974BCA3 /* [CP] Check Pods Manifest.lock */,
 				15F0614E211A6805004DAE25 /* Headers */,
 				15F0614F211A6805004DAE25 /* Sources */,
 				15F06150211A6805004DAE25 /* Frameworks */,
@@ -716,7 +727,25 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ArgonProModel-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ArgonModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE0FCEDAFE45BD2E974BCA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tokomak-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1081,7 +1110,7 @@
 		};
 		1514673C2116919A00B41F88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96E3D6288E2FDD204AF7AD98 /* Pods-ArgonProModel.debug.xcconfig */;
+			baseConfigurationReference = 3669C179D73010333383198D /* Pods-ArgonModel.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1112,7 +1141,7 @@
 		};
 		1514673D2116919A00B41F88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B58F3395B91AB9201C99DA7F /* Pods-ArgonProModel.release.xcconfig */;
+			baseConfigurationReference = 439DA76D8232F50C199721A8 /* Pods-ArgonModel.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1142,6 +1171,7 @@
 		};
 		15F0616B211A6805004DAE25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2593BECED94BA87637F9319 /* Pods-Tokomak.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1172,6 +1202,7 @@
 		};
 		15F0616C211A6805004DAE25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55F554578D9B3DC9FBC5EBA /* Pods-Tokomak.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
