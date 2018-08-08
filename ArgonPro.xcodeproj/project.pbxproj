@@ -21,8 +21,8 @@
 		1514671821166D1000B41F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1514671621166D1000B41F88 /* LaunchScreen.storyboard */; };
 		1514672321166D1000B41F88 /* ArgonProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514672221166D1000B41F88 /* ArgonProTests.swift */; };
 		151467362116919A00B41F88 /* ArgonProModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 151467342116919A00B41F88 /* ArgonProModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		151467392116919A00B41F88 /* ArgonProModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonProModel.framework */; };
-		1514673A2116919A00B41F88 /* ArgonProModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonProModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		151467392116919A00B41F88 /* ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonModel.framework */; };
+		1514673A2116919A00B41F88 /* ArgonModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 151467322116919A00B41F88 /* ArgonModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15146740211691B000B41F88 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514673F211691B000B41F88 /* Vial.swift */; };
 		151467432116938300B41F88 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151467422116938300B41F88 /* VialConfig.swift */; };
 		1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88A2118C59A003F0D75 /* AppTheming.swift */; };
@@ -41,6 +41,13 @@
 		15F06148211A33DF004DAE25 /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06147211A33DF004DAE25 /* String+Extractors.swift */; };
 		15F0614A211A43F3004DAE25 /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06149211A43F3004DAE25 /* Vial+Templates.swift */; };
 		15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */; };
+		15F0615C211A6805004DAE25 /* Tokomak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F06153211A6805004DAE25 /* Tokomak.framework */; };
+		15F06163211A6805004DAE25 /* TokomakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06162211A6805004DAE25 /* TokomakTests.swift */; };
+		15F06165211A6805004DAE25 /* Tokomak.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F06155211A6805004DAE25 /* Tokomak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F06168211A6805004DAE25 /* Tokomak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F06153211A6805004DAE25 /* Tokomak.framework */; };
+		15F06169211A6805004DAE25 /* Tokomak.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15F06153211A6805004DAE25 /* Tokomak.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15F06173211A6834004DAE25 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06172211A6834004DAE25 /* Tokomak.swift */; };
+		15F06175211A72A8004DAE25 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F06174211A72A8004DAE25 /* Template.swift */; };
 		2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
 		491123F3A4C3B92939D5C83A /* Pods_ArgonProModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
@@ -61,6 +68,27 @@
 			remoteGlobalIDString = 151467312116919A00B41F88;
 			remoteInfo = ArgonProModel;
 		};
+		15F0615D211A6805004DAE25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F06152211A6805004DAE25;
+			remoteInfo = Tokomak;
+		};
+		15F0615F211A6805004DAE25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1514670521166D0F00B41F88;
+			remoteInfo = ArgonPro;
+		};
+		15F06166211A6805004DAE25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F06152211A6805004DAE25;
+			remoteInfo = Tokomak;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,7 +98,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1514673A2116919A00B41F88 /* ArgonProModel.framework in Embed Frameworks */,
+				1514673A2116919A00B41F88 /* ArgonModel.framework in Embed Frameworks */,
+				15F06169211A6805004DAE25 /* Tokomak.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +124,7 @@
 		1514671E21166D1000B41F88 /* ArgonProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgonProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1514672221166D1000B41F88 /* ArgonProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgonProTests.swift; sourceTree = "<group>"; };
 		1514672421166D1000B41F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		151467322116919A00B41F88 /* ArgonProModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArgonProModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		151467322116919A00B41F88 /* ArgonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArgonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		151467342116919A00B41F88 /* ArgonProModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArgonProModel.h; sourceTree = "<group>"; };
 		151467352116919A00B41F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1514673F211691B000B41F88 /* Vial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vial.swift; sourceTree = "<group>"; };
@@ -117,6 +146,14 @@
 		15F06147211A33DF004DAE25 /* String+Extractors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extractors.swift"; sourceTree = "<group>"; };
 		15F06149211A43F3004DAE25 /* Vial+Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vial+Templates.swift"; sourceTree = "<group>"; };
 		15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FileIcon.swift"; sourceTree = "<group>"; };
+		15F06153211A6805004DAE25 /* Tokomak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tokomak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F06155211A6805004DAE25 /* Tokomak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tokomak.h; sourceTree = "<group>"; };
+		15F06156211A6805004DAE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F0615B211A6805004DAE25 /* TokomakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokomakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F06162211A6805004DAE25 /* TokomakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokomakTests.swift; sourceTree = "<group>"; };
+		15F06164211A6805004DAE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F06172211A6834004DAE25 /* Tokomak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokomak.swift; sourceTree = "<group>"; };
+		15F06174211A72A8004DAE25 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
 		86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151467392116919A00B41F88 /* ArgonProModel.framework in Frameworks */,
+				15F06168211A6805004DAE25 /* Tokomak.framework in Frameworks */,
+				151467392116919A00B41F88 /* ArgonModel.framework in Frameworks */,
 				2ACC375BE2BECD02650BBBB5 /* Pods_ArgonPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +192,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15F06150211A6805004DAE25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F06158211A6805004DAE25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F0615C211A6805004DAE25 /* Tokomak.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -171,6 +224,8 @@
 				1514670821166D0F00B41F88 /* ArgonPro */,
 				1514672121166D1000B41F88 /* ArgonProTests */,
 				151467332116919A00B41F88 /* ArgonProModel */,
+				15F06154211A6805004DAE25 /* Tokomak */,
+				15F06161211A6805004DAE25 /* TokomakTests */,
 				1514670721166D0F00B41F88 /* Products */,
 				E709D57DD1E863DB08BA2B55 /* Pods */,
 				5E718F6C8F29F0F7DF36B321 /* Frameworks */,
@@ -182,7 +237,9 @@
 			children = (
 				1514670621166D0F00B41F88 /* ArgonPro.app */,
 				1514671E21166D1000B41F88 /* ArgonProTests.xctest */,
-				151467322116919A00B41F88 /* ArgonProModel.framework */,
+				151467322116919A00B41F88 /* ArgonModel.framework */,
+				15F06153211A6805004DAE25 /* Tokomak.framework */,
+				15F0615B211A6805004DAE25 /* TokomakTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -348,6 +405,42 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		15F06154211A6805004DAE25 /* Tokomak */ = {
+			isa = PBXGroup;
+			children = (
+				15F06171211A681E004DAE25 /* Public */,
+				15F06170211A680F004DAE25 /* Supporting Files */,
+			);
+			path = Tokomak;
+			sourceTree = "<group>";
+		};
+		15F06161211A6805004DAE25 /* TokomakTests */ = {
+			isa = PBXGroup;
+			children = (
+				15F06162211A6805004DAE25 /* TokomakTests.swift */,
+				15F06164211A6805004DAE25 /* Info.plist */,
+			);
+			path = TokomakTests;
+			sourceTree = "<group>";
+		};
+		15F06170211A680F004DAE25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15F06155211A6805004DAE25 /* Tokomak.h */,
+				15F06156211A6805004DAE25 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15F06171211A681E004DAE25 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				15F06172211A6834004DAE25 /* Tokomak.swift */,
+				15F06174211A72A8004DAE25 /* Template.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		5E718F6C8F29F0F7DF36B321 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +475,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15F0614E211A6805004DAE25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F06165211A6805004DAE25 /* Tokomak.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -400,6 +501,7 @@
 			);
 			dependencies = (
 				151467382116919A00B41F88 /* PBXTargetDependency */,
+				15F06167211A6805004DAE25 /* PBXTargetDependency */,
 			);
 			name = ArgonPro;
 			productName = ArgonPro;
@@ -425,9 +527,9 @@
 			productReference = 1514671E21166D1000B41F88 /* ArgonProTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		151467312116919A00B41F88 /* ArgonProModel */ = {
+		151467312116919A00B41F88 /* ArgonModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1514673B2116919A00B41F88 /* Build configuration list for PBXNativeTarget "ArgonProModel" */;
+			buildConfigurationList = 1514673B2116919A00B41F88 /* Build configuration list for PBXNativeTarget "ArgonModel" */;
 			buildPhases = (
 				ADDB5FE5616DC902AF3ECF6C /* [CP] Check Pods Manifest.lock */,
 				1514672D2116919A00B41F88 /* Headers */,
@@ -439,10 +541,47 @@
 			);
 			dependencies = (
 			);
-			name = ArgonProModel;
+			name = ArgonModel;
 			productName = ArgonProModel;
-			productReference = 151467322116919A00B41F88 /* ArgonProModel.framework */;
+			productReference = 151467322116919A00B41F88 /* ArgonModel.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		15F06152211A6805004DAE25 /* Tokomak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F0616A211A6805004DAE25 /* Build configuration list for PBXNativeTarget "Tokomak" */;
+			buildPhases = (
+				15F0614E211A6805004DAE25 /* Headers */,
+				15F0614F211A6805004DAE25 /* Sources */,
+				15F06150211A6805004DAE25 /* Frameworks */,
+				15F06151211A6805004DAE25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tokomak;
+			productName = Tokomak;
+			productReference = 15F06153211A6805004DAE25 /* Tokomak.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		15F0615A211A6805004DAE25 /* TokomakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F0616D211A6805004DAE25 /* Build configuration list for PBXNativeTarget "TokomakTests" */;
+			buildPhases = (
+				15F06157211A6805004DAE25 /* Sources */,
+				15F06158211A6805004DAE25 /* Frameworks */,
+				15F06159211A6805004DAE25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15F0615E211A6805004DAE25 /* PBXTargetDependency */,
+				15F06160211A6805004DAE25 /* PBXTargetDependency */,
+			);
+			name = TokomakTests;
+			productName = TokomakTests;
+			productReference = 15F0615B211A6805004DAE25 /* TokomakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -473,6 +612,14 @@
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
 					};
+					15F06152211A6805004DAE25 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					15F0615A211A6805004DAE25 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 1514670521166D0F00B41F88;
+					};
 				};
 			};
 			buildConfigurationList = 1514670121166D0F00B41F88 /* Build configuration list for PBXProject "ArgonPro" */;
@@ -490,7 +637,9 @@
 			targets = (
 				1514670521166D0F00B41F88 /* ArgonPro */,
 				1514671D21166D1000B41F88 /* ArgonProTests */,
-				151467312116919A00B41F88 /* ArgonProModel */,
+				151467312116919A00B41F88 /* ArgonModel */,
+				15F06152211A6805004DAE25 /* Tokomak */,
+				15F0615A211A6805004DAE25 /* TokomakTests */,
 			);
 		};
 /* End PBXProject section */
@@ -515,6 +664,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		151467302116919A00B41F88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F06151211A6805004DAE25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F06159211A6805004DAE25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -647,6 +810,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15F0614F211A6805004DAE25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F06173211A6834004DAE25 /* Tokomak.swift in Sources */,
+				15F06175211A72A8004DAE25 /* Template.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F06157211A6805004DAE25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F06163211A6805004DAE25 /* TokomakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -657,8 +837,23 @@
 		};
 		151467382116919A00B41F88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 151467312116919A00B41F88 /* ArgonProModel */;
+			target = 151467312116919A00B41F88 /* ArgonModel */;
 			targetProxy = 151467372116919A00B41F88 /* PBXContainerItemProxy */;
+		};
+		15F0615E211A6805004DAE25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F06152211A6805004DAE25 /* Tokomak */;
+			targetProxy = 15F0615D211A6805004DAE25 /* PBXContainerItemProxy */;
+		};
+		15F06160211A6805004DAE25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1514670521166D0F00B41F88 /* ArgonPro */;
+			targetProxy = 15F0615F211A6805004DAE25 /* PBXContainerItemProxy */;
+		};
+		15F06167211A6805004DAE25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F06152211A6805004DAE25 /* Tokomak */;
+			targetProxy = 15F06166211A6805004DAE25 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -945,6 +1140,105 @@
 			};
 			name = Release;
 		};
+		15F0616B211A6805004DAE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Tokomak/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.bundles.Tokomak;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15F0616C211A6805004DAE25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Tokomak/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.bundles.Tokomak;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		15F0616E211A6805004DAE25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				INFOPLIST_FILE = TokomakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.bundles.TokomakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgonPro.app/ArgonPro";
+			};
+			name = Debug;
+		};
+		15F0616F211A6805004DAE25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				INFOPLIST_FILE = TokomakTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.bundles.TokomakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgonPro.app/ArgonPro";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -975,11 +1269,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1514673B2116919A00B41F88 /* Build configuration list for PBXNativeTarget "ArgonProModel" */ = {
+		1514673B2116919A00B41F88 /* Build configuration list for PBXNativeTarget "ArgonModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1514673C2116919A00B41F88 /* Debug */,
 				1514673D2116919A00B41F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F0616A211A6805004DAE25 /* Build configuration list for PBXNativeTarget "Tokomak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F0616B211A6805004DAE25 /* Debug */,
+				15F0616C211A6805004DAE25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F0616D211A6805004DAE25 /* Build configuration list for PBXNativeTarget "TokomakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F0616E211A6805004DAE25 /* Debug */,
+				15F0616F211A6805004DAE25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
