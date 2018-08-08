@@ -259,7 +259,7 @@
 			children = (
 				1514670821166D0F00B41F88 /* ArgonPro */,
 				1514672121166D1000B41F88 /* ArgonProTests */,
-				151467332116919A00B41F88 /* ArgonProModel */,
+				151467332116919A00B41F88 /* ArgonModel */,
 				15F06154211A6805004DAE25 /* Tokomak */,
 				15F06161211A6805004DAE25 /* TokomakTests */,
 				15FC821D211A804300924FD4 /* GadgetKit */,
@@ -307,14 +307,14 @@
 			path = ArgonProTests;
 			sourceTree = "<group>";
 		};
-		151467332116919A00B41F88 /* ArgonProModel */ = {
+		151467332116919A00B41F88 /* ArgonModel */ = {
 			isa = PBXGroup;
 			children = (
 				15F06143211A336B004DAE25 /* Supporting Files */,
 				15F06142211A335E004DAE25 /* Public */,
 				151467412116937000B41F88 /* Internal */,
 			);
-			path = ArgonProModel;
+			path = ArgonModel;
 			sourceTree = "<group>";
 		};
 		151467412116937000B41F88 /* Internal */ = {
@@ -1226,7 +1226,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/ArgonProModel/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ArgonModel/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1257,7 +1257,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/ArgonProModel/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ArgonModel/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
