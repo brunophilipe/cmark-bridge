@@ -109,10 +109,10 @@ extension Array where Element == VialNode
 {
 	init(fileWrapper: FileWrapper, ignoreUsing ignorerCallback: ((String) -> Bool)? = nil) throws
 	{
-		let vialNodes: [VialNode] = try fileWrapper.loadFiles(fileType: Vial.Page.self,
-															  directoryType: Vial.Directory.self,
-															  ignoreUsing: ignorerCallback)
-		self.init(vialNodes)
+		let vialNodes: [String: VialNode] = try fileWrapper.loadFiles(fileType: Vial.Page.self,
+																	  directoryType: Vial.Directory.self,
+																	  ignoreUsing: ignorerCallback)
+		self.init(vialNodes.values)
 	}
 
 	func writeFileWrappers() throws -> [String: FileWrapper]
