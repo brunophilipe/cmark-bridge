@@ -1,5 +1,5 @@
 //
-//  Tokomak.swift
+//  TemplateConfig.swift
 //  Tokomak
 //
 //  Created by Bruno Philipe on 8/8/18.
@@ -7,9 +7,11 @@
 //
 
 import Foundation
-import ArgonModel
 
-public class Tokomak
+struct TemplateConfig: Codable
 {
-
+	let name: String
+	let description: String
+	let author: String
+	let keywords: [String]
 }
