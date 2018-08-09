@@ -17,6 +17,15 @@
 		0E4A1FE93B5C319DBEDDE40B200BFCA2 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B3B3918ED04A70DA5198EB9275F7F /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10EB9D0468D0912DFE7D260B6C22431D /* ArgonModel-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3113F835D1F2C96B91AB013C00DE0CB0 /* ArgonModel-framework-dummy.m */; };
 		11AB8C7CC6F279B59186894FCB622A6B /* GadgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A02C58CCBF7685130CC39A32401172D /* GadgetKit.framework */; };
+		151FE12B211C9A9800A13E7B /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE12A211C9A9800A13E7B /* Page.swift */; };
+		151FE12D211C9ACA00A13E7B /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE12C211C9ACA00A13E7B /* Directory.swift */; };
+		151FE12F211C9AF400A13E7B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE12E211C9AF400A13E7B /* Post.swift */; };
+		151FE131211C9C3A00A13E7B /* Markup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE130211C9C3A00A13E7B /* Markup.swift */; };
+		151FE133211C9DC100A13E7B /* DateFormatter+Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE132211C9DC100A13E7B /* DateFormatter+Formats.swift */; };
+		151FE135211CA0E000A13E7B /* NSRegularExpression+Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE134211CA0E000A13E7B /* NSRegularExpression+Patterns.swift */; };
+		151FE137211CA7FA00A13E7B /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE136211CA7FA00A13E7B /* VialConfig.swift */; };
+		151FE138211CA7FF00A13E7B /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE136211CA7FA00A13E7B /* VialConfig.swift */; };
+		151FE13A211CB1B700A13E7B /* FileWrapper+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE139211CB1B700A13E7B /* FileWrapper+KeyPath.swift */; };
 		156F3A1324DF0FBD81E349CD20579BA5 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */; };
 		16D7BFD7E920A2584C2E727489B375DC /* Pods-ArgonPro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A651EE9796462464EDF723E49E7931 /* Pods-ArgonPro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1769654F053B2A22D1EF1B32BEEA827F /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
@@ -37,10 +46,10 @@
 		382552C1CF44074AA107E16F19C6365D /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
 		38CC51648FBB5643640061DD5E19AC15 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B238FD24D29A4008395251F504B1E81 /* scanner.c */; };
 		3C031259B63525084AEF5C51BEB2CEDB /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D8F9CA80E9B92FC22B018F5EEE36C /* Yams.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3ECF9D0B0946896781C4496F5F315BC9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */; };
+		3ECF9D0B0946896781C4496F5F315BC9 /* VialNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A3D6C73033F63A164ACE634EB891F /* VialNode.swift */; };
 		3EEFB7654106B4026177A1F8B69C78A9 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */; };
 		410D2E782CDE157B1226EE0115A0599D /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E51F2C032CBE87266592B404E64BF /* Emitter.swift */; };
-		49DB0FA4F69794979CA826E5DE55CC3D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */; };
+		49DB0FA4F69794979CA826E5DE55CC3D /* VialNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A3D6C73033F63A164ACE634EB891F /* VialNode.swift */; };
 		4D54362E74696808D6B7A6C7232E1875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
 		50C5800218EB8D119A124D55059E6544 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = FA7DDABF97647610E3DF305CC2A3FDA3 /* parser.c */; };
 		5213A6E3267E9958C3D0555C9658D810 /* Pods-ArgonPro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA658CC01F17DA05B3BDF509DBC89CF4 /* Pods-ArgonPro-dummy.m */; };
@@ -76,10 +85,8 @@
 		8DEFB9ECA2CDA7D3181E8E67D4F44007 /* Yams-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D60CB098DAE57647124EDAD4463DB478 /* Yams-framework-dummy.m */; };
 		8E4B66E90907F447BB5C93A8E572E2A4 /* Tokamak-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6FCF701BF44E956795DF4AC2EA15AC /* Tokamak-library-dummy.m */; };
 		8E9B48A47D4893D898AE2D577F56A748 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E63AF52AF3A89EB5C1A43659CC6D9 /* Resolver.swift */; };
-		940B5CAE0521B117C776496E88A46702 /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */; };
 		947BD5A835D58D3B0FB5DC812B65C77F /* Pods-ArgonTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B11DF1CC16333837D59F358F078284 /* Pods-ArgonTool-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		94EDC663F0FB5CD38FECD0F9EB0A56AF /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFFDD02EDC84FD8DE00DB215B1FDFA /* Tag.swift */; };
-		9578BE9F64894FA745F01A40A3811D98 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */; };
 		95FBFE33319D542A08A5C47F477E6B26 /* ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2178FB8EDA75E50FF25B5E9A5186C0 /* ArgonModel.framework */; };
 		9879F709E504DE5E29CDE6E9F66E70E3 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D133EB3760BC22CAE7A234C728E894 /* String+FrontMatter.swift */; };
 		996EC105D0893C8A02F03F6D435D0B71 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A97848620907353A0FDF0644609CEF5 /* emitter.c */; };
@@ -107,7 +114,6 @@
 		CB8D660DDB2D316834C19E2A354433BA /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */; };
 		CC12E8DE38FB9A351BCAE2CCF6D3BD6E /* GadgetKit-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B168D91DD96D4E1CA809D975C0D8A57 /* GadgetKit-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CC992ABAF026D0AA09946000503947A6 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */; };
-		CFBCB976A479875554FE4D78B8E9A94C /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */; };
 		D85A18F43F623FDB8104CA341C0BA310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
 		D8B79ECA402C37AC83A90ABF2D874545 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FB84B8514716DA3F1318FFFE2FDC4E /* reader.c */; };
 		DBFBC35478740802C0BC0068F3E6A8EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */; };
@@ -130,7 +136,6 @@
 		FA9B023CD58775250F4EC4BB6E1DF007 /* Yams-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0FE3F5B90A2509CC13CBAD7599EE56 /* Yams-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FAEA69058AA98CFD9FFF89474A1B1065 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1DA9D1D83F9B55BB04F9CF8C91467 /* Tokomak.swift */; };
 		FBEE458941939F55BC7F8E4628D34F10 /* ThrowUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3CDF6C87FA46FE4701C3F58CD191D /* ThrowUnwrap.swift */; };
-		FD0F1BB88731265AB8985694B75B5350 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */; };
 		FEB11C4DA39D2BCBAFB95B215B33C165 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B87B41E1F60458CBB16C14508A8E8 /* FileWrapper+Codable.swift */; };
 /* End PBXBuildFile section */
 
@@ -298,6 +303,14 @@
 		0FB765F7A4AC5CAA3496A40388799E0A /* Pods-ArgonProTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgonProTests.modulemap"; sourceTree = "<group>"; };
 		11986A50B46A7E796B3BB7FDE453CFEF /* Yams-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Yams-library-dummy.m"; path = "../Yams-library/Yams-library-dummy.m"; sourceTree = "<group>"; };
 		122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
+		151FE12A211C9A9800A13E7B /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		151FE12C211C9ACA00A13E7B /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		151FE12E211C9AF400A13E7B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		151FE130211C9C3A00A13E7B /* Markup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markup.swift; sourceTree = "<group>"; };
+		151FE132211C9DC100A13E7B /* DateFormatter+Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Formats.swift"; sourceTree = "<group>"; };
+		151FE134211CA0E000A13E7B /* NSRegularExpression+Patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Patterns.swift"; sourceTree = "<group>"; };
+		151FE136211CA7FA00A13E7B /* VialConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VialConfig.swift; sourceTree = "<group>"; };
+		151FE139211CB1B700A13E7B /* FileWrapper+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileWrapper+KeyPath.swift"; sourceTree = "<group>"; };
 		177E51F2C032CBE87266592B404E64BF /* Emitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emitter.swift; path = Sources/Yams/Emitter.swift; sourceTree = "<group>"; };
 		18C917D1D51DAA16A2C7E30A32069870 /* Tokamak.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Tokamak.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19D727789A5024C206BF7C34D7C5C5A9 /* Pods-ArgonPro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgonPro.modulemap"; sourceTree = "<group>"; };
@@ -312,7 +325,7 @@
 		3113F835D1F2C96B91AB013C00DE0CB0 /* ArgonModel-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArgonModel-framework-dummy.m"; sourceTree = "<group>"; };
 		31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Scalar.swift; path = Sources/Yams/Node.Scalar.swift; sourceTree = "<group>"; };
 		38C688C5F37C0DDD3ED08B1EFFA5B3F8 /* GadgetKit-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "GadgetKit-framework.modulemap"; sourceTree = "<group>"; };
-		3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		3B0A3D6C73033F63A164ACE634EB891F /* VialNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VialNode.swift; sourceTree = "<group>"; };
 		3BDC99B6505AD01F1F3A433EF9BDC204 /* Pods-ArgonTool-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgonTool-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F22F3094EFC93163D96914FAA873F3B /* Tokamak-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tokamak-library-prefix.pch"; path = "../Tokamak-library/Tokamak-library-prefix.pch"; sourceTree = "<group>"; };
 		3FDC8DF6788163ADF7D4AE66661F0A2A /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -330,13 +343,11 @@
 		523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Yams/Node.swift; sourceTree = "<group>"; };
 		53B3C812B72AE5B4FA02C866BFDEA42F /* Yams-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Yams-framework.xcconfig"; sourceTree = "<group>"; };
 		54DF52DE4F9404B560052C21E84CB639 /* GadgetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GadgetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VialConfig.swift; sourceTree = "<group>"; };
 		57EE89752AB3ED1C9306E4936BB21FD1 /* Yams-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-framework-prefix.pch"; sourceTree = "<group>"; };
 		5A97848620907353A0FDF0644609CEF5 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = Sources/CYaml/src/emitter.c; sourceTree = "<group>"; };
 		5B7ADC0B8853B66315D1787B5D63E162 /* libGadgetKit-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGadgetKit-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Yams/Decoder.swift; sourceTree = "<group>"; };
 		623E4AF2EE51A3D9B6F5EC3134364B87 /* GadgetKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GadgetKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionConfig.swift; sourceTree = "<group>"; };
 		62CD179397D86C6BA2CED0A68F1D17CE /* Pods-ArgonTool-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonTool-resources.sh"; sourceTree = "<group>"; };
 		6749C3EC237902BCFFD31125F1F6BBF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B168D91DD96D4E1CA809D975C0D8A57 /* GadgetKit-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GadgetKit-library-umbrella.h"; path = "../../Headers/Public/GadgetKit/GadgetKit-library-umbrella.h"; sourceTree = "<group>"; };
@@ -774,6 +785,7 @@
 		A1DA355BA7B0181917F6F63017430E0D /* GadgetKit */ = {
 			isa = PBXGroup;
 			children = (
+				151FE132211C9DC100A13E7B /* DateFormatter+Formats.swift */,
 				990B87B41E1F60458CBB16C14508A8E8 /* FileWrapper+Codable.swift */,
 				0CC36F41FD9A5AD1480197D3F8A19C7C /* FileWrapper+FileLoader.swift */,
 				DB33E210640ED68565A91544F8AB4815 /* FrontMatterFile.swift */,
@@ -791,8 +803,12 @@
 			isa = PBXGroup;
 			children = (
 				8F7003AA69B6DDB5D68CAEE62A3C943A /* Collection.swift */,
-				3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */,
+				151FE12C211C9ACA00A13E7B /* Directory.swift */,
+				151FE12A211C9A9800A13E7B /* Page.swift */,
+				151FE12E211C9AF400A13E7B /* Post.swift */,
+				3B0A3D6C73033F63A164ACE634EB891F /* VialNode.swift */,
 				F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */,
+				151FE130211C9C3A00A13E7B /* Markup.swift */,
 				2C2897785E2822B517881F914F133176 /* Extensions */,
 			);
 			path = Public;
@@ -802,6 +818,8 @@
 			isa = PBXGroup;
 			children = (
 				279F957254C33DB069902B59C464102E /* Vial+Examples.swift */,
+				151FE134211CA0E000A13E7B /* NSRegularExpression+Patterns.swift */,
+				151FE139211CB1B700A13E7B /* FileWrapper+KeyPath.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -861,8 +879,7 @@
 		D78313C9F1D10BABE3674B46844B696C /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */,
-				56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */,
+				151FE136211CA7FA00A13E7B /* VialConfig.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -1431,15 +1448,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151FE133211C9DC100A13E7B /* DateFormatter+Formats.swift in Sources */,
+				151FE135211CA0E000A13E7B /* NSRegularExpression+Patterns.swift in Sources */,
 				10EB9D0468D0912DFE7D260B6C22431D /* ArgonModel-framework-dummy.m in Sources */,
 				5A3FDC64FB3E286D84E15A75E8AFEEAF /* Collection.swift in Sources */,
-				940B5CAE0521B117C776496E88A46702 /* CollectionConfig.swift in Sources */,
-				49DB0FA4F69794979CA826E5DE55CC3D /* Node.swift in Sources */,
+				151FE131211C9C3A00A13E7B /* Markup.swift in Sources */,
+				151FE13A211CB1B700A13E7B /* FileWrapper+KeyPath.swift in Sources */,
+				151FE12F211C9AF400A13E7B /* Post.swift in Sources */,
+				49DB0FA4F69794979CA826E5DE55CC3D /* VialNode.swift in Sources */,
+				151FE12B211C9A9800A13E7B /* Page.swift in Sources */,
+				151FE137211CA7FA00A13E7B /* VialConfig.swift in Sources */,
 				E1E1BDF7DD2607FA7BA0733491139D42 /* String+Extractors.swift in Sources */,
 				B498974E5A50F1D2A26288C16D19D0FB /* Vial+Examples.swift in Sources */,
 				8D7DD10D1D1FF4996634763E72C66F31 /* Vial+Templates.swift in Sources */,
+				151FE12D211C9ACA00A13E7B /* Directory.swift in Sources */,
 				156F3A1324DF0FBD81E349CD20579BA5 /* Vial.swift in Sources */,
-				FD0F1BB88731265AB8985694B75B5350 /* VialConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1481,13 +1504,12 @@
 			files = (
 				3543BBDA27FDED99A2CC3FD743B59A4A /* ArgonModel-library-dummy.m in Sources */,
 				C74FCE5A4A2A76E4B83F22443DAD8D14 /* Collection.swift in Sources */,
-				CFBCB976A479875554FE4D78B8E9A94C /* CollectionConfig.swift in Sources */,
-				3ECF9D0B0946896781C4496F5F315BC9 /* Node.swift in Sources */,
+				3ECF9D0B0946896781C4496F5F315BC9 /* VialNode.swift in Sources */,
 				F3EFA36E6CCC263F19863EEF7ADD193A /* String+Extractors.swift in Sources */,
 				E42CDE14A79F44D3E388E0D04ADBDDF6 /* Vial+Examples.swift in Sources */,
+				151FE138211CA7FF00A13E7B /* VialConfig.swift in Sources */,
 				2F4EC5B01836268C89CA659AE322F3BF /* Vial+Templates.swift in Sources */,
 				CC992ABAF026D0AA09946000503947A6 /* Vial.swift in Sources */,
-				9578BE9F64894FA745F01A40A3811D98 /* VialConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

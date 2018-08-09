@@ -18,6 +18,9 @@ import UIKit
 	/// Color to be used as a control background color
 	var controlBackground: UIColor { get }
 
+	/// Color used as for controls that display placeholder text.
+	var placeholderText: UIColor { get }
+
 	// MARK: Navigation
 
 	/// Style for navigation bars
@@ -105,6 +108,7 @@ extension AppTheme
 class DarkTheme: NSObject, AppTheme
 {
 	var text: UIColor { return .lightText }
+	var placeholderText: UIColor { return #colorLiteral(red: 0.2785187943, green: 0.2785686486, blue: 0.2785125302, alpha: 1) }
 	var controlBackground: UIColor { return #colorLiteral(red: 0.1098284498, green: 0.1097278222, blue: 0.1140929684, alpha: 1) }
 	var navigationBarStyle: UIBarStyle { return .blackOpaque }
 	var navigationBarTransluscent: Bool { return false }
@@ -132,6 +136,7 @@ class DarkTheme: NSObject, AppTheme
 class LightTheme: NSObject, AppTheme
 {
 	var text: UIColor { return .darkText }
+	var placeholderText: UIColor { return #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1) }
 	var controlBackground: UIColor { return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }
 	var navigationBarStyle: UIBarStyle { return .default }
 	var navigationBarTransluscent: Bool { return false }

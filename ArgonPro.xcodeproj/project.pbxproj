@@ -18,6 +18,7 @@
 		1514671521166D1000B41F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1514671421166D1000B41F88 /* Assets.xcassets */; };
 		1514671821166D1000B41F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1514671621166D1000B41F88 /* LaunchScreen.storyboard */; };
 		1514672321166D1000B41F88 /* ArgonProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514672221166D1000B41F88 /* ArgonProTests.swift */; };
+		151FE13C211CDB0E00A13E7B /* ColoredPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */; };
 		1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88A2118C59A003F0D75 /* AppTheming.swift */; };
 		1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */; };
 		1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88C2118C59A003F0D75 /* AppTheme.swift */; };
@@ -77,6 +78,7 @@
 		1514671E21166D1000B41F88 /* ArgonProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgonProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1514672221166D1000B41F88 /* ArgonProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgonProTests.swift; sourceTree = "<group>"; };
 		1514672421166D1000B41F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredPlaceholderTextField.swift; sourceTree = "<group>"; };
 		1526C88A2118C59A003F0D75 /* AppTheming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheming.swift; sourceTree = "<group>"; };
 		1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Theming.swift"; sourceTree = "<group>"; };
 		1526C88C2118C59A003F0D75 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		150DB3D12118FE75005BB11E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */,
 				150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */,
 			);
 			path = Views;
@@ -559,6 +562,7 @@
 				1526C8952118C669003F0D75 /* Preferences.swift in Sources */,
 				15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */,
 				150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */,
+				151FE13C211CDB0E00A13E7B /* ColoredPlaceholderTextField.swift in Sources */,
 				1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */,
 				15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */,
 				1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */,

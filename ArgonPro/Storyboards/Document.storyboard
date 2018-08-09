@@ -108,7 +108,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Value" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="urX-9p-n0p">
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Value" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="urX-9p-n0p" customClass="ColoredPlaceholderTextField" customModule="ArgonPro" customModuleProvider="target">
                                             <rect key="frame" x="94" y="0.0" width="265" height="43.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="43.5" id="zYK-dp-nFI"/>

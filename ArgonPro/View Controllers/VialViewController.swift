@@ -124,10 +124,11 @@ class VialViewController: UITableViewController
 			cell.imageView?.image = #imageLiteral(resourceName: "collection_new.pdf")
 
 		case (1, let row):
+			let collection = vial.collections[vial.collectionKeys[row]]
 			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
-			cell.textLabel?.text = vial.collections[row].name
+			cell.textLabel?.text = vial.collectionKeys[row]
 			cell.imageView?.image = #imageLiteral(resourceName: "collection.pdf")
-			cell.detailTextLabel?.text = vial.collections[row].entriesDescription
+			cell.detailTextLabel?.text = collection?.entriesDescription
 
 		case (2, vial.nodes.count):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)

@@ -47,7 +47,7 @@ class CompilerViewController: NSViewController
 		}
 
 		let packageFileWrapper = FileWrapper(regularFileWithContents: productData)
-		packageFileWrapper.filename = themeUrl.lastPathComponent.appending(".tokamak")
+		packageFileWrapper.preferredFilename = themeUrl.lastPathComponent.appending(".tokamak")
 
 		dropProductView.product = packageFileWrapper
 
