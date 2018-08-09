@@ -7,141 +7,134 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007E005D2EF9B464BD54FFBAE25168EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
-		00CD9B8AB38F70D93690B1DDC0670E14 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B238FD24D29A4008395251F504B1E81 /* scanner.c */; };
-		014CFAE1DFE6601A0F61757BE6846A9C /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F481929B13C3BCC36FDB69A11190830 /* writer.c */; };
-		02306EA635F747681221C01DD522A73A /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159CB4BF6440006D1D0DA7A5E16278B1 /* Vial.swift */; };
+		002085D1F25D865FD30BD5FF217DA8CE /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */; };
 		0327C3CA3114068F8B736756C46A9125 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
-		0386BE41E610B7CBDDD1FC9CF92D6317 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E63AF52AF3A89EB5C1A43659CC6D9 /* Resolver.swift */; };
-		04AA2EFB4916A2315B224BBC544A80CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
-		056B29C9B8B6E06BD5FACB80B4279FEA /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EEDE4C5837E7DFFF851B7651D4AA3 /* String+FrontMatter.swift */; };
-		057329B7C45BC2FEA9049DF52BD68E08 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C844417251E354338821E987F81E2D /* Representer.swift */; };
-		07CEEF62F2B072AEA0EFD0CA3944B574 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBF2D677C6156A5A20DFC8F1279B8D /* Collection.swift */; };
-		0820DB60181E50C6CC4136A43A7E71D0 /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D421CAFE9C9DD2B583A693EA28F0F /* CYaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DB79F896FC61FF7D727D8C1C6875595 /* GadgetKit-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 950BCEA52000850C69F9665174F55AD8 /* GadgetKit-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0EE85333BD6D170C4349611A1BBC1AA0 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = FA7DDABF97647610E3DF305CC2A3FDA3 /* parser.c */; };
-		10FE76A70DDA32E3DB449A8EA2BA13B3 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E63AF52AF3A89EB5C1A43659CC6D9 /* Resolver.swift */; };
+		07C9256205A0D0ED8FF53A9203C3633E /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973C625AC790E9A93DE8BBCC925F2C3 /* Encoder.swift */; };
+		097D6B33DCEE7450BAB75F89482E8364 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C844417251E354338821E987F81E2D /* Representer.swift */; };
+		0AB8332F74B7471863D26261E5CB0818 /* NSRegularExpression+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEB6B59CE6C23EE5371BAE803A70A8 /* NSRegularExpression+FrontMatter.swift */; };
+		0C950D3C5DBB09384BFE504AF2EC9CAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */; };
+		0E378A2A4BEDFA2C47CEC48C146DC691 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A97848620907353A0FDF0644609CEF5 /* emitter.c */; };
+		0E4A1FE93B5C319DBEDDE40B200BFCA2 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B3B3918ED04A70DA5198EB9275F7F /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EB9D0468D0912DFE7D260B6C22431D /* ArgonModel-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3113F835D1F2C96B91AB013C00DE0CB0 /* ArgonModel-framework-dummy.m */; };
 		11AB8C7CC6F279B59186894FCB622A6B /* GadgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A02C58CCBF7685130CC39A32401172D /* GadgetKit.framework */; };
-		132E1856C694D351BC1DDC2D3668BA13 /* FileWrapper+FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA77B565A8D2EBFAF611787CAEC2F /* FileWrapper+FileLoader.swift */; };
-		14C24B44DEDD0C74BA509C87D16B2553 /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC2183D4DEC0DCE1450ABED85E311E /* String+Extractors.swift */; };
+		156F3A1324DF0FBD81E349CD20579BA5 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */; };
 		16D7BFD7E920A2584C2E727489B375DC /* Pods-ArgonPro-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A651EE9796462464EDF723E49E7931 /* Pods-ArgonPro-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1768179A0C0CAB3724099816A3EC8112 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F481929B13C3BCC36FDB69A11190830 /* writer.c */; };
-		1A0ECC0849281823478EC9447DF25B4A /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */; };
-		1AE164257A5B9A94975109FEC58CDFC9 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02569D8B4C54EAA40F8DC4615D933974 /* String+Yams.swift */; };
-		1BB1451939814D21EB4C055AA949C698 /* ArgonModel-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 679AC3227E4C59A912992FBE39A67AEB /* ArgonModel-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1CD663364322FD8FE29CB599869866AD /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FB84B8514716DA3F1318FFFE2FDC4E /* reader.c */; };
-		1F86C3E13C9A0927FF0421C03654B5FD /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */; };
-		222516FA48A82C56806021D9FA3BA396 /* Yams-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E246E526AB8626C0A78F3086CCA16D /* Yams-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		233AD9E40F45C23DE843006EB3135603 /* Yams-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D60CB098DAE57647124EDAD4463DB478 /* Yams-framework-dummy.m */; };
-		274AB20F41BC09365F6E3B161FE15B67 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */; };
-		27A1DEE1EA5807FF220E1D5CC11A429A /* GadgetKit-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B483B0A94076D2186A0209C340B527 /* GadgetKit-library-dummy.m */; };
-		2A1B5EA38B7F626B65438FE35A4DAC78 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B3B3918ED04A70DA5198EB9275F7F /* yaml_private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2C9FE06C0FE4B0366259B1365E8DF14D /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D8F9CA80E9B92FC22B018F5EEE36C /* Yams.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DE3B2E1ECFAACBBFCAF8C97F398A2E8 /* ThrowUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CA032DC27F52038DA0680EBF682FD /* ThrowUnwrap.swift */; };
-		2EC7D08E158A5F9ECE3D61B775FB9F5A /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFFDD02EDC84FD8DE00DB215B1FDFA /* Tag.swift */; };
-		341CB705CAE30D738D5EE639B2ED197B /* Tokamak-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B54CF72CEC080A94F87EB63B8C3DAEC4 /* Tokamak-framework-dummy.m */; };
-		3620CE4DEE3D7371D1240F00116DD8CF /* ArgonModel-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9FE63256E6EB30CB70103197F372E8 /* ArgonModel-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		367ED82CE8FC74B235B09D75C13FD8B1 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DE53CC85E2077E2BC4428F145F439F /* Mark.swift */; };
-		3B03F9224A642A839363B66012475839 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A16F9B42E354F1650E93E25C9C5CE7B /* yaml.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3C73A454CF61EB6DA972433FBD5E07CA /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF2A1543C6F6D7A99D8ECED3427CA2 /* Vial+Examples.swift */; };
-		3DA7DC2ABADB94733FFE14A8E758C3F1 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B3B3918ED04A70DA5198EB9275F7F /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44CE54DE1ACA5B8868BC11129DA36A91 /* GadgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A02C58CCBF7685130CC39A32401172D /* GadgetKit.framework */; };
-		4707CC9CEA0AAEACD00CA114CB18704D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4477F13359A5816A747649E05916AB1 /* Parser.swift */; };
-		4A9379355BE87854F8358194C2BFDD10 /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D421CAFE9C9DD2B583A693EA28F0F /* CYaml.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1769654F053B2A22D1EF1B32BEEA827F /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
+		17A015E198EE7AA3329304DA12079C5F /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB33E210640ED68565A91544F8AB4815 /* FrontMatterFile.swift */; };
+		1EE6454D36E58838AAA9E6E078C2BEBD /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = FA7DDABF97647610E3DF305CC2A3FDA3 /* parser.c */; };
+		25DC25032DD7D0169410F3B997853EA0 /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C1B3B3918ED04A70DA5198EB9275F7F /* yaml_private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		295D38903DE2C4EF8BAA4A4063CE8234 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A16F9B42E354F1650E93E25C9C5CE7B /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDAFD78C447F91CC8FF407D4476B2AE /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A943315CCB7FF55991299EF87BF1F /* Node.Sequence.swift */; };
+		2D1AE8C2FB4D9AAD9766701F05676233 /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB23842A65149004F85B578C4E825C /* YamlError.swift */; };
+		2F4EC5B01836268C89CA659AE322F3BF /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF575230B2621159FEA32ABB735B3A8F /* Vial+Templates.swift */; };
+		30235162DD1A760C1F0855C92730B410 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E63AF52AF3A89EB5C1A43659CC6D9 /* Resolver.swift */; };
+		3206D00A00AA388F254A91D4A835AB40 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055807D968721B988FBAE7F112068A94 /* Constructor.swift */; };
+		32DD9BFA56A8D984E287B0A86B6210F0 /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F63631BB3FC54C1901544F0D101048 /* Node.Mapping.swift */; };
+		341CB705CAE30D738D5EE639B2ED197B /* Tokamak-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A34FE71555C175D532DF3CFC5642E3D3 /* Tokamak-framework-dummy.m */; };
+		3543BBDA27FDED99A2CC3FD743B59A4A /* ArgonModel-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E49082C933747FC57BD4D672D024A2 /* ArgonModel-library-dummy.m */; };
+		37DF1C04A01E3D27D05A4F126628AC3C /* ArgonModel-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA18173BBE72328FBD583E9CF73B478D /* ArgonModel-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37F355DABB04C048CAF504E0F66A35F2 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E51F2C032CBE87266592B404E64BF /* Emitter.swift */; };
+		382552C1CF44074AA107E16F19C6365D /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
+		38CC51648FBB5643640061DD5E19AC15 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B238FD24D29A4008395251F504B1E81 /* scanner.c */; };
+		3C031259B63525084AEF5C51BEB2CEDB /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D8F9CA80E9B92FC22B018F5EEE36C /* Yams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3ECF9D0B0946896781C4496F5F315BC9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */; };
+		3EEFB7654106B4026177A1F8B69C78A9 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */; };
+		410D2E782CDE157B1226EE0115A0599D /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E51F2C032CBE87266592B404E64BF /* Emitter.swift */; };
+		49DB0FA4F69794979CA826E5DE55CC3D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */; };
 		4D54362E74696808D6B7A6C7232E1875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
-		4FDD74840DFD1E926E8F66459F18721E /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E716FDF18060317986FA4C1E1A3EDAC /* Vial+Templates.swift */; };
+		50C5800218EB8D119A124D55059E6544 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = FA7DDABF97647610E3DF305CC2A3FDA3 /* parser.c */; };
 		5213A6E3267E9958C3D0555C9658D810 /* Pods-ArgonPro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA658CC01F17DA05B3BDF509DBC89CF4 /* Pods-ArgonPro-dummy.m */; };
-		5261924E2DFFA75EA0ED162B06D6C6A2 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E51F2C032CBE87266592B404E64BF /* Emitter.swift */; };
-		5322127CF484D9274FABBEE65E2AEA4D /* ThrowUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CA032DC27F52038DA0680EBF682FD /* ThrowUnwrap.swift */; };
-		57733A20398AF448280EA1E7AE202F8D /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97B5F1730CA9B119C7BB46C8695438 /* FileWrapper+Codable.swift */; };
-		57936C71B8FDE1AA4F03B04F0AB3D171 /* Data+FileWrapperCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1567B62F5F84B25E1F5CB84A840322 /* Data+FileWrapperCodable.swift */; };
-		5917B411FFA6CDE1CF0C66A2E898596E /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC7A2F136E917D5FE1140AD14471EA /* Tokomak.swift */; };
-		594DEA2C50F0403D3C83E2DA8E1251DB /* FileWrapper+FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA77B565A8D2EBFAF611787CAEC2F /* FileWrapper+FileLoader.swift */; };
-		5F63F5C3E1355B844443CE804B90F3C4 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D3924FCD1EEA304F5F99AA66039040 /* Template.swift */; };
-		62D1A434279A00AC1C39EB4BF6265DF7 /* TemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB224B50BADB7257378C80A9953DF43A /* TemplateConfig.swift */; };
-		645FE4076FC9E70D49F7A5AE83AC8526 /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4A68D65B0B565A1C00835638CF03E /* FrontMatterFile.swift */; };
-		6699B73BDB0A31CA666EEF9CA8C01337 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFFDD02EDC84FD8DE00DB215B1FDFA /* Tag.swift */; };
-		67411CEA0DCF66039E9994FDF55DEE0C /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A00C03A13FBB6D3CA0D5C6A59DE062 /* CollectionConfig.swift */; };
-		67541C1DE839E30BC73DAFBA6C86C5DF /* Yams-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0FE3F5B90A2509CC13CBAD7599EE56 /* Yams-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6CE9FF93490DA4209DD989EE1F01EDF3 /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */; };
-		71C2A42BFDD20D55445B47D653F20552 /* TemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB224B50BADB7257378C80A9953DF43A /* TemplateConfig.swift */; };
-		7351D41DAEBCC3B79BF7BBF0DF7CE4DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
-		76371ACB0DF6C66F80C91CC0B38125F4 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D3924FCD1EEA304F5F99AA66039040 /* Template.swift */; };
-		7CBC0DEEFD7C3329D38D428C109EE239 /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A943315CCB7FF55991299EF87BF1F /* Node.Sequence.swift */; };
-		8015F68C61161509E062A9E57B1FFD7C /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB23842A65149004F85B578C4E825C /* YamlError.swift */; };
-		80BC63E3863105E52170CDF66BA98B0B /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB23842A65149004F85B578C4E825C /* YamlError.swift */; };
-		81DA4F482B46DB64062FB286AD668272 /* GadgetKit-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9277646F1C2416F0C5BF75975D74AE1 /* GadgetKit-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84196361FC4AEFD00698583E06C7ED48 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = FA7DDABF97647610E3DF305CC2A3FDA3 /* parser.c */; };
-		8796114D7BD975AFD7BB897ECA6CE79A /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A85C6454275D546FE2B7BAFEFE0B0A /* shim.swift */; };
-		894E32ABE511B068E03C1B14F44BCEAD /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
-		8B795CF6765B0C3863872E23D35A2A54 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97B5F1730CA9B119C7BB46C8695438 /* FileWrapper+Codable.swift */; };
-		8E4B66E90907F447BB5C93A8E572E2A4 /* Tokamak-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03279D82D6AC2FC1E35F294C7C63420E /* Tokamak-library-dummy.m */; };
+		524B541B2B88840C624D21DF4ED7F4F9 /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D421CAFE9C9DD2B583A693EA28F0F /* CYaml.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52ACB07E25D225888A261D1CFC651925 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A85C6454275D546FE2B7BAFEFE0B0A /* shim.swift */; };
+		54D8F24858DF1D02CBB1D5C8063445D2 /* GadgetKit-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA381268A6627802491390F1DA49558 /* GadgetKit-library-dummy.m */; };
+		57936C71B8FDE1AA4F03B04F0AB3D171 /* Data+FileWrapperCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D11494821BDEAD7753C60F48C4165D7 /* Data+FileWrapperCodable.swift */; };
+		58C2BEB5E633460402CEA502E6029A2F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4477F13359A5816A747649E05916AB1 /* Parser.swift */; };
+		59123355B5CF7BBF210269EB55BA060C /* NSRegularExpression+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DEB6B59CE6C23EE5371BAE803A70A8 /* NSRegularExpression+FrontMatter.swift */; };
+		5917B411FFA6CDE1CF0C66A2E898596E /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1DA9D1D83F9B55BB04F9CF8C91467 /* Tokomak.swift */; };
+		5A3FDC64FB3E286D84E15A75E8AFEEAF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7003AA69B6DDB5D68CAEE62A3C943A /* Collection.swift */; };
+		5C1D0BF7F9D1F7F1B035A28828D199BA /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A16F9B42E354F1650E93E25C9C5CE7B /* yaml.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F63F5C3E1355B844443CE804B90F3C4 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2634548954EE45CE91B531A6CF7E5E /* Template.swift */; };
+		62D1A434279A00AC1C39EB4BF6265DF7 /* TemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08155E3092C1F56D25ABA39EB4B163C2 /* TemplateConfig.swift */; };
+		630EA51D7398279E11CB3D6FCF40EA8C /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F481929B13C3BCC36FDB69A11190830 /* writer.c */; };
+		64382B69CB3341681F93888002399630 /* ThrowUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3CDF6C87FA46FE4701C3F58CD191D /* ThrowUnwrap.swift */; };
+		6A11DB2C9898C209160E4F93C9866B39 /* GadgetKit-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C5EC94A6F12AF31B641159B506689D /* GadgetKit-framework-dummy.m */; };
+		6B39F517E1C21E2F98C27F7E13E7B859 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DE53CC85E2077E2BC4428F145F439F /* Mark.swift */; };
+		6D147356B71A53D6CBE41C3E096F32A2 /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D421CAFE9C9DD2B583A693EA28F0F /* CYaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F0E0D2700C4F4EB07F065530843D48D /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DE53CC85E2077E2BC4428F145F439F /* Mark.swift */; };
+		71C2A42BFDD20D55445B47D653F20552 /* TemplateConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08155E3092C1F56D25ABA39EB4B163C2 /* TemplateConfig.swift */; };
+		72084FC794726DBCD4A711AB2358284F /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A943315CCB7FF55991299EF87BF1F /* Node.Sequence.swift */; };
+		72962A2F75E67853096BF9BC715158BA /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB23842A65149004F85B578C4E825C /* YamlError.swift */; };
+		76371ACB0DF6C66F80C91CC0B38125F4 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2634548954EE45CE91B531A6CF7E5E /* Template.swift */; };
+		76A1DB76C5875DD7FA4AF8647A6104D1 /* FileWrapper+FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC36F41FD9A5AD1480197D3F8A19C7C /* FileWrapper+FileLoader.swift */; };
+		773923F6478C745AE4BFA66A71AB918A /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A85C6454275D546FE2B7BAFEFE0B0A /* shim.swift */; };
+		77EC598FA7683AC9F02C71EE37600B43 /* GadgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A02C58CCBF7685130CC39A32401172D /* GadgetKit.framework */; };
+		816A01504C6A711BCD8162A5FD6DFD67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
+		82A58F9600C71175F9752BD027653E65 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02569D8B4C54EAA40F8DC4615D933974 /* String+Yams.swift */; };
+		8766245A1BA55194C1190ACFCFC31FA0 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B87B41E1F60458CBB16C14508A8E8 /* FileWrapper+Codable.swift */; };
+		8BE5929BE11B6AFFE798E2D94A805012 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */; };
+		8D7DD10D1D1FF4996634763E72C66F31 /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF575230B2621159FEA32ABB735B3A8F /* Vial+Templates.swift */; };
+		8DEFB9ECA2CDA7D3181E8E67D4F44007 /* Yams-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D60CB098DAE57647124EDAD4463DB478 /* Yams-framework-dummy.m */; };
+		8E4B66E90907F447BB5C93A8E572E2A4 /* Tokamak-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6FCF701BF44E956795DF4AC2EA15AC /* Tokamak-library-dummy.m */; };
+		8E9B48A47D4893D898AE2D577F56A748 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43E63AF52AF3A89EB5C1A43659CC6D9 /* Resolver.swift */; };
+		940B5CAE0521B117C776496E88A46702 /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */; };
 		947BD5A835D58D3B0FB5DC812B65C77F /* Pods-ArgonTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B11DF1CC16333837D59F358F078284 /* Pods-ArgonTool-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		94EDC663F0FB5CD38FECD0F9EB0A56AF /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFFDD02EDC84FD8DE00DB215B1FDFA /* Tag.swift */; };
+		9578BE9F64894FA745F01A40A3811D98 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */; };
 		95FBFE33319D542A08A5C47F477E6B26 /* ArgonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2178FB8EDA75E50FF25B5E9A5186C0 /* ArgonModel.framework */; };
-		99E2E06927AB26226AD2DFC33C5A5D4F /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC2183D4DEC0DCE1450ABED85E311E /* String+Extractors.swift */; };
-		9F73EBE9608D54E16F65AD9FC4A4F8B6 /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F63631BB3FC54C1901544F0D101048 /* Node.Mapping.swift */; };
-		A047DFF727C49C12EE1F2B52B42C29E7 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159CB4BF6440006D1D0DA7A5E16278B1 /* Vial.swift */; };
-		A0910F4385A286A29E36739CF9982C76 /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4A68D65B0B565A1C00835638CF03E /* FrontMatterFile.swift */; };
-		A21412DD335FDC5010C2B26BB76AC3F9 /* GadgetKit-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4148998E23E45F63DF1F18B8097BD930 /* GadgetKit-framework-dummy.m */; };
-		A32B1D747632B2C421E7EBCBCB440C1C /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A00C03A13FBB6D3CA0D5C6A59DE062 /* CollectionConfig.swift */; };
-		A423FED939F6767D4D1A51B98A9EF47B /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A97848620907353A0FDF0644609CEF5 /* emitter.c */; };
-		A6EDC9E64AFFD5550FB780691687578D /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055807D968721B988FBAE7F112068A94 /* Constructor.swift */; };
-		ABFF36B0F223D290B993D21EE3A4FD43 /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F63631BB3FC54C1901544F0D101048 /* Node.Mapping.swift */; };
-		AC250477BA63CF7E28548D67BF279B0F /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4477F13359A5816A747649E05916AB1 /* Parser.swift */; };
-		AD7DA574C80CAF3D2C3E3387916BEA48 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B238FD24D29A4008395251F504B1E81 /* scanner.c */; };
-		B13A22EEEB413E55968DEAFDB088992D /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DE53CC85E2077E2BC4428F145F439F /* Mark.swift */; };
-		B26DD4E6A649913A59C881C5941DFDB4 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C844417251E354338821E987F81E2D /* Representer.swift */; };
-		B6AD20C8FAD11615B12784BD6EA43DA1 /* ArgonModel-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 283EF3E321291E0FBCA6769FCA534063 /* ArgonModel-library-dummy.m */; };
-		B8743847DF11AFDC4F7939728A45555A /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FB84B8514716DA3F1318FFFE2FDC4E /* reader.c */; };
-		B8755A336F7057CDAA124E0C6772430B /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAA9FD7FC848C635E4F0C5B0A64DA7 /* VialConfig.swift */; };
-		B88A4603F56B678184E1DCCBA0805914 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */; };
-		B930E68338DB27C3E51DF1DFD4D04012 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBF2D677C6156A5A20DFC8F1279B8D /* Collection.swift */; };
+		9879F709E504DE5E29CDE6E9F66E70E3 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D133EB3760BC22CAE7A234C728E894 /* String+FrontMatter.swift */; };
+		996EC105D0893C8A02F03F6D435D0B71 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A97848620907353A0FDF0644609CEF5 /* emitter.c */; };
+		A03BB5886D9FF9EC725FEF5347191DA5 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F481929B13C3BCC36FDB69A11190830 /* writer.c */; };
+		A08F13DFF800028CF8F7196D07270537 /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C844417251E354338821E987F81E2D /* Representer.swift */; };
+		A491C58FC8AA7A7813B71F1421329142 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4477F13359A5816A747649E05916AB1 /* Parser.swift */; };
+		A9FE8AC3F8E5159A97464BC1DD5E29D9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */; };
+		AAB4C10122A7EC4953AB43D0E5CFD905 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
+		AE498172AC344319DF703B3B6940E9FD /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02569D8B4C54EAA40F8DC4615D933974 /* String+Yams.swift */; };
+		AFEB22CCE490AD5A726A6F936510B4F2 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FB84B8514716DA3F1318FFFE2FDC4E /* reader.c */; };
+		B498974E5A50F1D2A26288C16D19D0FB /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F957254C33DB069902B59C464102E /* Vial+Examples.swift */; };
+		B6D57E5386CCA710222F8EFB61432EC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */; };
+		B8B54A11EFAFA5C24A4B06A26433F611 /* FileWrapper+FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC36F41FD9A5AD1480197D3F8A19C7C /* FileWrapper+FileLoader.swift */; };
 		BBA710A27B15A477C2DBC1F19B0D5D4B /* Pods-ArgonTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF51F9B737339BF41FD2E514278C0F /* Pods-ArgonTool-dummy.m */; };
-		BC56039004F0F5FAA11CB590405E9224 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A85C6454275D546FE2B7BAFEFE0B0A /* shim.swift */; };
-		BCD1416B879AE4EBC17E5C44538FB8F5 /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91A943315CCB7FF55991299EF87BF1F /* Node.Sequence.swift */; };
-		BD95146E3AFCAA6F57ABD6BDFAC1719A /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */; };
-		C07E9C7A63982E6BFACB6B9859D530E4 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A97848620907353A0FDF0644609CEF5 /* emitter.c */; };
-		C18F1941EB4A79596691542480D3DB41 /* Data+FileWrapperCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1567B62F5F84B25E1F5CB84A840322 /* Data+FileWrapperCodable.swift */; };
+		BBC91DC8E9F37A89C565D02127C4B481 /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D8F9CA80E9B92FC22B018F5EEE36C /* Yams.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD6A896CD40453AE29E0220CB7EC2CE3 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */; };
+		C03403C611B9512A9F53F6990D2148DB /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */; };
+		C18F1941EB4A79596691542480D3DB41 /* Data+FileWrapperCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D11494821BDEAD7753C60F48C4165D7 /* Data+FileWrapperCodable.swift */; };
+		C1E1385D6994196E366E7B784468B41F /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973C625AC790E9A93DE8BBCC925F2C3 /* Encoder.swift */; };
+		C372A01DB9180509B42BEBE866E0E4E2 /* GadgetKit-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04612A2D629074DA7B4DE6623D6905C3 /* GadgetKit-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C534CFF413FEFA13F058812074DA06D9 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B238FD24D29A4008395251F504B1E81 /* scanner.c */; };
 		C64F2404630EA1E2CCE90445FB288CC3 /* Pods-ArgonProTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E9890EC7F5EBFAEDBAA3E1D75F1624 /* Pods-ArgonProTests-dummy.m */; };
-		C962598BBD215962CB14D3790C145A6F /* NSRegularExpression+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9424CB3BE83CFA736AF7002A70F20EE2 /* NSRegularExpression+FrontMatter.swift */; };
-		C9EF5591F0C0232183F0A08744139EB1 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */; };
-		CA6B88AFBB5942FC843E7DD3D5A427B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */; };
+		C74FCE5A4A2A76E4B83F22443DAD8D14 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7003AA69B6DDB5D68CAEE62A3C943A /* Collection.swift */; };
+		C884C5EE25E83AC93C25E479F55D3CF2 /* Yams-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E246E526AB8626C0A78F3086CCA16D /* Yams-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB8D660DDB2D316834C19E2A354433BA /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */; };
+		CC12E8DE38FB9A351BCAE2CCF6D3BD6E /* GadgetKit-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B168D91DD96D4E1CA809D975C0D8A57 /* GadgetKit-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC992ABAF026D0AA09946000503947A6 /* Vial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */; };
+		CFBCB976A479875554FE4D78B8E9A94C /* CollectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */; };
 		D85A18F43F623FDB8104CA341C0BA310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
-		DAED60314A1D8B8282D13EE18E4001F2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */; };
+		D8B79ECA402C37AC83A90ABF2D874545 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 96FB84B8514716DA3F1318FFFE2FDC4E /* reader.c */; };
 		DBFBC35478740802C0BC0068F3E6A8EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */; };
-		DC0278F1E9A77AFD92170DE8B447ECC1 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E51F2C032CBE87266592B404E64BF /* Emitter.swift */; };
-		DCFEF2950A8187E00BDAD07F952D94C9 /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF2A1543C6F6D7A99D8ECED3427CA2 /* Vial+Examples.swift */; };
-		E0B50FEB564FCB957FD673D3916403F7 /* Tokamak-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F64FC4A47D753779807B360CFC71CC3D /* Tokamak-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3A5A183C832F36662303CFD8B71112B /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89451D4BC3E2799C38DF9CED9CE4F3FA /* Node.swift */; };
-		E77E6C51794F0734C4F7E6F29DF97D71 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973C625AC790E9A93DE8BBCC925F2C3 /* Encoder.swift */; };
-		E7B6440183C0BFA6F6CECEF0D011E985 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A16F9B42E354F1650E93E25C9C5CE7B /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9590CEE5DB2EA2BD43D2DDCF63B0EAE /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02569D8B4C54EAA40F8DC4615D933974 /* String+Yams.swift */; };
-		E98F6B2256C26A1C66603F22B1297B32 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EEDE4C5837E7DFFF851B7651D4AA3 /* String+FrontMatter.swift */; };
+		DEFF1DBDABBD614A940BF17B3F358870 /* ArgonModel-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5BD7C0D9512DA4CC521453E0C75DA5 /* ArgonModel-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E067A9D376FC3535C3F244904A69CB74 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFFDD02EDC84FD8DE00DB215B1FDFA /* Tag.swift */; };
+		E0B50FEB564FCB957FD673D3916403F7 /* Tokamak-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA8F37BD2977057186FE030E00CB36B6 /* Tokamak-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1E1BDF7DD2607FA7BA0733491139D42 /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6BEFDE375E662DD008B3A3FF33A41 /* String+Extractors.swift */; };
+		E2EC44101CEA1C3136450089C630D366 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */; };
+		E323BE3E8FBF01A9A2EA8A1F58A9630F /* Yams-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11986A50B46A7E796B3BB7FDE453CFEF /* Yams-library-dummy.m */; };
+		E42CDE14A79F44D3E388E0D04ADBDDF6 /* Vial+Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F957254C33DB069902B59C464102E /* Vial+Examples.swift */; };
+		E4BD9C148A1AE20F4E3755A65FF52376 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D133EB3760BC22CAE7A234C728E894 /* String+FrontMatter.swift */; };
 		EA91167A5E791F1FF037C920DA3BA1AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
 		EAB23DF11999629015E87643509757C3 /* Pods-ArgonProTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1D43E0B230174E65894A90D35C9CD4 /* Pods-ArgonProTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB46348F3A06BD566087DF8A65A7EBA7 /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D8F9CA80E9B92FC22B018F5EEE36C /* Yams.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EBA844BFBBB4EC51453DB9B85E3C036E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89451D4BC3E2799C38DF9CED9CE4F3FA /* Node.swift */; };
-		EBFDD57167289E64AAF8171E694F69A9 /* Tokamak-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E11D9DA617F759DE60F6BE7A4BD99FB4 /* Tokamak-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ED0C36B808B67A137DF61E96C91DDEB0 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAA9FD7FC848C635E4F0C5B0A64DA7 /* VialConfig.swift */; };
-		EED46CED934A3840F345E8D8C8AF499F /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055807D968721B988FBAE7F112068A94 /* Constructor.swift */; };
-		EF041AAD1061F965D0106D8A8734B9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */; };
-		F33D3594B1490AB421C286CB3C247F83 /* Yams-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11986A50B46A7E796B3BB7FDE453CFEF /* Yams-library-dummy.m */; };
-		F4A713CE16F7C1471FAEDEF7D2D46815 /* ArgonModel-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80C729F6A93933AEBFA061CA97D9D1 /* ArgonModel-framework-dummy.m */; };
-		F5E5A155C814D4C0F493FFFFB52A105E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */; };
-		F743EDBD936F54893F15EE023EBA53D0 /* Vial+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E716FDF18060317986FA4C1E1A3EDAC /* Vial+Templates.swift */; };
-		FAEA69058AA98CFD9FFF89474A1B1065 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC7A2F136E917D5FE1140AD14471EA /* Tokomak.swift */; };
-		FC2DF7644F0A9DF78D9F6954D654E81C /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973C625AC790E9A93DE8BBCC925F2C3 /* Encoder.swift */; };
-		FF7AD551C0D480D39004E5A83603B34B /* NSRegularExpression+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9424CB3BE83CFA736AF7002A70F20EE2 /* NSRegularExpression+FrontMatter.swift */; };
+		EBFDD57167289E64AAF8171E694F69A9 /* Tokamak-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02609D0E45618887577D1A82715F5EB8 /* Tokamak-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EF0EB2D74830BD47237F7AAF1BE7D5E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */; };
+		F3EFA36E6CCC263F19863EEF7ADD193A /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6BEFDE375E662DD008B3A3FF33A41 /* String+Extractors.swift */; };
+		F405446257A89B852B2D3DA7783BA6FD /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F63631BB3FC54C1901544F0D101048 /* Node.Mapping.swift */; };
+		F964B1771E076F4EB82FC5F2A8B93C0D /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055807D968721B988FBAE7F112068A94 /* Constructor.swift */; };
+		FA4C39B27B4F1633D95F1D4014115F85 /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB33E210640ED68565A91544F8AB4815 /* FrontMatterFile.swift */; };
+		FA9B023CD58775250F4EC4BB6E1DF007 /* Yams-library-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0FE3F5B90A2509CC13CBAD7599EE56 /* Yams-library-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FAEA69058AA98CFD9FFF89474A1B1065 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1DA9D1D83F9B55BB04F9CF8C91467 /* Tokomak.swift */; };
+		FBEE458941939F55BC7F8E4628D34F10 /* ThrowUnwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3CDF6C87FA46FE4701C3F58CD191D /* ThrowUnwrap.swift */; };
+		FD0F1BB88731265AB8985694B75B5350 /* VialConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */; };
+		FEB11C4DA39D2BCBAFB95B215B33C165 /* FileWrapper+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B87B41E1F60458CBB16C14508A8E8 /* FileWrapper+Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		024BE0E730151C02472674CF57D6EB44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64A4E2B4E9CB75DE7E80AE45EC6D3D69;
-			remoteInfo = "GadgetKit-framework";
-		};
 		0F8BAE57E2CBA5961FB0EBD17DD56845 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -153,64 +146,85 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6D72D35477BF5F017DFA24C9B46944E0;
+			remoteGlobalIDString = 628F65FF399DBBDD093FBE971B4A8285;
 			remoteInfo = "Yams-library";
+		};
+		1B427C57130F70BAC4126BD38D69FDA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A398D01FAFA39106EF7606807F86599B;
+			remoteInfo = "GadgetKit-library";
 		};
 		243A71EFBA0F7CE4891E0D1D373ADD0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 242A7B7B5C4337A05E106076E6EC9BBC;
+			remoteGlobalIDString = 8CB14E494154C3A056F62D2CAFA80FAF;
 			remoteInfo = "ArgonModel-framework";
 		};
 		285DB4DA8FCBD79792250DF6FC77302C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4DF748CE5E7966B307392C37E29B8807;
+			remoteGlobalIDString = AA7F22D8DADA1CAC100976493528F624;
 			remoteInfo = "Yams-framework";
 		};
 		3302047291F3D2CFA45AA4A276248333 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5AE6F3BAADA07B4E641EBFB57AB4DCC9;
+			remoteGlobalIDString = 521535AB80324118766E3586C40BEE43;
 			remoteInfo = "ArgonModel-library";
 		};
 		3D9A5BF5D2FBD7E76F6EAFDE629E1ED3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC83C4C623986680587A51F5FCB6A8B2;
+			remoteGlobalIDString = A398D01FAFA39106EF7606807F86599B;
 			remoteInfo = "GadgetKit-library";
+		};
+		54BCCB1E128EFB4E6C88F88848F81FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 628F65FF399DBBDD093FBE971B4A8285;
+			remoteInfo = "Yams-library";
 		};
 		556B7C2D6D7C56B787200C7050EE85E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6D72D35477BF5F017DFA24C9B46944E0;
+			remoteGlobalIDString = 628F65FF399DBBDD093FBE971B4A8285;
 			remoteInfo = "Yams-library";
 		};
 		5F76825B696D0CA5BABA687666EFA54A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64A4E2B4E9CB75DE7E80AE45EC6D3D69;
+			remoteGlobalIDString = F61E08C1D8F138FF2F4F76AFE310522B;
 			remoteInfo = "GadgetKit-framework";
 		};
 		6693432289CB983FAA476070BBB0087E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 242A7B7B5C4337A05E106076E6EC9BBC;
+			remoteGlobalIDString = 8CB14E494154C3A056F62D2CAFA80FAF;
 			remoteInfo = "ArgonModel-framework";
 		};
 		682392FE1A80043066F7400965C06CD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5AE6F3BAADA07B4E641EBFB57AB4DCC9;
+			remoteGlobalIDString = 521535AB80324118766E3586C40BEE43;
 			remoteInfo = "ArgonModel-library";
+		};
+		71042F62F8FA96C85920FC3D9EA316F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 628F65FF399DBBDD093FBE971B4A8285;
+			remoteInfo = "Yams-library";
 		};
 		84E9D61464FDDD451DB395AC7B055752 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -219,54 +233,47 @@
 			remoteGlobalIDString = A35C83835ACBA81DB7B8176B121D8408;
 			remoteInfo = "Pods-ArgonPro";
 		};
-		87F1EDA225A77D117F79B04582E49313 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D72D35477BF5F017DFA24C9B46944E0;
-			remoteInfo = "Yams-library";
-		};
 		8FFF8E4E67C0FC7F604C2BE7D38A6132 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC83C4C623986680587A51F5FCB6A8B2;
+			remoteGlobalIDString = A398D01FAFA39106EF7606807F86599B;
 			remoteInfo = "GadgetKit-library";
-		};
-		92EF5E877217FC9AFC18D2D6CB278F7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC83C4C623986680587A51F5FCB6A8B2;
-			remoteInfo = "GadgetKit-library";
-		};
-		A1B43CDFD8AF948B0824583826164E4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4DF748CE5E7966B307392C37E29B8807;
-			remoteInfo = "Yams-framework";
 		};
 		AA6366A46AB32A35AD29FF39C522B919 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4DF748CE5E7966B307392C37E29B8807;
+			remoteGlobalIDString = AA7F22D8DADA1CAC100976493528F624;
 			remoteInfo = "Yams-framework";
 		};
-		E2CA58A6D3372953A2C3C351033A2DAF /* PBXContainerItemProxy */ = {
+		AABFF2C55C1240B9DCD55840564FBD70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4DF748CE5E7966B307392C37E29B8807;
-			remoteInfo = "Yams-framework";
+			remoteGlobalIDString = F61E08C1D8F138FF2F4F76AFE310522B;
+			remoteInfo = "GadgetKit-framework";
 		};
 		E7DC88CF6773200FA3D15DA38F4FA776 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 64A4E2B4E9CB75DE7E80AE45EC6D3D69;
+			remoteGlobalIDString = F61E08C1D8F138FF2F4F76AFE310522B;
 			remoteInfo = "GadgetKit-framework";
+		};
+		E952F9E56C39022E7A4B8DB3192EC211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7F22D8DADA1CAC100976493528F624;
+			remoteInfo = "Yams-framework";
+		};
+		EA23F9FA541C07903F51DD6CFF2F8BB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7F22D8DADA1CAC100976493528F624;
+			remoteInfo = "Yams-framework";
 		};
 		F207CDE4FAD014083095993DC3DDB445 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -275,160 +282,161 @@
 			remoteGlobalIDString = B73F990DFC5409A0A5B585CF4A081B16;
 			remoteInfo = "Tokamak-library";
 		};
-		F25CFC6A65B66BB8F95AEC2E8572D574 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D72D35477BF5F017DFA24C9B46944E0;
-			remoteInfo = "Yams-library";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01E9890EC7F5EBFAEDBAA3E1D75F1624 /* Pods-ArgonProTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArgonProTests-dummy.m"; sourceTree = "<group>"; };
 		02569D8B4C54EAA40F8DC4615D933974 /* String+Yams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Yams.swift"; path = "Sources/Yams/String+Yams.swift"; sourceTree = "<group>"; };
-		03279D82D6AC2FC1E35F294C7C63420E /* Tokamak-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Tokamak-library-dummy.m"; path = "../Tokamak-library/Tokamak-library-dummy.m"; sourceTree = "<group>"; };
+		02609D0E45618887577D1A82715F5EB8 /* Tokamak-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tokamak-library-umbrella.h"; path = "../../Headers/Public/Tokamak/Tokamak-library-umbrella.h"; sourceTree = "<group>"; };
+		04612A2D629074DA7B4DE6623D6905C3 /* GadgetKit-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GadgetKit-framework-umbrella.h"; sourceTree = "<group>"; };
 		055807D968721B988FBAE7F112068A94 /* Constructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constructor.swift; path = Sources/Yams/Constructor.swift; sourceTree = "<group>"; };
-		05D91CC9E1BE738232088775F67AAF62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07C844417251E354338821E987F81E2D /* Representer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Representer.swift; path = Sources/Yams/Representer.swift; sourceTree = "<group>"; };
-		08B483B0A94076D2186A0209C340B527 /* GadgetKit-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GadgetKit-library-dummy.m"; path = "../GadgetKit-library/GadgetKit-library-dummy.m"; sourceTree = "<group>"; };
-		0E80C729F6A93933AEBFA061CA97D9D1 /* ArgonModel-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArgonModel-framework-dummy.m"; sourceTree = "<group>"; };
+		08155E3092C1F56D25ABA39EB4B163C2 /* TemplateConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TemplateConfig.swift; sourceTree = "<group>"; };
+		0CC36F41FD9A5AD1480197D3F8A19C7C /* FileWrapper+FileLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileWrapper+FileLoader.swift"; sourceTree = "<group>"; };
+		0CF7D4866F2E7DCFB5A7D6DA9052941D /* ArgonModel-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ArgonModel-framework.modulemap"; sourceTree = "<group>"; };
 		0F481929B13C3BCC36FDB69A11190830 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = writer.c; path = Sources/CYaml/src/writer.c; sourceTree = "<group>"; };
 		0FB765F7A4AC5CAA3496A40388799E0A /* Pods-ArgonProTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgonProTests.modulemap"; sourceTree = "<group>"; };
 		11986A50B46A7E796B3BB7FDE453CFEF /* Yams-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Yams-library-dummy.m"; path = "../Yams-library/Yams-library-dummy.m"; sourceTree = "<group>"; };
 		122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
-		159CB4BF6440006D1D0DA7A5E16278B1 /* Vial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vial.swift; sourceTree = "<group>"; };
 		177E51F2C032CBE87266592B404E64BF /* Emitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emitter.swift; path = Sources/Yams/Emitter.swift; sourceTree = "<group>"; };
+		18C917D1D51DAA16A2C7E30A32069870 /* Tokamak.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Tokamak.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19D727789A5024C206BF7C34D7C5C5A9 /* Pods-ArgonPro.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgonPro.modulemap"; sourceTree = "<group>"; };
+		1A2634548954EE45CE91B531A6CF7E5E /* Template.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		1B238FD24D29A4008395251F504B1E81 /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = scanner.c; path = Sources/CYaml/src/scanner.c; sourceTree = "<group>"; };
-		1CEF2A1543C6F6D7A99D8ECED3427CA2 /* Vial+Examples.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Vial+Examples.swift"; sourceTree = "<group>"; };
-		1D8A9072CD425FAFD32BC9EEBC430D3B /* GadgetKit-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "GadgetKit-framework.modulemap"; sourceTree = "<group>"; };
-		1EF9E1C2F0E42BBBE7A58498A98DB560 /* Tokamak-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tokamak-library.xcconfig"; path = "../Tokamak-library/Tokamak-library.xcconfig"; sourceTree = "<group>"; };
+		1BF6BEFDE375E662DD008B3A3FF33A41 /* String+Extractors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Extractors.swift"; sourceTree = "<group>"; };
+		23C385C200F0830146BF037A9A37A8EB /* ArgonModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ArgonModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		25ADD09D4FC30A282B849F8E88B94D39 /* Yams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		283EF3E321291E0FBCA6769FCA534063 /* ArgonModel-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ArgonModel-library-dummy.m"; path = "../ArgonModel-library/ArgonModel-library-dummy.m"; sourceTree = "<group>"; };
-		2A9FE63256E6EB30CB70103197F372E8 /* ArgonModel-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArgonModel-framework-umbrella.h"; sourceTree = "<group>"; };
+		279F957254C33DB069902B59C464102E /* Vial+Examples.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Vial+Examples.swift"; sourceTree = "<group>"; };
 		2C1B3B3918ED04A70DA5198EB9275F7F /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = Sources/CYaml/src/yaml_private.h; sourceTree = "<group>"; };
 		2DCB8B451324C931BC021D44FDBEF3F5 /* libTokamak-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTokamak-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EAC2183D4DEC0DCE1450ABED85E311E /* String+Extractors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Extractors.swift"; sourceTree = "<group>"; };
-		307EE70CB2971F6DC41AF3A903C09BC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3113F835D1F2C96B91AB013C00DE0CB0 /* ArgonModel-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ArgonModel-framework-dummy.m"; sourceTree = "<group>"; };
 		31700EA06BB05D321662F9A27B028F32 /* Node.Scalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Scalar.swift; path = Sources/Yams/Node.Scalar.swift; sourceTree = "<group>"; };
-		3BCC7A2F136E917D5FE1140AD14471EA /* Tokomak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tokomak.swift; sourceTree = "<group>"; };
+		38C688C5F37C0DDD3ED08B1EFFA5B3F8 /* GadgetKit-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "GadgetKit-framework.modulemap"; sourceTree = "<group>"; };
+		3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		3BDC99B6505AD01F1F3A433EF9BDC204 /* Pods-ArgonTool-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgonTool-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E6EF4EE55E9FB1033B2904CC1480514 /* GadgetKit-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "GadgetKit-library.modulemap"; path = "../../Headers/Public/GadgetKit/GadgetKit-library.modulemap"; sourceTree = "<group>"; };
+		3F22F3094EFC93163D96914FAA873F3B /* Tokamak-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tokamak-library-prefix.pch"; path = "../Tokamak-library/Tokamak-library-prefix.pch"; sourceTree = "<group>"; };
 		3FDC8DF6788163ADF7D4AE66661F0A2A /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E246E526AB8626C0A78F3086CCA16D /* Yams-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-framework-umbrella.h"; sourceTree = "<group>"; };
-		4148998E23E45F63DF1F18B8097BD930 /* GadgetKit-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GadgetKit-framework-dummy.m"; sourceTree = "<group>"; };
 		418A47F3CD9E5659A846777F0244ED9F /* Pods-ArgonPro-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgonPro-acknowledgements.plist"; sourceTree = "<group>"; };
 		43F63631BB3FC54C1901544F0D101048 /* Node.Mapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Mapping.swift; path = Sources/Yams/Node.Mapping.swift; sourceTree = "<group>"; };
 		440D8F9CA80E9B92FC22B018F5EEE36C /* Yams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Yams.h; path = Sources/Yams/Yams.h; sourceTree = "<group>"; };
 		4A16F9B42E354F1650E93E25C9C5CE7B /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = Sources/CYaml/include/yaml.h; sourceTree = "<group>"; };
-		4A97B5F1730CA9B119C7BB46C8695438 /* FileWrapper+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileWrapper+Codable.swift"; sourceTree = "<group>"; };
 		4BF9DC7D0BA68C041D67AF59D88272F9 /* Pods-ArgonPro-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgonPro-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4C0D95396A012705D1742232BC8BB2DF /* ArgonModel-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ArgonModel-library.modulemap"; path = "../../Headers/Public/ArgonModel/ArgonModel-library.modulemap"; sourceTree = "<group>"; };
-		4DEAA9FD7FC848C635E4F0C5B0A64DA7 /* VialConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VialConfig.swift; sourceTree = "<group>"; };
+		4C1AD796E26C7054B130DBFCAC335A38 /* GadgetKit-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GadgetKit-library.xcconfig"; path = "../GadgetKit-library/GadgetKit-library.xcconfig"; sourceTree = "<group>"; };
+		4EA381268A6627802491390F1DA49558 /* GadgetKit-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GadgetKit-library-dummy.m"; path = "../GadgetKit-library/GadgetKit-library-dummy.m"; sourceTree = "<group>"; };
 		4F99500C4E73267A45BAF61CA692E222 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5046C1EFCBDA632EA4EBD6538358361C /* Pods-ArgonPro-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonPro-resources.sh"; sourceTree = "<group>"; };
+		51D133EB3760BC22CAE7A234C728E894 /* String+FrontMatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+FrontMatter.swift"; sourceTree = "<group>"; };
 		523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Yams/Node.swift; sourceTree = "<group>"; };
 		53B3C812B72AE5B4FA02C866BFDEA42F /* Yams-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Yams-framework.xcconfig"; sourceTree = "<group>"; };
 		54DF52DE4F9404B560052C21E84CB639 /* GadgetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GadgetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VialConfig.swift; sourceTree = "<group>"; };
 		57EE89752AB3ED1C9306E4936BB21FD1 /* Yams-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-framework-prefix.pch"; sourceTree = "<group>"; };
 		5A97848620907353A0FDF0644609CEF5 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = emitter.c; path = Sources/CYaml/src/emitter.c; sourceTree = "<group>"; };
 		5B7ADC0B8853B66315D1787B5D63E162 /* libGadgetKit-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGadgetKit-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C25BF3A2D8EF02107BB12FDA9795461 /* ArgonModel-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ArgonModel-framework.xcconfig"; sourceTree = "<group>"; };
 		61A1E4AFF9BA89B2EB9003DD3E50E7F4 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Yams/Decoder.swift; sourceTree = "<group>"; };
+		623E4AF2EE51A3D9B6F5EC3134364B87 /* GadgetKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GadgetKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionConfig.swift; sourceTree = "<group>"; };
 		62CD179397D86C6BA2CED0A68F1D17CE /* Pods-ArgonTool-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonTool-resources.sh"; sourceTree = "<group>"; };
 		6749C3EC237902BCFFD31125F1F6BBF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		679AC3227E4C59A912992FBE39A67AEB /* ArgonModel-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ArgonModel-library-umbrella.h"; path = "../../Headers/Public/ArgonModel/ArgonModel-library-umbrella.h"; sourceTree = "<group>"; };
-		69C8F6886347DED43F6A90378238959F /* Tokamak-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Tokamak-framework.xcconfig"; sourceTree = "<group>"; };
+		6B168D91DD96D4E1CA809D975C0D8A57 /* GadgetKit-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GadgetKit-library-umbrella.h"; path = "../../Headers/Public/GadgetKit/GadgetKit-library-umbrella.h"; sourceTree = "<group>"; };
 		6BBD774FC15F5FF72972D939FBD0389E /* Pods-ArgonProTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonProTests-frameworks.sh"; sourceTree = "<group>"; };
-		7035C882D19344E698A30A4744276975 /* ArgonModel-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ArgonModel-framework.modulemap"; sourceTree = "<group>"; };
+		6BDE6BA62E1C9FB7A8698CA208321A5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D11494821BDEAD7753C60F48C4165D7 /* Data+FileWrapperCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+FileWrapperCodable.swift"; sourceTree = "<group>"; };
 		728745FEC6289F8A135BA8248AFE70C5 /* ArgonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArgonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7288CBFE288626F99F62BE1CEDF02CE6 /* Tokamak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tokamak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		744EEDE4C5837E7DFFF851B7651D4AA3 /* String+FrontMatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+FrontMatter.swift"; sourceTree = "<group>"; };
-		75D3924FCD1EEA304F5F99AA66039040 /* Template.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		74C95E39B69CF7A0BD6260AAD68E8F21 /* GadgetKit-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GadgetKit-library-prefix.pch"; path = "../GadgetKit-library/GadgetKit-library-prefix.pch"; sourceTree = "<group>"; };
 		7780DF21DDC70FE18EE6C438EB73D529 /* Yams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		78D32CE61383E5C4CFA48C488BA4441D /* ArgonModel-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArgonModel-framework-prefix.pch"; sourceTree = "<group>"; };
 		7A02C58CCBF7685130CC39A32401172D /* GadgetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GadgetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9E4182000EBD642E814D78CD3554C6 /* Tokamak-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tokamak-library.modulemap"; path = "../../Headers/Public/Tokamak/Tokamak-library.modulemap"; sourceTree = "<group>"; };
 		7D1D9E102E8F684AE24BFFB9EBC42018 /* libYams-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libYams-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E716FDF18060317986FA4C1E1A3EDAC /* Vial+Templates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Vial+Templates.swift"; sourceTree = "<group>"; };
+		7E0C5344123D3D296E685DEE1B744F48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FDF51F9B737339BF41FD2E514278C0F /* Pods-ArgonTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArgonTool-dummy.m"; sourceTree = "<group>"; };
 		815E52C08C8B7CF31F294F8C04A8EB5C /* Yams-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Yams-framework.modulemap"; sourceTree = "<group>"; };
-		84A00C03A13FBB6D3CA0D5C6A59DE062 /* CollectionConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionConfig.swift; sourceTree = "<group>"; };
-		8635E14FC22619B7635AA1961E1A2BB2 /* GadgetKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GadgetKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8673245577C4973B377734DCDB5C72B7 /* Pods-ArgonTool-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonTool-frameworks.sh"; sourceTree = "<group>"; };
-		86AFD74E30317440D4A3A468569F3499 /* ArgonModel-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ArgonModel-library.xcconfig"; path = "../ArgonModel-library/ArgonModel-library.xcconfig"; sourceTree = "<group>"; };
-		86C286A5D2B92EBD3C97401969E4EC11 /* Tokamak-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Tokamak-library.modulemap"; path = "../../Headers/Public/Tokamak/Tokamak-library.modulemap"; sourceTree = "<group>"; };
-		87E671BBBE5CFF3AE007957A292ECEB5 /* Tokamak-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Tokamak-framework.modulemap"; sourceTree = "<group>"; };
-		89451D4BC3E2799C38DF9CED9CE4F3FA /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		888F41BBA4D665F9EB7BF8EC8FCA6C02 /* GadgetKit-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "GadgetKit-library.modulemap"; path = "../../Headers/Public/GadgetKit/GadgetKit-library.modulemap"; sourceTree = "<group>"; };
 		89B577BC5423DF0119A6469FCA982E90 /* Pods-ArgonTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ArgonTool.modulemap"; sourceTree = "<group>"; };
 		89DFFDD02EDC84FD8DE00DB215B1FDFA /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Yams/Tag.swift; sourceTree = "<group>"; };
-		8A604885B55881E0D14D1180D01C8D1D /* Tokamak.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Tokamak.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B95264F02E6CC60107EE5288F5FED81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8F7003AA69B6DDB5D68CAEE62A3C943A /* Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		91C5EC94A6F12AF31B641159B506689D /* GadgetKit-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GadgetKit-framework-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C1494E722E52E9EA6FCBC68B5516E7 /* GadgetKit-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GadgetKit-framework-prefix.pch"; sourceTree = "<group>"; };
 		93DE53CC85E2077E2BC4428F145F439F /* Mark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mark.swift; path = Sources/Yams/Mark.swift; sourceTree = "<group>"; };
-		9424CB3BE83CFA736AF7002A70F20EE2 /* NSRegularExpression+FrontMatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+FrontMatter.swift"; sourceTree = "<group>"; };
-		950BCEA52000850C69F9665174F55AD8 /* GadgetKit-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GadgetKit-library-umbrella.h"; path = "../../Headers/Public/GadgetKit/GadgetKit-library-umbrella.h"; sourceTree = "<group>"; };
+		94E49082C933747FC57BD4D672D024A2 /* ArgonModel-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ArgonModel-library-dummy.m"; path = "../ArgonModel-library/ArgonModel-library-dummy.m"; sourceTree = "<group>"; };
 		96FB84B8514716DA3F1318FFFE2FDC4E /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = reader.c; path = Sources/CYaml/src/reader.c; sourceTree = "<group>"; };
-		98ED41A931A747B30A0BE2D5DC1E886C /* Tokamak-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tokamak-framework-prefix.pch"; sourceTree = "<group>"; };
+		990B87B41E1F60458CBB16C14508A8E8 /* FileWrapper+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileWrapper+Codable.swift"; sourceTree = "<group>"; };
 		9C0FE3F5B90A2509CC13CBAD7599EE56 /* Yams-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Yams-library-umbrella.h"; path = "../../Headers/Public/Yams/Yams-library-umbrella.h"; sourceTree = "<group>"; };
+		9F6FCF701BF44E956795DF4AC2EA15AC /* Tokamak-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Tokamak-library-dummy.m"; path = "../Tokamak-library/Tokamak-library-dummy.m"; sourceTree = "<group>"; };
+		9F8FDE2A7FDFB5C34F9F6A2608A1393C /* Tokamak-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Tokamak-library.xcconfig"; path = "../Tokamak-library/Tokamak-library.xcconfig"; sourceTree = "<group>"; };
 		A11075919F6EF62A12889C89D78CA88E /* Pods-ArgonProTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArgonProTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A4FA9BF8E4391A3007705D62F0F4DE3D /* GadgetKit-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GadgetKit-framework.xcconfig"; sourceTree = "<group>"; };
+		A22BDB67DD3142EF21511FBD0F780341 /* Tokamak-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Tokamak-framework.xcconfig"; sourceTree = "<group>"; };
+		A34FE71555C175D532DF3CFC5642E3D3 /* Tokamak-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tokamak-framework-dummy.m"; sourceTree = "<group>"; };
+		A3D184941D1C462D16584919164C1EAE /* ArgonModel-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ArgonModel-library-prefix.pch"; path = "../ArgonModel-library/ArgonModel-library-prefix.pch"; sourceTree = "<group>"; };
 		A639A0CEEC80B980B0048110F2177CCB /* libPods-ArgonTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArgonTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7E3EDB2BA19554FA0BE8DAD826DD5C1 /* ArgonModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ArgonModel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6DEC7A4F58216F4010A54743DB37F28 /* ArgonModel-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ArgonModel-library.xcconfig"; path = "../ArgonModel-library/ArgonModel-library.xcconfig"; sourceTree = "<group>"; };
+		A7009FF39200617F242C80365494540C /* ArgonModel-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ArgonModel-library.modulemap"; path = "../../Headers/Public/ArgonModel/ArgonModel-library.modulemap"; sourceTree = "<group>"; };
 		AAA91591B04EC293259328CDAE5FB8FE /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB224B50BADB7257378C80A9953DF43A /* TemplateConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TemplateConfig.swift; sourceTree = "<group>"; };
 		AC548C7A2DAA9C0461B823FE88B3C15E /* Yams-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Yams-library.xcconfig"; path = "../Yams-library/Yams-library.xcconfig"; sourceTree = "<group>"; };
-		AE3729E8FA4FA485AC6114D96970FC9C /* GadgetKit-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "GadgetKit-library.xcconfig"; path = "../GadgetKit-library/GadgetKit-library.xcconfig"; sourceTree = "<group>"; };
+		AC78289253E87F76F981991DAEDEEEC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED6A5F6A8B3216A0E8576A2B5BADF3E /* Pods-ArgonTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonTool.release.xcconfig"; sourceTree = "<group>"; };
 		B43E63AF52AF3A89EB5C1A43659CC6D9 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Yams/Resolver.swift; sourceTree = "<group>"; };
-		B54CF72CEC080A94F87EB63B8C3DAEC4 /* Tokamak-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tokamak-framework-dummy.m"; sourceTree = "<group>"; };
-		B9277646F1C2416F0C5BF75975D74AE1 /* GadgetKit-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GadgetKit-framework-umbrella.h"; sourceTree = "<group>"; };
-		BA1567B62F5F84B25E1F5CB84A840322 /* Data+FileWrapperCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+FileWrapperCodable.swift"; sourceTree = "<group>"; };
 		BA658CC01F17DA05B3BDF509DBC89CF4 /* Pods-ArgonPro-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArgonPro-dummy.m"; sourceTree = "<group>"; };
-		BF0BA77B565A8D2EBFAF611787CAEC2F /* FileWrapper+FileLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileWrapper+FileLoader.swift"; sourceTree = "<group>"; };
+		C035EF2A13ED26026706B1252C029F4E /* ArgonModel-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ArgonModel-framework.xcconfig"; sourceTree = "<group>"; };
 		C0AAE871497678F3BC8EA32227869216 /* Pods-ArgonTool-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgonTool-acknowledgements.plist"; sourceTree = "<group>"; };
+		C42537EEE9697ADB48F28053C4792C00 /* Tokamak-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Tokamak-framework.modulemap"; sourceTree = "<group>"; };
 		C4B0DB278D1104DB189A6C9D3512386C /* Yams-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Yams-library-prefix.pch"; path = "../Yams-library/Yams-library-prefix.pch"; sourceTree = "<group>"; };
-		C9F8373A7AB3553248FDB5F9A11E2975 /* ArgonModel-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ArgonModel-library-prefix.pch"; path = "../ArgonModel-library/ArgonModel-library-prefix.pch"; sourceTree = "<group>"; };
 		CA171C328258A4FDD1D141225795AD33 /* Pods-ArgonProTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArgonProTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CB5BB73A6DA7C44926E26DA78ED3B9D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBBB23842A65149004F85B578C4E825C /* YamlError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YamlError.swift; path = Sources/Yams/YamlError.swift; sourceTree = "<group>"; };
 		CDBEFD7AA5B08274241A3C7F90CF8EF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF575230B2621159FEA32ABB735B3A8F /* Vial+Templates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Vial+Templates.swift"; sourceTree = "<group>"; };
 		D277EC1A8791AA9D00DE413D57333573 /* Pods-ArgonTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonTool.debug.xcconfig"; sourceTree = "<group>"; };
 		D293999CF878C67322B05561826BF8AA /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
+		D4B348865B98A84A88BAD822BAAED933 /* GadgetKit-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GadgetKit-framework.xcconfig"; sourceTree = "<group>"; };
 		D4F91E2E66D39C9E916B8AFBA53DD046 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D51CA032DC27F52038DA0680EBF682FD /* ThrowUnwrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThrowUnwrap.swift; sourceTree = "<group>"; };
 		D53A747F723B4E9B066F14E6407E902F /* Pods-ArgonProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonProTests.release.xcconfig"; sourceTree = "<group>"; };
 		D60CB098DAE57647124EDAD4463DB478 /* Yams-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yams-framework-dummy.m"; sourceTree = "<group>"; };
 		D7232BB29EED57620909257BB9C271ED /* Pods_ArgonPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A9094482ACDA0188BF2EDAF0B7B6FA /* Pods-ArgonProTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonProTests-resources.sh"; sourceTree = "<group>"; };
-		D8DBF2D677C6156A5A20DFC8F1279B8D /* Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		D973C625AC790E9A93DE8BBCC925F2C3 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Yams/Encoder.swift; sourceTree = "<group>"; };
+		DA18173BBE72328FBD583E9CF73B478D /* ArgonModel-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ArgonModel-library-umbrella.h"; path = "../../Headers/Public/ArgonModel/ArgonModel-library-umbrella.h"; sourceTree = "<group>"; };
 		DA1D43E0B230174E65894A90D35C9CD4 /* Pods-ArgonProTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArgonProTests-umbrella.h"; sourceTree = "<group>"; };
-		DB8E11BDF9ED7FBD9EC0C80529105C8F /* Tokamak-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tokamak-library-prefix.pch"; path = "../Tokamak-library/Tokamak-library-prefix.pch"; sourceTree = "<group>"; };
+		DA8F37BD2977057186FE030E00CB36B6 /* Tokamak-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tokamak-framework-umbrella.h"; sourceTree = "<group>"; };
+		DB33E210640ED68565A91544F8AB4815 /* FrontMatterFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrontMatterFile.swift; sourceTree = "<group>"; };
 		DD559791D244174CB3627A51ABF47414 /* Pods-ArgonPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonPro.debug.xcconfig"; sourceTree = "<group>"; };
 		E0ED75D454B0C10670F413E6E5D268C2 /* Yams-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Yams-library.modulemap"; path = "../../Headers/Public/Yams/Yams-library.modulemap"; sourceTree = "<group>"; };
-		E11D9DA617F759DE60F6BE7A4BD99FB4 /* Tokamak-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tokamak-library-umbrella.h"; path = "../../Headers/Public/Tokamak/Tokamak-library-umbrella.h"; sourceTree = "<group>"; };
-		E165317126CAF859047A8122DE12AF12 /* GadgetKit-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GadgetKit-library-prefix.pch"; path = "../GadgetKit-library/GadgetKit-library-prefix.pch"; sourceTree = "<group>"; };
 		E35D421CAFE9C9DD2B583A693EA28F0F /* CYaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYaml.h; path = Sources/CYaml/include/CYaml.h; sourceTree = "<group>"; };
 		E3A651EE9796462464EDF723E49E7931 /* Pods-ArgonPro-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArgonPro-umbrella.h"; sourceTree = "<group>"; };
 		E4477F13359A5816A747649E05916AB1 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Yams/Parser.swift; sourceTree = "<group>"; };
+		E6B4F216F35C07483572C734CE070379 /* ArgonModel-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArgonModel-framework-prefix.pch"; sourceTree = "<group>"; };
 		E8B11DF1CC16333837D59F358F078284 /* Pods-ArgonTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArgonTool-umbrella.h"; sourceTree = "<group>"; };
 		E91A943315CCB7FF55991299EF87BF1F /* Node.Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Sequence.swift; path = Sources/Yams/Node.Sequence.swift; sourceTree = "<group>"; };
 		EB2178FB8EDA75E50FF25B5E9A5186C0 /* ArgonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArgonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD1DA9D1D83F9B55BB04F9CF8C91467 /* Tokomak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tokomak.swift; sourceTree = "<group>"; };
+		ECE3CDF6C87FA46FE4701C3F58CD191D /* ThrowUnwrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ThrowUnwrap.swift; sourceTree = "<group>"; };
+		F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vial.swift; sourceTree = "<group>"; };
 		F23497116F62AB5A098C04495A22715A /* Pods-ArgonPro-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArgonPro-frameworks.sh"; sourceTree = "<group>"; };
-		F2C4A68D65B0B565A1C00835638CF03E /* FrontMatterFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FrontMatterFile.swift; sourceTree = "<group>"; };
 		F5A85C6454275D546FE2B7BAFEFE0B0A /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Sources/Yams/shim.swift; sourceTree = "<group>"; };
-		F64FC4A47D753779807B360CFC71CC3D /* Tokamak-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tokamak-framework-umbrella.h"; sourceTree = "<group>"; };
 		F9DA5753B5E41CF83F2033175D4292F6 /* libArgonModel-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libArgonModel-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DEB6B59CE6C23EE5371BAE803A70A8 /* NSRegularExpression+FrontMatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+FrontMatter.swift"; sourceTree = "<group>"; };
+		FA5BD7C0D9512DA4CC521453E0C75DA5 /* ArgonModel-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ArgonModel-framework-umbrella.h"; sourceTree = "<group>"; };
 		FA7DDABF97647610E3DF305CC2A3FDA3 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = parser.c; path = Sources/CYaml/src/parser.c; sourceTree = "<group>"; };
+		FEC8BF8C330C9D85E1F794FC9F29F90B /* GadgetKit-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GadgetKit-framework-prefix.pch"; sourceTree = "<group>"; };
+		FFFDB0CE7212F5E0D2490ED4127A8B04 /* Tokamak-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tokamak-framework-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A39214DFC3A10F8ED6FBA632F90D379 /* Frameworks */ = {
+		10F40930279A41F13C4FDFBD4462E96D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB27721A903F768147E4C6BCC9DDCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816A01504C6A711BCD8162A5FD6DFD67 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,20 +448,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		291583F1ADFA59FFF2B7B3830F867F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C950D3C5DBB09384BFE504AF2EC9CAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D51FE429BD5B88389F42C8BB972A613 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4D54362E74696808D6B7A6C7232E1875 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		47579F1A307202FA0E2E836F2D1BB9D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04AA2EFB4916A2315B224BBC544A80CE /* Foundation.framework in Frameworks */,
-				BD95146E3AFCAA6F57ABD6BDFAC1719A /* Yams.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,21 +471,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		533636FC88501730AAE557349F4F1CE5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7351D41DAEBCC3B79BF7BBF0DF7CE4DC /* Foundation.framework in Frameworks */,
-				44CE54DE1ACA5B8868BC11129DA36A91 /* GadgetKit.framework in Frameworks */,
-				894E32ABE511B068E03C1B14F44BCEAD /* Yams.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5E9DABFE81E091BC1909C2092978F2BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DBFBC35478740802C0BC0068F3E6A8EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		634ACD1BE9239569F9B3574360E899D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0EB2D74830BD47237F7AAF1BE7D5E3 /* Foundation.framework in Frameworks */,
+				77EC598FA7683AC9F02C71EE37600B43 /* GadgetKit.framework in Frameworks */,
+				382552C1CF44074AA107E16F19C6365D /* Yams.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D39C40E0EA0BFFC5D3D74A774784E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB4C10122A7EC4953AB43D0E5CFD905 /* Foundation.framework in Frameworks */,
+				1769654F053B2A22D1EF1B32BEEA827F /* Yams.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,27 +509,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD848C5FE61929803E9DAC55117666B3 /* Frameworks */ = {
+		F92F2B13D361E6A8C7317DA33DD64148 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA6B88AFBB5942FC843E7DD3D5A427B8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B99B4451EC0FEA028C9201FE59DCD4CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF041AAD1061F965D0106D8A8734B9DB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E228E705059464D59311F2926FD63527 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				007E005D2EF9B464BD54FFBAE25168EE /* Foundation.framework in Frameworks */,
+				B6D57E5386CCA710222F8EFB61432EC0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +537,33 @@
 			path = "Target Support Files/Pods-ArgonTool";
 			sourceTree = "<group>";
 		};
+		052B5DE630B91AE91BE0843A50C9D745 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E0C5344123D3D296E685DEE1B744F48 /* Info.plist */,
+				C42537EEE9697ADB48F28053C4792C00 /* Tokamak-framework.modulemap */,
+				A22BDB67DD3142EF21511FBD0F780341 /* Tokamak-framework.xcconfig */,
+				A34FE71555C175D532DF3CFC5642E3D3 /* Tokamak-framework-dummy.m */,
+				FFFDB0CE7212F5E0D2490ED4127A8B04 /* Tokamak-framework-prefix.pch */,
+				DA8F37BD2977057186FE030E00CB36B6 /* Tokamak-framework-umbrella.h */,
+				7C9E4182000EBD642E814D78CD3554C6 /* Tokamak-library.modulemap */,
+				9F8FDE2A7FDFB5C34F9F6A2608A1393C /* Tokamak-library.xcconfig */,
+				9F6FCF701BF44E956795DF4AC2EA15AC /* Tokamak-library-dummy.m */,
+				3F22F3094EFC93163D96914FAA873F3B /* Tokamak-library-prefix.pch */,
+				02609D0E45618887577D1A82715F5EB8 /* Tokamak-library-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/Tokamak-framework";
+			sourceTree = "<group>";
+		};
+		1FA93C377A05817BF3F17C1DDE6FDEDF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				18C917D1D51DAA16A2C7E30A32069870 /* Tokamak.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		25D6F9B462195B761FEEAA629243C85A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,12 +574,72 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		489A5161C7247F6506999449DE060266 /* Pod */ = {
+		2C2897785E2822B517881F914F133176 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8A604885B55881E0D14D1180D01C8D1D /* Tokamak.podspec */,
+				1BF6BEFDE375E662DD008B3A3FF33A41 /* String+Extractors.swift */,
+				CF575230B2621159FEA32ABB735B3A8F /* Vial+Templates.swift */,
 			);
-			name = Pod;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C6E4FB15C8D6BC44F29B5E592D10B00 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0CF7D4866F2E7DCFB5A7D6DA9052941D /* ArgonModel-framework.modulemap */,
+				C035EF2A13ED26026706B1252C029F4E /* ArgonModel-framework.xcconfig */,
+				3113F835D1F2C96B91AB013C00DE0CB0 /* ArgonModel-framework-dummy.m */,
+				E6B4F216F35C07483572C734CE070379 /* ArgonModel-framework-prefix.pch */,
+				FA5BD7C0D9512DA4CC521453E0C75DA5 /* ArgonModel-framework-umbrella.h */,
+				A7009FF39200617F242C80365494540C /* ArgonModel-library.modulemap */,
+				A6DEC7A4F58216F4010A54743DB37F28 /* ArgonModel-library.xcconfig */,
+				94E49082C933747FC57BD4D672D024A2 /* ArgonModel-library-dummy.m */,
+				A3D184941D1C462D16584919164C1EAE /* ArgonModel-library-prefix.pch */,
+				DA18173BBE72328FBD583E9CF73B478D /* ArgonModel-library-umbrella.h */,
+				6BDE6BA62E1C9FB7A8698CA208321A5C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/ArgonModel-framework";
+			sourceTree = "<group>";
+		};
+		3DD719E56284B3B6CA2A0D3BB19E689E /* ArgonModel */ = {
+			isa = PBXGroup;
+			children = (
+				471936F79E8F73FBE7DEE841AA4D1982 /* Internal */,
+				913F50A337DE8EA055CE1CAE24A84A60 /* Pod */,
+				AAC772A412B81B0E5CCDBAB2AEE442E1 /* Public */,
+				2C6E4FB15C8D6BC44F29B5E592D10B00 /* Support Files */,
+			);
+			name = ArgonModel;
+			path = ../Dependencies/ArgonModel;
+			sourceTree = "<group>";
+		};
+		46EE1D37519247CA18B359F2A9B12C96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38C688C5F37C0DDD3ED08B1EFFA5B3F8 /* GadgetKit-framework.modulemap */,
+				D4B348865B98A84A88BAD822BAAED933 /* GadgetKit-framework.xcconfig */,
+				91C5EC94A6F12AF31B641159B506689D /* GadgetKit-framework-dummy.m */,
+				FEC8BF8C330C9D85E1F794FC9F29F90B /* GadgetKit-framework-prefix.pch */,
+				04612A2D629074DA7B4DE6623D6905C3 /* GadgetKit-framework-umbrella.h */,
+				888F41BBA4D665F9EB7BF8EC8FCA6C02 /* GadgetKit-library.modulemap */,
+				4C1AD796E26C7054B130DBFCAC335A38 /* GadgetKit-library.xcconfig */,
+				4EA381268A6627802491390F1DA49558 /* GadgetKit-library-dummy.m */,
+				74C95E39B69CF7A0BD6260AAD68E8F21 /* GadgetKit-library-prefix.pch */,
+				6B168D91DD96D4E1CA809D975C0D8A57 /* GadgetKit-library-umbrella.h */,
+				AC78289253E87F76F981991DAEDEEEC1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/GadgetKit-framework";
+			sourceTree = "<group>";
+		};
+		471936F79E8F73FBE7DEE841AA4D1982 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				D78313C9F1D10BABE3674B46844B696C /* Configurations */,
+				AB87AA398767AA1D31FF114F6B5E2186 /* Extensions */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 		4C9187624510D2A43B339FDFAB67F9C3 /* Yams */ = {
@@ -589,37 +676,6 @@
 			path = Yams;
 			sourceTree = "<group>";
 		};
-		56CDBBC96BCD219B0EC3B379C91922DE /* ArgonModel */ = {
-			isa = PBXGroup;
-			children = (
-				901190056AFF08D3E8E11536752C13BA /* Internal */,
-				E691E7DF85DE68CB19CA6A121FC90EC1 /* Pod */,
-				B150C6F79E68101651E5CE1F3886A416 /* Public */,
-				EDE27E26EDA1F4E00FD22C30C26F20EB /* Support Files */,
-			);
-			name = ArgonModel;
-			path = ../Dependencies/ArgonModel;
-			sourceTree = "<group>";
-		};
-		5C5F70CD199CE998E13D684166CED218 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1D8A9072CD425FAFD32BC9EEBC430D3B /* GadgetKit-framework.modulemap */,
-				A4FA9BF8E4391A3007705D62F0F4DE3D /* GadgetKit-framework.xcconfig */,
-				4148998E23E45F63DF1F18B8097BD930 /* GadgetKit-framework-dummy.m */,
-				93C1494E722E52E9EA6FCBC68B5516E7 /* GadgetKit-framework-prefix.pch */,
-				B9277646F1C2416F0C5BF75975D74AE1 /* GadgetKit-framework-umbrella.h */,
-				3E6EF4EE55E9FB1033B2904CC1480514 /* GadgetKit-library.modulemap */,
-				AE3729E8FA4FA485AC6114D96970FC9C /* GadgetKit-library.xcconfig */,
-				08B483B0A94076D2186A0209C340B527 /* GadgetKit-library-dummy.m */,
-				E165317126CAF859047A8122DE12AF12 /* GadgetKit-library-prefix.pch */,
-				950BCEA52000850C69F9665174F55AD8 /* GadgetKit-library-umbrella.h */,
-				CB5BB73A6DA7C44926E26DA78ED3B9D6 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/GadgetKit-framework";
-			sourceTree = "<group>";
-		};
 		5E3CB09E52903BC711C3A60427FC1D6F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,32 +703,12 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		624D7709FE87A7724A39F87471E1EF2A /* Support Files */ = {
+		66718272480274E42DBDC7B11C43A8F6 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				05D91CC9E1BE738232088775F67AAF62 /* Info.plist */,
-				87E671BBBE5CFF3AE007957A292ECEB5 /* Tokamak-framework.modulemap */,
-				69C8F6886347DED43F6A90378238959F /* Tokamak-framework.xcconfig */,
-				B54CF72CEC080A94F87EB63B8C3DAEC4 /* Tokamak-framework-dummy.m */,
-				98ED41A931A747B30A0BE2D5DC1E886C /* Tokamak-framework-prefix.pch */,
-				F64FC4A47D753779807B360CFC71CC3D /* Tokamak-framework-umbrella.h */,
-				86C286A5D2B92EBD3C97401969E4EC11 /* Tokamak-library.modulemap */,
-				1EF9E1C2F0E42BBBE7A58498A98DB560 /* Tokamak-library.xcconfig */,
-				03279D82D6AC2FC1E35F294C7C63420E /* Tokamak-library-dummy.m */,
-				DB8E11BDF9ED7FBD9EC0C80529105C8F /* Tokamak-library-prefix.pch */,
-				E11D9DA617F759DE60F6BE7A4BD99FB4 /* Tokamak-library-umbrella.h */,
+				623E4AF2EE51A3D9B6F5EC3134364B87 /* GadgetKit.podspec */,
 			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/Tokamak-framework";
-			sourceTree = "<group>";
-		};
-		665A2AB504224EE5B0D3580FCDF63E77 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2EAC2183D4DEC0DCE1450ABED85E311E /* String+Extractors.swift */,
-				7E716FDF18060317986FA4C1E1A3EDAC /* Vial+Templates.swift */,
-			);
-			path = Extensions;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		6F41CBB0E0470A59A79EE99B446D6920 /* Frameworks */ = {
@@ -709,7 +745,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E2AD09A1CFAAB9E2B6CD32E1934EDD0A /* Development Pods */,
+				8110DDA3CE88E31D6EFD0B884F8DFAAF /* Development Pods */,
 				6F41CBB0E0470A59A79EE99B446D6920 /* Frameworks */,
 				CE3739577D48230CDAD67559D9476E43 /* Pods */,
 				74145355F8DC7C7CEBDAD8DDBC0E5B41 /* Products */,
@@ -717,22 +753,57 @@
 			);
 			sourceTree = "<group>";
 		};
-		82AA1D3A0351C6F2E6288F40BD04202A /* Internal */ = {
+		8110DDA3CE88E31D6EFD0B884F8DFAAF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BA1567B62F5F84B25E1F5CB84A840322 /* Data+FileWrapperCodable.swift */,
-				AB224B50BADB7257378C80A9953DF43A /* TemplateConfig.swift */,
+				3DD719E56284B3B6CA2A0D3BB19E689E /* ArgonModel */,
+				A1DA355BA7B0181917F6F63017430E0D /* GadgetKit */,
+				EC3D86F948C8A99534C30E736C396E4F /* Tokamak */,
 			);
-			path = Internal;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		901190056AFF08D3E8E11536752C13BA /* Internal */ = {
+		913F50A337DE8EA055CE1CAE24A84A60 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CD13C2D1DF98A68DA44AAB4249E4D64F /* Configurations */,
-				D1587C4AA0709AA936A19A3B0D741A2B /* Extensions */,
+				23C385C200F0830146BF037A9A37A8EB /* ArgonModel.podspec */,
 			);
-			path = Internal;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A1DA355BA7B0181917F6F63017430E0D /* GadgetKit */ = {
+			isa = PBXGroup;
+			children = (
+				990B87B41E1F60458CBB16C14508A8E8 /* FileWrapper+Codable.swift */,
+				0CC36F41FD9A5AD1480197D3F8A19C7C /* FileWrapper+FileLoader.swift */,
+				DB33E210640ED68565A91544F8AB4815 /* FrontMatterFile.swift */,
+				F9DEB6B59CE6C23EE5371BAE803A70A8 /* NSRegularExpression+FrontMatter.swift */,
+				51D133EB3760BC22CAE7A234C728E894 /* String+FrontMatter.swift */,
+				ECE3CDF6C87FA46FE4701C3F58CD191D /* ThrowUnwrap.swift */,
+				66718272480274E42DBDC7B11C43A8F6 /* Pod */,
+				46EE1D37519247CA18B359F2A9B12C96 /* Support Files */,
+			);
+			name = GadgetKit;
+			path = ../Dependencies/GadgetKit;
+			sourceTree = "<group>";
+		};
+		AAC772A412B81B0E5CCDBAB2AEE442E1 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8F7003AA69B6DDB5D68CAEE62A3C943A /* Collection.swift */,
+				3B0A3D6C73033F63A164ACE634EB891F /* Node.swift */,
+				F03AC9FA9B1A427CAC873223D7844D5B /* Vial.swift */,
+				2C2897785E2822B517881F914F133176 /* Extensions */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		AB87AA398767AA1D31FF114F6B5E2186 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				279F957254C33DB069902B59C464102E /* Vial+Examples.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B120C5B77134826CD1C2F1268E9D2FBA /* Pods-ArgonPro */ = {
@@ -751,27 +822,6 @@
 			);
 			name = "Pods-ArgonPro";
 			path = "Target Support Files/Pods-ArgonPro";
-			sourceTree = "<group>";
-		};
-		B150C6F79E68101651E5CE1F3886A416 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				D8DBF2D677C6156A5A20DFC8F1279B8D /* Collection.swift */,
-				F2C4A68D65B0B565A1C00835638CF03E /* FrontMatterFile.swift */,
-				89451D4BC3E2799C38DF9CED9CE4F3FA /* Node.swift */,
-				159CB4BF6440006D1D0DA7A5E16278B1 /* Vial.swift */,
-				665A2AB504224EE5B0D3580FCDF63E77 /* Extensions */,
-			);
-			path = Public;
-			sourceTree = "<group>";
-		};
-		B5C5B32F5C90948605B0D66728DAD803 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				75D3924FCD1EEA304F5F99AA66039040 /* Template.swift */,
-				3BCC7A2F136E917D5FE1140AD14471EA /* Tokomak.swift */,
-			);
-			path = Public;
 			sourceTree = "<group>";
 		};
 		C48423FBA272A1DACAD6C08D905116E7 /* iOS */ = {
@@ -800,15 +850,6 @@
 			path = "Target Support Files/Pods-ArgonProTests";
 			sourceTree = "<group>";
 		};
-		CD13C2D1DF98A68DA44AAB4249E4D64F /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				84A00C03A13FBB6D3CA0D5C6A59DE062 /* CollectionConfig.swift */,
-				4DEAA9FD7FC848C635E4F0C5B0A64DA7 /* VialConfig.swift */,
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
 		CE3739577D48230CDAD67559D9476E43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -817,81 +858,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D1587C4AA0709AA936A19A3B0D741A2B /* Extensions */ = {
+		D78313C9F1D10BABE3674B46844B696C /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				9424CB3BE83CFA736AF7002A70F20EE2 /* NSRegularExpression+FrontMatter.swift */,
-				744EEDE4C5837E7DFFF851B7651D4AA3 /* String+FrontMatter.swift */,
-				1CEF2A1543C6F6D7A99D8ECED3427CA2 /* Vial+Examples.swift */,
+				629AE8B17D15D2EA15DC1AFCA4B9006F /* CollectionConfig.swift */,
+				56F60FBE5A95EF98202F3CB86CE01AE7 /* VialConfig.swift */,
 			);
-			path = Extensions;
+			path = Configurations;
 			sourceTree = "<group>";
 		};
-		DDA668673A8AAF204D1C95791BCE20B3 /* Pod */ = {
+		D95EED6171821A867BD5D4EB6A6B77EF /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				8635E14FC22619B7635AA1961E1A2BB2 /* GadgetKit.podspec */,
+				6D11494821BDEAD7753C60F48C4165D7 /* Data+FileWrapperCodable.swift */,
+				08155E3092C1F56D25ABA39EB4B163C2 /* TemplateConfig.swift */,
 			);
-			name = Pod;
+			path = Internal;
 			sourceTree = "<group>";
 		};
-		E014E6180679874B082F4EB4EAE2C515 /* GadgetKit */ = {
+		E529EF1677946057574A434235DF4A0A /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				4A97B5F1730CA9B119C7BB46C8695438 /* FileWrapper+Codable.swift */,
-				BF0BA77B565A8D2EBFAF611787CAEC2F /* FileWrapper+FileLoader.swift */,
-				D51CA032DC27F52038DA0680EBF682FD /* ThrowUnwrap.swift */,
-				DDA668673A8AAF204D1C95791BCE20B3 /* Pod */,
-				5C5F70CD199CE998E13D684166CED218 /* Support Files */,
+				1A2634548954EE45CE91B531A6CF7E5E /* Template.swift */,
+				ECD1DA9D1D83F9B55BB04F9CF8C91467 /* Tokomak.swift */,
 			);
-			name = GadgetKit;
-			path = ../Dependencies/GadgetKit;
+			path = Public;
 			sourceTree = "<group>";
 		};
-		E2AD09A1CFAAB9E2B6CD32E1934EDD0A /* Development Pods */ = {
+		EC3D86F948C8A99534C30E736C396E4F /* Tokamak */ = {
 			isa = PBXGroup;
 			children = (
-				56CDBBC96BCD219B0EC3B379C91922DE /* ArgonModel */,
-				E014E6180679874B082F4EB4EAE2C515 /* GadgetKit */,
-				EF6D392C57CC50464EA189F3400554C9 /* Tokamak */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E691E7DF85DE68CB19CA6A121FC90EC1 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A7E3EDB2BA19554FA0BE8DAD826DD5C1 /* ArgonModel.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		EDE27E26EDA1F4E00FD22C30C26F20EB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7035C882D19344E698A30A4744276975 /* ArgonModel-framework.modulemap */,
-				5C25BF3A2D8EF02107BB12FDA9795461 /* ArgonModel-framework.xcconfig */,
-				0E80C729F6A93933AEBFA061CA97D9D1 /* ArgonModel-framework-dummy.m */,
-				78D32CE61383E5C4CFA48C488BA4441D /* ArgonModel-framework-prefix.pch */,
-				2A9FE63256E6EB30CB70103197F372E8 /* ArgonModel-framework-umbrella.h */,
-				4C0D95396A012705D1742232BC8BB2DF /* ArgonModel-library.modulemap */,
-				86AFD74E30317440D4A3A468569F3499 /* ArgonModel-library.xcconfig */,
-				283EF3E321291E0FBCA6769FCA534063 /* ArgonModel-library-dummy.m */,
-				C9F8373A7AB3553248FDB5F9A11E2975 /* ArgonModel-library-prefix.pch */,
-				679AC3227E4C59A912992FBE39A67AEB /* ArgonModel-library-umbrella.h */,
-				307EE70CB2971F6DC41AF3A903C09BC3 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/ArgonModel-framework";
-			sourceTree = "<group>";
-		};
-		EF6D392C57CC50464EA189F3400554C9 /* Tokamak */ = {
-			isa = PBXGroup;
-			children = (
-				82AA1D3A0351C6F2E6288F40BD04202A /* Internal */,
-				489A5161C7247F6506999449DE060266 /* Pod */,
-				B5C5B32F5C90948605B0D66728DAD803 /* Public */,
-				624D7709FE87A7724A39F87471E1EF2A /* Support Files */,
+				D95EED6171821A867BD5D4EB6A6B77EF /* Internal */,
+				1FA93C377A05817BF3F17C1DDE6FDEDF /* Pod */,
+				E529EF1677946057574A434235DF4A0A /* Public */,
+				052B5DE630B91AE91BE0843A50C9D745 /* Support Files */,
 			);
 			name = Tokamak;
 			path = ../Dependencies/Tokamak;
@@ -916,18 +916,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		314F983FB310F2D0BCB46234F89A50CA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0820DB60181E50C6CC4136A43A7E71D0 /* CYaml.h in Headers */,
-				E7B6440183C0BFA6F6CECEF0D011E985 /* yaml.h in Headers */,
-				3DA7DC2ABADB94733FFE14A8E758C3F1 /* yaml_private.h in Headers */,
-				222516FA48A82C56806021D9FA3BA396 /* Yams-framework-umbrella.h in Headers */,
-				2C9FE06C0FE4B0366259B1365E8DF14D /* Yams.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		37342D35736BAD655C940E090EC4F878 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -936,39 +924,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AFDB252962BD7B9AC085D4C6E12AD09 /* Headers */ = {
+		435A75C80F3DEEB3F09472AFB68C59B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3620CE4DEE3D7371D1240F00116DD8CF /* ArgonModel-framework-umbrella.h in Headers */,
+				524B541B2B88840C624D21DF4ED7F4F9 /* CYaml.h in Headers */,
+				5C1D0BF7F9D1F7F1B035A28828D199BA /* yaml.h in Headers */,
+				25DC25032DD7D0169410F3B997853EA0 /* yaml_private.h in Headers */,
+				FA9B023CD58775250F4EC4BB6E1DF007 /* Yams-library-umbrella.h in Headers */,
+				BBC91DC8E9F37A89C565D02127C4B481 /* Yams.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C8282C28D064A6A668CCEFCDBDC8081 /* Headers */ = {
+		6CE1AB201B3C81239A29B517CB8D28C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81DA4F482B46DB64062FB286AD668272 /* GadgetKit-framework-umbrella.h in Headers */,
+				DEFF1DBDABBD614A940BF17B3F358870 /* ArgonModel-framework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8DEBB0C71FA6F4CF611C894B706EFB61 /* Headers */ = {
+		7226F7151F24ACB5CC7006B0BEB2B234 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9379355BE87854F8358194C2BFDD10 /* CYaml.h in Headers */,
-				3B03F9224A642A839363B66012475839 /* yaml.h in Headers */,
-				2A1B5EA38B7F626B65438FE35A4DAC78 /* yaml_private.h in Headers */,
-				67541C1DE839E30BC73DAFBA6C86C5DF /* Yams-library-umbrella.h in Headers */,
-				EB46348F3A06BD566087DF8A65A7EBA7 /* Yams.h in Headers */,
+				C372A01DB9180509B42BEBE866E0E4E2 /* GadgetKit-framework-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2782114AD14EA901B1CF0DFA3A04961 /* Headers */ = {
+		8386DE3A7F4907B97F1233D674F8897F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB79F896FC61FF7D727D8C1C6875595 /* GadgetKit-library-umbrella.h in Headers */,
+				37DF1C04A01E3D27D05A4F126628AC3C /* ArgonModel-library-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A09E5A22518268399038C3082628DB8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC12E8DE38FB9A351BCAE2CCF6D3BD6E /* GadgetKit-library-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,11 +976,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3F5A62EED7894AB459340EA3698D825 /* Headers */ = {
+		EDE4DD47E9E8895723B6D82B236B4048 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB1451939814D21EB4C055AA949C698 /* ArgonModel-library-umbrella.h in Headers */,
+				6D147356B71A53D6CBE41C3E096F32A2 /* CYaml.h in Headers */,
+				295D38903DE2C4EF8BAA4A4063CE8234 /* yaml.h in Headers */,
+				0E4A1FE93B5C319DBEDDE40B200BFCA2 /* yaml_private.h in Headers */,
+				C884C5EE25E83AC93C25E479F55D3CF2 /* Yams-framework-umbrella.h in Headers */,
+				3C031259B63525084AEF5C51BEB2CEDB /* Yams.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,88 +1040,34 @@
 			productReference = A639A0CEEC80B980B0048110F2177CCB /* libPods-ArgonTool.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		242A7B7B5C4337A05E106076E6EC9BBC /* ArgonModel-framework */ = {
+		521535AB80324118766E3586C40BEE43 /* ArgonModel-library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2AB736F7605143E57EFB8AEED3F425C /* Build configuration list for PBXNativeTarget "ArgonModel-framework" */;
+			buildConfigurationList = F6B3777B3FA23EB5390961C56D9CD7C6 /* Build configuration list for PBXNativeTarget "ArgonModel-library" */;
 			buildPhases = (
-				A0CB71EC91ACC582F4A819905E4BBA6E /* Sources */,
-				533636FC88501730AAE557349F4F1CE5 /* Frameworks */,
-				4AFDB252962BD7B9AC085D4C6E12AD09 /* Headers */,
+				B0CBF98F0B0312CA815CDFD24ED14794 /* Sources */,
+				F92F2B13D361E6A8C7317DA33DD64148 /* Frameworks */,
+				8386DE3A7F4907B97F1233D674F8897F /* Headers */,
+				7DB615AF270D1F3BA2BD676443DAEE9A /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B7E2655EFD23181FEC3697C33FFE645A /* PBXTargetDependency */,
-				2559300BF7AF592B8401BCED5281CF27 /* PBXTargetDependency */,
-			);
-			name = "ArgonModel-framework";
-			productName = "ArgonModel-framework";
-			productReference = 728745FEC6289F8A135BA8248AFE70C5 /* ArgonModel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4DF748CE5E7966B307392C37E29B8807 /* Yams-framework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3375A5F7806679475A2960C70CD791D0 /* Build configuration list for PBXNativeTarget "Yams-framework" */;
-			buildPhases = (
-				9030AC9562343EBD8A386CE037485195 /* Sources */,
-				E228E705059464D59311F2926FD63527 /* Frameworks */,
-				314F983FB310F2D0BCB46234F89A50CA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Yams-framework";
-			productName = "Yams-framework";
-			productReference = 25ADD09D4FC30A282B849F8E88B94D39 /* Yams.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5AE6F3BAADA07B4E641EBFB57AB4DCC9 /* ArgonModel-library */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54270B96A8BCBC5FB617C450F98E16B5 /* Build configuration list for PBXNativeTarget "ArgonModel-library" */;
-			buildPhases = (
-				3753DCFF14C70C44E5945FDC6D4B1895 /* Sources */,
-				AD848C5FE61929803E9DAC55117666B3 /* Frameworks */,
-				D3F5A62EED7894AB459340EA3698D825 /* Headers */,
-				47F0B1193FF872260B4B63326F0EED0B /* Copy generated compatibility header */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E48426B2E3AB5E94B6E41CF39F6992DA /* PBXTargetDependency */,
-				E988E45101D906303074CE624D6E61C1 /* PBXTargetDependency */,
+				96796A0E5D89AF941ECA40BE5F574204 /* PBXTargetDependency */,
+				29216642FB9335C14443F5EE382AC22B /* PBXTargetDependency */,
 			);
 			name = "ArgonModel-library";
 			productName = "ArgonModel-library";
 			productReference = F9DA5753B5E41CF83F2033175D4292F6 /* libArgonModel-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		64A4E2B4E9CB75DE7E80AE45EC6D3D69 /* GadgetKit-framework */ = {
+		628F65FF399DBBDD093FBE971B4A8285 /* Yams-library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B00A609D0E09E2BF7310553EC35A98BE /* Build configuration list for PBXNativeTarget "GadgetKit-framework" */;
+			buildConfigurationList = 3C369A11AA152737E0B051ED71D21CAB /* Build configuration list for PBXNativeTarget "Yams-library" */;
 			buildPhases = (
-				9CA4B5A43C554C2AB79AD94A72247828 /* Sources */,
-				47579F1A307202FA0E2E836F2D1BB9D6 /* Frameworks */,
-				7C8282C28D064A6A668CCEFCDBDC8081 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				97839B339832EEB5E8F581C3450C36A0 /* PBXTargetDependency */,
-			);
-			name = "GadgetKit-framework";
-			productName = "GadgetKit-framework";
-			productReference = 54DF52DE4F9404B560052C21E84CB639 /* GadgetKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6D72D35477BF5F017DFA24C9B46944E0 /* Yams-library */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F1206209341AF008D3F8D24CFC6F9A9A /* Build configuration list for PBXNativeTarget "Yams-library" */;
-			buildPhases = (
-				692DCF63A7C648C7AA9B5C529F13DA8B /* Sources */,
-				1A39214DFC3A10F8ED6FBA632F90D379 /* Frameworks */,
-				8DEBB0C71FA6F4CF611C894B706EFB61 /* Headers */,
-				9FC44799AB958536DA851407993D6D7A /* Copy generated compatibility header */,
+				2B068F64E4F9879DD3036D29F58C3D9F /* Sources */,
+				10F40930279A41F13C4FDFBD4462E96D /* Frameworks */,
+				435A75C80F3DEEB3F09472AFB68C59B6 /* Headers */,
+				5BCCF5C7BCE7F093EC7FD9F41E775CEC /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -1131,6 +1077,25 @@
 			productName = "Yams-library";
 			productReference = 7D1D9E102E8F684AE24BFFB9EBC42018 /* libYams-library.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		8CB14E494154C3A056F62D2CAFA80FAF /* ArgonModel-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A642D217187C95A0280F476487E85A31 /* Build configuration list for PBXNativeTarget "ArgonModel-framework" */;
+			buildPhases = (
+				543295D5F43942E583B8C271E2885139 /* Sources */,
+				634ACD1BE9239569F9B3574360E899D0 /* Frameworks */,
+				6CE1AB201B3C81239A29B517CB8D28C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8FECB149807ECA06AB3395D9B7E33DC /* PBXTargetDependency */,
+				F28B20F97E795E238404EECB30FB6CE2 /* PBXTargetDependency */,
+			);
+			name = "ArgonModel-framework";
+			productName = "ArgonModel-framework";
+			productReference = 728745FEC6289F8A135BA8248AFE70C5 /* ArgonModel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		A35C83835ACBA81DB7B8176B121D8408 /* Pods-ArgonPro */ = {
 			isa = PBXNativeTarget;
@@ -1151,6 +1116,42 @@
 			name = "Pods-ArgonPro";
 			productName = "Pods-ArgonPro";
 			productReference = D7232BB29EED57620909257BB9C271ED /* Pods_ArgonPro.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A398D01FAFA39106EF7606807F86599B /* GadgetKit-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CFDA8CB33ADC56527F7AC679429BC55 /* Build configuration list for PBXNativeTarget "GadgetKit-library" */;
+			buildPhases = (
+				0F0D2FC9D1DAF2F75C5C85787BB312C1 /* Sources */,
+				291583F1ADFA59FFF2B7B3830F867F1D /* Frameworks */,
+				A09E5A22518268399038C3082628DB8D /* Headers */,
+				ED9771D9FC107233AE92C91951E77A65 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BCC1EC4E53DF6E0243B780A53CD965E /* PBXTargetDependency */,
+			);
+			name = "GadgetKit-library";
+			productName = "GadgetKit-library";
+			productReference = 5B7ADC0B8853B66315D1787B5D63E162 /* libGadgetKit-library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA7F22D8DADA1CAC100976493528F624 /* Yams-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9CB9BC918F9DDF8C0A8197426639349 /* Build configuration list for PBXNativeTarget "Yams-framework" */;
+			buildPhases = (
+				392C4A430BA60580040858E8106F7B96 /* Sources */,
+				1AB27721A903F768147E4C6BCC9DDCB9 /* Frameworks */,
+				EDE4DD47E9E8895723B6D82B236B4048 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yams-framework";
+			productName = "Yams-framework";
+			productReference = 25ADD09D4FC30A282B849F8E88B94D39 /* Yams.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B73F990DFC5409A0A5B585CF4A081B16 /* Tokamak-library */ = {
@@ -1174,25 +1175,6 @@
 			productReference = 2DCB8B451324C931BC021D44FDBEF3F5 /* libTokamak-library.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		EC83C4C623986680587A51F5FCB6A8B2 /* GadgetKit-library */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DCC1BE7ECF0036E0015CB2F339A59F9 /* Build configuration list for PBXNativeTarget "GadgetKit-library" */;
-			buildPhases = (
-				26A94D686E8EEB54D9B45E601ABEE8D5 /* Sources */,
-				B99B4451EC0FEA028C9201FE59DCD4CD /* Frameworks */,
-				A2782114AD14EA901B1CF0DFA3A04961 /* Headers */,
-				C85E201BF513058EB19915274D2E7FEA /* Copy generated compatibility header */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9CCD3ADA5A633E10AF98D15460488056 /* PBXTargetDependency */,
-			);
-			name = "GadgetKit-library";
-			productName = "GadgetKit-library";
-			productReference = 5B7ADC0B8853B66315D1787B5D63E162 /* libGadgetKit-library.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		F55166CB19A7B5D4EDED8433A7E70F06 /* Pods-ArgonProTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC53F934FF22C24315059718F0B33836 /* Build configuration list for PBXNativeTarget "Pods-ArgonProTests" */;
@@ -1209,6 +1191,24 @@
 			name = "Pods-ArgonProTests";
 			productName = "Pods-ArgonProTests";
 			productReference = 3FDC8DF6788163ADF7D4AE66661F0A2A /* Pods_ArgonProTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F61E08C1D8F138FF2F4F76AFE310522B /* GadgetKit-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20195B18C11E3E12E611F50D7222C2A0 /* Build configuration list for PBXNativeTarget "GadgetKit-framework" */;
+			buildPhases = (
+				2F18C285326681A4B015A1DD179A5B42 /* Sources */,
+				7D39C40E0EA0BFFC5D3D74A774784E59 /* Frameworks */,
+				7226F7151F24ACB5CC7006B0BEB2B234 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				842CB1AD5F229AB1ACAEB06D30F86E6E /* PBXTargetDependency */,
+			);
+			name = "GadgetKit-framework";
+			productName = "GadgetKit-framework";
+			productReference = 54DF52DE4F9404B560052C21E84CB639 /* GadgetKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1232,43 +1232,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				242A7B7B5C4337A05E106076E6EC9BBC /* ArgonModel-framework */,
-				5AE6F3BAADA07B4E641EBFB57AB4DCC9 /* ArgonModel-library */,
-				64A4E2B4E9CB75DE7E80AE45EC6D3D69 /* GadgetKit-framework */,
-				EC83C4C623986680587A51F5FCB6A8B2 /* GadgetKit-library */,
+				8CB14E494154C3A056F62D2CAFA80FAF /* ArgonModel-framework */,
+				521535AB80324118766E3586C40BEE43 /* ArgonModel-library */,
+				F61E08C1D8F138FF2F4F76AFE310522B /* GadgetKit-framework */,
+				A398D01FAFA39106EF7606807F86599B /* GadgetKit-library */,
 				A35C83835ACBA81DB7B8176B121D8408 /* Pods-ArgonPro */,
 				F55166CB19A7B5D4EDED8433A7E70F06 /* Pods-ArgonProTests */,
 				1A55205D19CBC2A52F10EB9DC9DADEA6 /* Pods-ArgonTool */,
 				14300DED38586204581B123B075FCEA9 /* Tokamak-framework */,
 				B73F990DFC5409A0A5B585CF4A081B16 /* Tokamak-library */,
-				4DF748CE5E7966B307392C37E29B8807 /* Yams-framework */,
-				6D72D35477BF5F017DFA24C9B46944E0 /* Yams-library */,
+				AA7F22D8DADA1CAC100976493528F624 /* Yams-framework */,
+				628F65FF399DBBDD093FBE971B4A8285 /* Yams-library */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47F0B1193FF872260B4B63326F0EED0B /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library.modulemap",
-				"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/ArgonModel-library-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-		};
-		9FC44799AB958536DA851407993D6D7A /* Copy generated compatibility header */ = {
+		5BCCF5C7BCE7F093EC7FD9F41E775CEC /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1288,7 +1268,27 @@
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Yams/Yams-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Yams/Yams-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
-		C85E201BF513058EB19915274D2E7FEA /* Copy generated compatibility header */ = {
+		7DB615AF270D1F3BA2BD676443DAEE9A /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library.modulemap",
+				"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/ArgonModel-library-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/ArgonModel/ArgonModel-library-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		ED9771D9FC107233AE92C91951E77A65 /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1331,33 +1331,91 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26A94D686E8EEB54D9B45E601ABEE8D5 /* Sources */ = {
+		0F0D2FC9D1DAF2F75C5C85787BB312C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57733A20398AF448280EA1E7AE202F8D /* FileWrapper+Codable.swift in Sources */,
-				594DEA2C50F0403D3C83E2DA8E1251DB /* FileWrapper+FileLoader.swift in Sources */,
-				27A1DEE1EA5807FF220E1D5CC11A429A /* GadgetKit-library-dummy.m in Sources */,
-				5322127CF484D9274FABBEE65E2AEA4D /* ThrowUnwrap.swift in Sources */,
+				8766245A1BA55194C1190ACFCFC31FA0 /* FileWrapper+Codable.swift in Sources */,
+				B8B54A11EFAFA5C24A4B06A26433F611 /* FileWrapper+FileLoader.swift in Sources */,
+				FA4C39B27B4F1633D95F1D4014115F85 /* FrontMatterFile.swift in Sources */,
+				54D8F24858DF1D02CBB1D5C8063445D2 /* GadgetKit-library-dummy.m in Sources */,
+				59123355B5CF7BBF210269EB55BA060C /* NSRegularExpression+FrontMatter.swift in Sources */,
+				9879F709E504DE5E29CDE6E9F66E70E3 /* String+FrontMatter.swift in Sources */,
+				FBEE458941939F55BC7F8E4628D34F10 /* ThrowUnwrap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3753DCFF14C70C44E5945FDC6D4B1895 /* Sources */ = {
+		2B068F64E4F9879DD3036D29F58C3D9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6AD20C8FAD11615B12784BD6EA43DA1 /* ArgonModel-library-dummy.m in Sources */,
-				B930E68338DB27C3E51DF1DFD4D04012 /* Collection.swift in Sources */,
-				A32B1D747632B2C421E7EBCBCB440C1C /* CollectionConfig.swift in Sources */,
-				A0910F4385A286A29E36739CF9982C76 /* FrontMatterFile.swift in Sources */,
-				E3A5A183C832F36662303CFD8B71112B /* Node.swift in Sources */,
-				C962598BBD215962CB14D3790C145A6F /* NSRegularExpression+FrontMatter.swift in Sources */,
-				14C24B44DEDD0C74BA509C87D16B2553 /* String+Extractors.swift in Sources */,
-				E98F6B2256C26A1C66603F22B1297B32 /* String+FrontMatter.swift in Sources */,
-				3C73A454CF61EB6DA972433FBD5E07CA /* Vial+Examples.swift in Sources */,
-				F743EDBD936F54893F15EE023EBA53D0 /* Vial+Templates.swift in Sources */,
-				A047DFF727C49C12EE1F2B52B42C29E7 /* Vial.swift in Sources */,
-				B8755A336F7057CDAA124E0C6772430B /* VialConfig.swift in Sources */,
+				002085D1F25D865FD30BD5FF217DA8CE /* api.c in Sources */,
+				F964B1771E076F4EB82FC5F2A8B93C0D /* Constructor.swift in Sources */,
+				CB8D660DDB2D316834C19E2A354433BA /* Decoder.swift in Sources */,
+				0E378A2A4BEDFA2C47CEC48C146DC691 /* emitter.c in Sources */,
+				37F355DABB04C048CAF504E0F66A35F2 /* Emitter.swift in Sources */,
+				C1E1385D6994196E366E7B784468B41F /* Encoder.swift in Sources */,
+				6B39F517E1C21E2F98C27F7E13E7B859 /* Mark.swift in Sources */,
+				F405446257A89B852B2D3DA7783BA6FD /* Node.Mapping.swift in Sources */,
+				C03403C611B9512A9F53F6990D2148DB /* Node.Scalar.swift in Sources */,
+				2BDAFD78C447F91CC8FF407D4476B2AE /* Node.Sequence.swift in Sources */,
+				A9FE8AC3F8E5159A97464BC1DD5E29D9 /* Node.swift in Sources */,
+				1EE6454D36E58838AAA9E6E078C2BEBD /* parser.c in Sources */,
+				A491C58FC8AA7A7813B71F1421329142 /* Parser.swift in Sources */,
+				D8B79ECA402C37AC83A90ABF2D874545 /* reader.c in Sources */,
+				097D6B33DCEE7450BAB75F89482E8364 /* Representer.swift in Sources */,
+				8E9B48A47D4893D898AE2D577F56A748 /* Resolver.swift in Sources */,
+				38CC51648FBB5643640061DD5E19AC15 /* scanner.c in Sources */,
+				52ACB07E25D225888A261D1CFC651925 /* shim.swift in Sources */,
+				AE498172AC344319DF703B3B6940E9FD /* String+Yams.swift in Sources */,
+				94EDC663F0FB5CD38FECD0F9EB0A56AF /* Tag.swift in Sources */,
+				630EA51D7398279E11CB3D6FCF40EA8C /* writer.c in Sources */,
+				2D1AE8C2FB4D9AAD9766701F05676233 /* YamlError.swift in Sources */,
+				E323BE3E8FBF01A9A2EA8A1F58A9630F /* Yams-library-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F18C285326681A4B015A1DD179A5B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB11C4DA39D2BCBAFB95B215B33C165 /* FileWrapper+Codable.swift in Sources */,
+				76A1DB76C5875DD7FA4AF8647A6104D1 /* FileWrapper+FileLoader.swift in Sources */,
+				17A015E198EE7AA3329304DA12079C5F /* FrontMatterFile.swift in Sources */,
+				6A11DB2C9898C209160E4F93C9866B39 /* GadgetKit-framework-dummy.m in Sources */,
+				0AB8332F74B7471863D26261E5CB0818 /* NSRegularExpression+FrontMatter.swift in Sources */,
+				E4BD9C148A1AE20F4E3755A65FF52376 /* String+FrontMatter.swift in Sources */,
+				64382B69CB3341681F93888002399630 /* ThrowUnwrap.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392C4A430BA60580040858E8106F7B96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2EC44101CEA1C3136450089C630D366 /* api.c in Sources */,
+				3206D00A00AA388F254A91D4A835AB40 /* Constructor.swift in Sources */,
+				BD6A896CD40453AE29E0220CB7EC2CE3 /* Decoder.swift in Sources */,
+				996EC105D0893C8A02F03F6D435D0B71 /* emitter.c in Sources */,
+				410D2E782CDE157B1226EE0115A0599D /* Emitter.swift in Sources */,
+				07C9256205A0D0ED8FF53A9203C3633E /* Encoder.swift in Sources */,
+				6F0E0D2700C4F4EB07F065530843D48D /* Mark.swift in Sources */,
+				32DD9BFA56A8D984E287B0A86B6210F0 /* Node.Mapping.swift in Sources */,
+				3EEFB7654106B4026177A1F8B69C78A9 /* Node.Scalar.swift in Sources */,
+				72084FC794726DBCD4A711AB2358284F /* Node.Sequence.swift in Sources */,
+				8BE5929BE11B6AFFE798E2D94A805012 /* Node.swift in Sources */,
+				50C5800218EB8D119A124D55059E6544 /* parser.c in Sources */,
+				58C2BEB5E633460402CEA502E6029A2F /* Parser.swift in Sources */,
+				AFEB22CCE490AD5A726A6F936510B4F2 /* reader.c in Sources */,
+				A08F13DFF800028CF8F7196D07270537 /* Representer.swift in Sources */,
+				30235162DD1A760C1F0855C92730B410 /* Resolver.swift in Sources */,
+				C534CFF413FEFA13F058812074DA06D9 /* scanner.c in Sources */,
+				773923F6478C745AE4BFA66A71AB918A /* shim.swift in Sources */,
+				82A58F9600C71175F9752BD027653E65 /* String+Yams.swift in Sources */,
+				E067A9D376FC3535C3F244904A69CB74 /* Tag.swift in Sources */,
+				A03BB5886D9FF9EC725FEF5347191DA5 /* writer.c in Sources */,
+				72962A2F75E67853096BF9BC715158BA /* YamlError.swift in Sources */,
+				8DEFB9ECA2CDA7D3181E8E67D4F44007 /* Yams-framework-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1366,6 +1424,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64F2404630EA1E2CCE90445FB288CC3 /* Pods-ArgonProTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543295D5F43942E583B8C271E2885139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10EB9D0468D0912DFE7D260B6C22431D /* ArgonModel-framework-dummy.m in Sources */,
+				5A3FDC64FB3E286D84E15A75E8AFEEAF /* Collection.swift in Sources */,
+				940B5CAE0521B117C776496E88A46702 /* CollectionConfig.swift in Sources */,
+				49DB0FA4F69794979CA826E5DE55CC3D /* Node.swift in Sources */,
+				E1E1BDF7DD2607FA7BA0733491139D42 /* String+Extractors.swift in Sources */,
+				B498974E5A50F1D2A26288C16D19D0FB /* Vial+Examples.swift in Sources */,
+				8D7DD10D1D1FF4996634763E72C66F31 /* Vial+Templates.swift in Sources */,
+				156F3A1324DF0FBD81E349CD20579BA5 /* Vial.swift in Sources */,
+				FD0F1BB88731265AB8985694B75B5350 /* VialConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1393,36 +1467,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		692DCF63A7C648C7AA9B5C529F13DA8B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9EF5591F0C0232183F0A08744139EB1 /* api.c in Sources */,
-				EED46CED934A3840F345E8D8C8AF499F /* Constructor.swift in Sources */,
-				1A0ECC0849281823478EC9447DF25B4A /* Decoder.swift in Sources */,
-				C07E9C7A63982E6BFACB6B9859D530E4 /* emitter.c in Sources */,
-				DC0278F1E9A77AFD92170DE8B447ECC1 /* Emitter.swift in Sources */,
-				FC2DF7644F0A9DF78D9F6954D654E81C /* Encoder.swift in Sources */,
-				B13A22EEEB413E55968DEAFDB088992D /* Mark.swift in Sources */,
-				ABFF36B0F223D290B993D21EE3A4FD43 /* Node.Mapping.swift in Sources */,
-				6CE9FF93490DA4209DD989EE1F01EDF3 /* Node.Scalar.swift in Sources */,
-				7CBC0DEEFD7C3329D38D428C109EE239 /* Node.Sequence.swift in Sources */,
-				F5E5A155C814D4C0F493FFFFB52A105E /* Node.swift in Sources */,
-				0EE85333BD6D170C4349611A1BBC1AA0 /* parser.c in Sources */,
-				4707CC9CEA0AAEACD00CA114CB18704D /* Parser.swift in Sources */,
-				B8743847DF11AFDC4F7939728A45555A /* reader.c in Sources */,
-				B26DD4E6A649913A59C881C5941DFDB4 /* Representer.swift in Sources */,
-				0386BE41E610B7CBDDD1FC9CF92D6317 /* Resolver.swift in Sources */,
-				AD7DA574C80CAF3D2C3E3387916BEA48 /* scanner.c in Sources */,
-				8796114D7BD975AFD7BB897ECA6CE79A /* shim.swift in Sources */,
-				1AE164257A5B9A94975109FEC58CDFC9 /* String+Yams.swift in Sources */,
-				2EC7D08E158A5F9ECE3D61B775FB9F5A /* Tag.swift in Sources */,
-				1768179A0C0CAB3724099816A3EC8112 /* writer.c in Sources */,
-				80BC63E3863105E52170CDF66BA98B0B /* YamlError.swift in Sources */,
-				F33D3594B1490AB421C286CB3C247F83 /* Yams-library-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8B1D454D63DB92711FD725F0D89BB3D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1431,63 +1475,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9030AC9562343EBD8A386CE037485195 /* Sources */ = {
+		B0CBF98F0B0312CA815CDFD24ED14794 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F86C3E13C9A0927FF0421C03654B5FD /* api.c in Sources */,
-				A6EDC9E64AFFD5550FB780691687578D /* Constructor.swift in Sources */,
-				B88A4603F56B678184E1DCCBA0805914 /* Decoder.swift in Sources */,
-				A423FED939F6767D4D1A51B98A9EF47B /* emitter.c in Sources */,
-				5261924E2DFFA75EA0ED162B06D6C6A2 /* Emitter.swift in Sources */,
-				E77E6C51794F0734C4F7E6F29DF97D71 /* Encoder.swift in Sources */,
-				367ED82CE8FC74B235B09D75C13FD8B1 /* Mark.swift in Sources */,
-				9F73EBE9608D54E16F65AD9FC4A4F8B6 /* Node.Mapping.swift in Sources */,
-				274AB20F41BC09365F6E3B161FE15B67 /* Node.Scalar.swift in Sources */,
-				BCD1416B879AE4EBC17E5C44538FB8F5 /* Node.Sequence.swift in Sources */,
-				DAED60314A1D8B8282D13EE18E4001F2 /* Node.swift in Sources */,
-				84196361FC4AEFD00698583E06C7ED48 /* parser.c in Sources */,
-				AC250477BA63CF7E28548D67BF279B0F /* Parser.swift in Sources */,
-				1CD663364322FD8FE29CB599869866AD /* reader.c in Sources */,
-				057329B7C45BC2FEA9049DF52BD68E08 /* Representer.swift in Sources */,
-				10FE76A70DDA32E3DB449A8EA2BA13B3 /* Resolver.swift in Sources */,
-				00CD9B8AB38F70D93690B1DDC0670E14 /* scanner.c in Sources */,
-				BC56039004F0F5FAA11CB590405E9224 /* shim.swift in Sources */,
-				E9590CEE5DB2EA2BD43D2DDCF63B0EAE /* String+Yams.swift in Sources */,
-				6699B73BDB0A31CA666EEF9CA8C01337 /* Tag.swift in Sources */,
-				014CFAE1DFE6601A0F61757BE6846A9C /* writer.c in Sources */,
-				8015F68C61161509E062A9E57B1FFD7C /* YamlError.swift in Sources */,
-				233AD9E40F45C23DE843006EB3135603 /* Yams-framework-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9CA4B5A43C554C2AB79AD94A72247828 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B795CF6765B0C3863872E23D35A2A54 /* FileWrapper+Codable.swift in Sources */,
-				132E1856C694D351BC1DDC2D3668BA13 /* FileWrapper+FileLoader.swift in Sources */,
-				A21412DD335FDC5010C2B26BB76AC3F9 /* GadgetKit-framework-dummy.m in Sources */,
-				2DE3B2E1ECFAACBBFCAF8C97F398A2E8 /* ThrowUnwrap.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0CB71EC91ACC582F4A819905E4BBA6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4A713CE16F7C1471FAEDEF7D2D46815 /* ArgonModel-framework-dummy.m in Sources */,
-				07CEEF62F2B072AEA0EFD0CA3944B574 /* Collection.swift in Sources */,
-				67411CEA0DCF66039E9994FDF55DEE0C /* CollectionConfig.swift in Sources */,
-				645FE4076FC9E70D49F7A5AE83AC8526 /* FrontMatterFile.swift in Sources */,
-				EBA844BFBBB4EC51453DB9B85E3C036E /* Node.swift in Sources */,
-				FF7AD551C0D480D39004E5A83603B34B /* NSRegularExpression+FrontMatter.swift in Sources */,
-				99E2E06927AB26226AD2DFC33C5A5D4F /* String+Extractors.swift in Sources */,
-				056B29C9B8B6E06BD5FACB80B4279FEA /* String+FrontMatter.swift in Sources */,
-				DCFEF2950A8187E00BDAD07F952D94C9 /* Vial+Examples.swift in Sources */,
-				4FDD74840DFD1E926E8F66459F18721E /* Vial+Templates.swift in Sources */,
-				02306EA635F747681221C01DD522A73A /* Vial.swift in Sources */,
-				ED0C36B808B67A137DF61E96C91DDEB0 /* VialConfig.swift in Sources */,
+				3543BBDA27FDED99A2CC3FD743B59A4A /* ArgonModel-library-dummy.m in Sources */,
+				C74FCE5A4A2A76E4B83F22443DAD8D14 /* Collection.swift in Sources */,
+				CFBCB976A479875554FE4D78B8E9A94C /* CollectionConfig.swift in Sources */,
+				3ECF9D0B0946896781C4496F5F315BC9 /* Node.swift in Sources */,
+				F3EFA36E6CCC263F19863EEF7ADD193A /* String+Extractors.swift in Sources */,
+				E42CDE14A79F44D3E388E0D04ADBDDF6 /* Vial+Examples.swift in Sources */,
+				2F4EC5B01836268C89CA659AE322F3BF /* Vial+Templates.swift in Sources */,
+				CC992ABAF026D0AA09946000503947A6 /* Vial.swift in Sources */,
+				9578BE9F64894FA745F01A40A3811D98 /* VialConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1505,19 +1505,19 @@
 		031838926B2DD6E183DD69F1D5B1A733 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ArgonModel-library";
-			target = 5AE6F3BAADA07B4E641EBFB57AB4DCC9 /* ArgonModel-library */;
+			target = 521535AB80324118766E3586C40BEE43 /* ArgonModel-library */;
 			targetProxy = 682392FE1A80043066F7400965C06CD7 /* PBXContainerItemProxy */;
 		};
 		08854DE4228A798467DC1EABC10FD945 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ArgonModel-framework";
-			target = 242A7B7B5C4337A05E106076E6EC9BBC /* ArgonModel-framework */;
+			target = 8CB14E494154C3A056F62D2CAFA80FAF /* ArgonModel-framework */;
 			targetProxy = 243A71EFBA0F7CE4891E0D1D373ADD0F /* PBXContainerItemProxy */;
 		};
 		1406F82A40812F0C966882AD862B4321 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Yams-library";
-			target = 6D72D35477BF5F017DFA24C9B46944E0 /* Yams-library */;
+			target = 628F65FF399DBBDD093FBE971B4A8285 /* Yams-library */;
 			targetProxy = 556B7C2D6D7C56B787200C7050EE85E8 /* PBXContainerItemProxy */;
 		};
 		1DEF58A46B1372A6CB4D2E4E79EC2868 /* PBXTargetDependency */ = {
@@ -1526,22 +1526,22 @@
 			target = A35C83835ACBA81DB7B8176B121D8408 /* Pods-ArgonPro */;
 			targetProxy = 84E9D61464FDDD451DB395AC7B055752 /* PBXContainerItemProxy */;
 		};
-		2559300BF7AF592B8401BCED5281CF27 /* PBXTargetDependency */ = {
+		29216642FB9335C14443F5EE382AC22B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Yams-framework";
-			target = 4DF748CE5E7966B307392C37E29B8807 /* Yams-framework */;
-			targetProxy = E2CA58A6D3372953A2C3C351033A2DAF /* PBXContainerItemProxy */;
+			name = "Yams-library";
+			target = 628F65FF399DBBDD093FBE971B4A8285 /* Yams-library */;
+			targetProxy = 71042F62F8FA96C85920FC3D9EA316F1 /* PBXContainerItemProxy */;
 		};
 		29B17CDD5A13CF8B9CD7C3196D1184BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Yams-framework";
-			target = 4DF748CE5E7966B307392C37E29B8807 /* Yams-framework */;
+			target = AA7F22D8DADA1CAC100976493528F624 /* Yams-framework */;
 			targetProxy = AA6366A46AB32A35AD29FF39C522B919 /* PBXContainerItemProxy */;
 		};
 		432AB72654F45CD92A7BFD4A5F997F74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Yams-framework";
-			target = 4DF748CE5E7966B307392C37E29B8807 /* Yams-framework */;
+			target = AA7F22D8DADA1CAC100976493528F624 /* Yams-framework */;
 			targetProxy = 285DB4DA8FCBD79792250DF6FC77302C /* PBXContainerItemProxy */;
 		};
 		4D37C297B53BA9A1AEEBB197116A05CA /* PBXTargetDependency */ = {
@@ -1553,13 +1553,19 @@
 		4D48759780952F4D5475948597F6E530 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GadgetKit-library";
-			target = EC83C4C623986680587A51F5FCB6A8B2 /* GadgetKit-library */;
+			target = A398D01FAFA39106EF7606807F86599B /* GadgetKit-library */;
 			targetProxy = 3D9A5BF5D2FBD7E76F6EAFDE629E1ED3 /* PBXContainerItemProxy */;
+		};
+		5BCC1EC4E53DF6E0243B780A53CD965E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Yams-library";
+			target = 628F65FF399DBBDD093FBE971B4A8285 /* Yams-library */;
+			targetProxy = 54BCCB1E128EFB4E6C88F88848F81FC2 /* PBXContainerItemProxy */;
 		};
 		5D693BBEEB43B9E1A4A92BCC8C5ADD48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Yams-library";
-			target = 6D72D35477BF5F017DFA24C9B46944E0 /* Yams-library */;
+			target = 628F65FF399DBBDD093FBE971B4A8285 /* Yams-library */;
 			targetProxy = 16B665AA139380A2BF10B1841FECC463 /* PBXContainerItemProxy */;
 		};
 		6A97DDB0F5D59FD009A298152963AB7F /* PBXTargetDependency */ = {
@@ -1568,65 +1574,59 @@
 			target = 14300DED38586204581B123B075FCEA9 /* Tokamak-framework */;
 			targetProxy = 0F8BAE57E2CBA5961FB0EBD17DD56845 /* PBXContainerItemProxy */;
 		};
+		842CB1AD5F229AB1ACAEB06D30F86E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Yams-framework";
+			target = AA7F22D8DADA1CAC100976493528F624 /* Yams-framework */;
+			targetProxy = EA23F9FA541C07903F51DD6CFF2F8BB1 /* PBXContainerItemProxy */;
+		};
 		88258BCB05FADBBCD50B6C8132B50653 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GadgetKit-framework";
-			target = 64A4E2B4E9CB75DE7E80AE45EC6D3D69 /* GadgetKit-framework */;
+			target = F61E08C1D8F138FF2F4F76AFE310522B /* GadgetKit-framework */;
 			targetProxy = 5F76825B696D0CA5BABA687666EFA54A /* PBXContainerItemProxy */;
 		};
-		97839B339832EEB5E8F581C3450C36A0 /* PBXTargetDependency */ = {
+		96796A0E5D89AF941ECA40BE5F574204 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Yams-framework";
-			target = 4DF748CE5E7966B307392C37E29B8807 /* Yams-framework */;
-			targetProxy = A1B43CDFD8AF948B0824583826164E4D /* PBXContainerItemProxy */;
+			name = "GadgetKit-library";
+			target = A398D01FAFA39106EF7606807F86599B /* GadgetKit-library */;
+			targetProxy = 1B427C57130F70BAC4126BD38D69FDA9 /* PBXContainerItemProxy */;
 		};
-		9CCD3ADA5A633E10AF98D15460488056 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Yams-library";
-			target = 6D72D35477BF5F017DFA24C9B46944E0 /* Yams-library */;
-			targetProxy = 87F1EDA225A77D117F79B04582E49313 /* PBXContainerItemProxy */;
-		};
-		B7E2655EFD23181FEC3697C33FFE645A /* PBXTargetDependency */ = {
+		B8FECB149807ECA06AB3395D9B7E33DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GadgetKit-framework";
-			target = 64A4E2B4E9CB75DE7E80AE45EC6D3D69 /* GadgetKit-framework */;
-			targetProxy = 024BE0E730151C02472674CF57D6EB44 /* PBXContainerItemProxy */;
+			target = F61E08C1D8F138FF2F4F76AFE310522B /* GadgetKit-framework */;
+			targetProxy = AABFF2C55C1240B9DCD55840564FBD70 /* PBXContainerItemProxy */;
 		};
 		C707C3CB1064F103D801ECF5F547C913 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ArgonModel-library";
-			target = 5AE6F3BAADA07B4E641EBFB57AB4DCC9 /* ArgonModel-library */;
+			target = 521535AB80324118766E3586C40BEE43 /* ArgonModel-library */;
 			targetProxy = 3302047291F3D2CFA45AA4A276248333 /* PBXContainerItemProxy */;
 		};
 		CA524A09724A2EBA4665E8EAE09E48AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GadgetKit-framework";
-			target = 64A4E2B4E9CB75DE7E80AE45EC6D3D69 /* GadgetKit-framework */;
+			target = F61E08C1D8F138FF2F4F76AFE310522B /* GadgetKit-framework */;
 			targetProxy = E7DC88CF6773200FA3D15DA38F4FA776 /* PBXContainerItemProxy */;
 		};
 		D1C116054A5ED422D3C4D47FC371B575 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ArgonModel-framework";
-			target = 242A7B7B5C4337A05E106076E6EC9BBC /* ArgonModel-framework */;
+			target = 8CB14E494154C3A056F62D2CAFA80FAF /* ArgonModel-framework */;
 			targetProxy = 6693432289CB983FAA476070BBB0087E /* PBXContainerItemProxy */;
-		};
-		E48426B2E3AB5E94B6E41CF39F6992DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GadgetKit-library";
-			target = EC83C4C623986680587A51F5FCB6A8B2 /* GadgetKit-library */;
-			targetProxy = 92EF5E877217FC9AFC18D2D6CB278F7B /* PBXContainerItemProxy */;
-		};
-		E988E45101D906303074CE624D6E61C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Yams-library";
-			target = 6D72D35477BF5F017DFA24C9B46944E0 /* Yams-library */;
-			targetProxy = F25CFC6A65B66BB8F95AEC2E8572D574 /* PBXContainerItemProxy */;
 		};
 		EBF4981D86FFFF15FA97378D33AB6A1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GadgetKit-library";
-			target = EC83C4C623986680587A51F5FCB6A8B2 /* GadgetKit-library */;
+			target = A398D01FAFA39106EF7606807F86599B /* GadgetKit-library */;
 			targetProxy = 8FFF8E4E67C0FC7F604C2BE7D38A6132 /* PBXContainerItemProxy */;
+		};
+		F28B20F97E795E238404EECB30FB6CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Yams-framework";
+			target = AA7F22D8DADA1CAC100976493528F624 /* Yams-framework */;
+			targetProxy = E952F9E56C39022E7A4B8DB3192EC211 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1682,7 +1682,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1690,60 +1690,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		1993A765F9234168DBE989FA78335660 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86AFD74E30317440D4A3A468569F3499 /* ArgonModel-library.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/ArgonModel-library/ArgonModel-library-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Headers/Public/ArgonModel/ArgonModel-library.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = ArgonModel;
-				PRODUCT_NAME = "ArgonModel-library";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		1D94992FB96E075D55E651BF5152F1DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE3729E8FA4FA485AC6114D96970FC9C /* GadgetKit-library.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/GadgetKit-library/GadgetKit-library-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Headers/Public/GadgetKit/GadgetKit-library.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = GadgetKit;
-				PRODUCT_NAME = "GadgetKit-library";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
 		};
 		210C70CAE253B47D8EFF5CA2BDACA3E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1816,7 +1762,7 @@
 		};
 		2D967F7B393DBA62ECBB08A1845708F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EF9E1C2F0E42BBBE7A58498A98DB560 /* Tokamak-library.xcconfig */;
+			baseConfigurationReference = 9F8FDE2A7FDFB5C34F9F6A2608A1393C /* Tokamak-library.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
@@ -1841,38 +1787,85 @@
 			};
 			name = Release;
 		};
-		5262AE3DE8DDE58640D3BDF455A5D5BD /* Release */ = {
+		2DA300E482317D69D9B92BE3E9F8A9E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53B3C812B72AE5B4FA02C866BFDEA42F /* Yams-framework.xcconfig */;
+			baseConfigurationReference = 4C1AD796E26C7054B130DBFCAC335A38 /* GadgetKit-library.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Yams-framework/Yams-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Yams-framework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Yams-framework/Yams-framework.modulemap";
-				PRODUCT_MODULE_NAME = Yams;
-				PRODUCT_NAME = Yams;
-				SDKROOT = iphoneos;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/GadgetKit-library/GadgetKit-library-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Headers/Public/GadgetKit/GadgetKit-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GadgetKit;
+				PRODUCT_NAME = "GadgetKit-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		437B0F2DF243B42B726C13A688D59699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC548C7A2DAA9C0461B823FE88B3C15E /* Yams-library.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Yams-library/Yams-library-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Headers/Public/Yams/Yams-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = "Yams-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		47BA66EA4597F322DCAC9BB56F9CF00D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1AD796E26C7054B130DBFCAC335A38 /* GadgetKit-library.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/GadgetKit-library/GadgetKit-library-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Headers/Public/GadgetKit/GadgetKit-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GadgetKit;
+				PRODUCT_NAME = "GadgetKit-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
 		};
 		5BAB1843C89717581F1C9B0EBBB0CFD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1910,41 +1903,9 @@
 			};
 			name = Debug;
 		};
-		675AE38C254112B2494C6627496A71CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53B3C812B72AE5B4FA02C866BFDEA42F /* Yams-framework.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Yams-framework/Yams-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Yams-framework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Yams-framework/Yams-framework.modulemap";
-				PRODUCT_MODULE_NAME = Yams;
-				PRODUCT_NAME = Yams;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		68ECCA14BE3B6F7FB4E3218FE5419493 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69C8F6886347DED43F6A90378238959F /* Tokamak-framework.xcconfig */;
+			baseConfigurationReference = A22BDB67DD3142EF21511FBD0F780341 /* Tokamak-framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1974,6 +1935,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		77E263EEEFA0434A4DB135CDFED49CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B3C812B72AE5B4FA02C866BFDEA42F /* Yams-framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yams-framework/Yams-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yams-framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Yams-framework/Yams-framework.modulemap";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = Yams;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7AB5682994E7E3E1DA055C4F85244612 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2029,7 +2023,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2039,7 +2033,40 @@
 			};
 			name = Debug;
 		};
-		853AE712BD1907384CB99865896A2035 /* Release */ = {
+		9307EF960D5CAD8F6EF7B8D42B7B18FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C035EF2A13ED26026706B1252C029F4E /* ArgonModel-framework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ArgonModel-framework/ArgonModel-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ArgonModel-framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ArgonModel-framework/ArgonModel-framework.modulemap";
+				PRODUCT_MODULE_NAME = ArgonModel;
+				PRODUCT_NAME = ArgonModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		937FC115015120ED75495899E903A92D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC548C7A2DAA9C0461B823FE88B3C15E /* Yams-library.xcconfig */;
 			buildSettings = {
@@ -2065,69 +2092,9 @@
 			};
 			name = Release;
 		};
-		9EFFA99641E246E1749C0A0795CA5590 /* Debug */ = {
+		94F826543B6F4B872F68BE97B73A9B8F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4FA9BF8E4391A3007705D62F0F4DE3D /* GadgetKit-framework.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GadgetKit-framework/GadgetKit-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GadgetKit-framework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GadgetKit-framework/GadgetKit-framework.modulemap";
-				PRODUCT_MODULE_NAME = GadgetKit;
-				PRODUCT_NAME = GadgetKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A5D539DC4CD1E96AB64D6268401B47E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE3729E8FA4FA485AC6114D96970FC9C /* GadgetKit-library.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/GadgetKit-library/GadgetKit-library-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Headers/Public/GadgetKit/GadgetKit-library.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = GadgetKit;
-				PRODUCT_NAME = "GadgetKit-library";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		B5CEFE359EA9B723063E6A55058DB48D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C25BF3A2D8EF02107BB12FDA9795461 /* ArgonModel-framework.xcconfig */;
+			baseConfigurationReference = C035EF2A13ED26026706B1252C029F4E /* ArgonModel-framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -2159,9 +2126,36 @@
 			};
 			name = Release;
 		};
+		A467B2AF18675170964DF1F897E82935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6DEC7A4F58216F4010A54743DB37F28 /* ArgonModel-library.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ArgonModel-library/ArgonModel-library-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Headers/Public/ArgonModel/ArgonModel-library.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ArgonModel;
+				PRODUCT_NAME = "ArgonModel-library";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
 		B8427869FE82906A22773B24D01DC86F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69C8F6886347DED43F6A90378238959F /* Tokamak-framework.xcconfig */;
+			baseConfigurationReference = A22BDB67DD3142EF21511FBD0F780341 /* Tokamak-framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -2192,39 +2186,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		B9FB705C4384721F373592A48A8BD2AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C25BF3A2D8EF02107BB12FDA9795461 /* ArgonModel-framework.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ArgonModel-framework/ArgonModel-framework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ArgonModel-framework/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ArgonModel-framework/ArgonModel-framework.modulemap";
-				PRODUCT_MODULE_NAME = ArgonModel;
-				PRODUCT_NAME = ArgonModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		BAD5C09F681811DF50B3B5DC03C69966 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2262,33 +2223,9 @@
 			};
 			name = Release;
 		};
-		C551FB807C149AA22857FD665A136F63 /* Release */ = {
+		BC9366AC50F8E5A09C6DEC388D639F6A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AED6A5F6A8B3216A0E8576A2B5BADF3E /* Pods-ArgonTool.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MODULEMAP_FILE = "Target Support Files/Pods-ArgonTool/Pods-ArgonTool.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-			};
-			name = Release;
-		};
-		C6388F9AB54BD950CB3EC078487CE618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86AFD74E30317440D4A3A468569F3499 /* ArgonModel-library.xcconfig */;
+			baseConfigurationReference = A6DEC7A4F58216F4010A54743DB37F28 /* ArgonModel-library.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
@@ -2313,9 +2250,9 @@
 			};
 			name = Release;
 		};
-		E3826C7865AE614EE5345ADCFE358B27 /* Debug */ = {
+		C551FB807C149AA22857FD665A136F63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D277EC1A8791AA9D00DE413D57333573 /* Pods-ArgonTool.debug.xcconfig */;
+			baseConfigurationReference = AED6A5F6A8B3216A0E8576A2B5BADF3E /* Pods-ArgonTool.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2333,40 +2270,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
-			name = Debug;
+			name = Release;
 		};
-		E61B00CFBAD80AA3871F979F6E5ED421 /* Debug */ = {
+		D012AE63EB131775A909AB90558834D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC548C7A2DAA9C0461B823FE88B3C15E /* Yams-library.xcconfig */;
+			baseConfigurationReference = D4B348865B98A84A88BAD822BAAED933 /* GadgetKit-framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/Yams-library/Yams-library-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Headers/Public/Yams/Yams-library.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = Yams;
-				PRODUCT_NAME = "Yams-library";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GadgetKit-framework/GadgetKit-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GadgetKit-framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GadgetKit-framework/GadgetKit-framework.modulemap";
+				PRODUCT_MODULE_NAME = GadgetKit;
+				PRODUCT_NAME = GadgetKit;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E69F9752448563CCA251ABD263F5DC3E /* Release */ = {
+		D4A09013F7569D504FBDDDAD05836F1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4FA9BF8E4391A3007705D62F0F4DE3D /* GadgetKit-framework.xcconfig */;
+			baseConfigurationReference = D4B348865B98A84A88BAD822BAAED933 /* GadgetKit-framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -2398,9 +2341,66 @@
 			};
 			name = Release;
 		};
+		DA7FD5AE9D6E429709A6C15DD3109FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B3C812B72AE5B4FA02C866BFDEA42F /* Yams-framework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yams-framework/Yams-framework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yams-framework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Yams-framework/Yams-framework.modulemap";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = Yams;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3826C7865AE614EE5345ADCFE358B27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D277EC1A8791AA9D00DE413D57333573 /* Pods-ArgonTool.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArgonTool/Pods-ArgonTool.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
 		FEB57298E291E7F36868245C2A3942E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EF9E1C2F0E42BBBE7A58498A98DB560 /* Tokamak-library.xcconfig */;
+			baseConfigurationReference = 9F8FDE2A7FDFB5C34F9F6A2608A1393C /* Tokamak-library.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
@@ -2428,6 +2428,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		20195B18C11E3E12E611F50D7222C2A0 /* Build configuration list for PBXNativeTarget "GadgetKit-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D012AE63EB131775A909AB90558834D5 /* Debug */,
+				D4A09013F7569D504FBDDDAD05836F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CFDA8CB33ADC56527F7AC679429BC55 /* Build configuration list for PBXNativeTarget "GadgetKit-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BA66EA4597F322DCAC9BB56F9CF00D /* Debug */,
+				2DA300E482317D69D9B92BE3E9F8A9E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2437,11 +2455,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3375A5F7806679475A2960C70CD791D0 /* Build configuration list for PBXNativeTarget "Yams-framework" */ = {
+		3C369A11AA152737E0B051ED71D21CAB /* Build configuration list for PBXNativeTarget "Yams-library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				675AE38C254112B2494C6627496A71CD /* Debug */,
-				5262AE3DE8DDE58640D3BDF455A5D5BD /* Release */,
+				437B0F2DF243B42B726C13A688D59699 /* Debug */,
+				937FC115015120ED75495899E903A92D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2451,15 +2469,6 @@
 			buildConfigurations = (
 				5BAB1843C89717581F1C9B0EBBB0CFD3 /* Debug */,
 				BAD5C09F681811DF50B3B5DC03C69966 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54270B96A8BCBC5FB617C450F98E16B5 /* Build configuration list for PBXNativeTarget "ArgonModel-library" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1993A765F9234168DBE989FA78335660 /* Debug */,
-				C6388F9AB54BD950CB3EC078487CE618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2482,29 +2491,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DCC1BE7ECF0036E0015CB2F339A59F9 /* Build configuration list for PBXNativeTarget "GadgetKit-library" */ = {
+		A642D217187C95A0280F476487E85A31 /* Build configuration list for PBXNativeTarget "ArgonModel-framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D94992FB96E075D55E651BF5152F1DF /* Debug */,
-				A5D539DC4CD1E96AB64D6268401B47E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B00A609D0E09E2BF7310553EC35A98BE /* Build configuration list for PBXNativeTarget "GadgetKit-framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9EFFA99641E246E1749C0A0795CA5590 /* Debug */,
-				E69F9752448563CCA251ABD263F5DC3E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2AB736F7605143E57EFB8AEED3F425C /* Build configuration list for PBXNativeTarget "ArgonModel-framework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B9FB705C4384721F373592A48A8BD2AF /* Debug */,
-				B5CEFE359EA9B723063E6A55058DB48D /* Release */,
+				9307EF960D5CAD8F6EF7B8D42B7B18FE /* Debug */,
+				94F826543B6F4B872F68BE97B73A9B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2527,11 +2518,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1206209341AF008D3F8D24CFC6F9A9A /* Build configuration list for PBXNativeTarget "Yams-library" */ = {
+		D9CB9BC918F9DDF8C0A8197426639349 /* Build configuration list for PBXNativeTarget "Yams-framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E61B00CFBAD80AA3871F979F6E5ED421 /* Debug */,
-				853AE712BD1907384CB99865896A2035 /* Release */,
+				DA7FD5AE9D6E429709A6C15DD3109FB2 /* Debug */,
+				77E263EEEFA0434A4DB135CDFED49CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B3777B3FA23EB5390961C56D9CD7C6 /* Build configuration list for PBXNativeTarget "ArgonModel-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A467B2AF18675170964DF1F897E82935 /* Debug */,
+				BC9366AC50F8E5A09C6DEC388D639F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
