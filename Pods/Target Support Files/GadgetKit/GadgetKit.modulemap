@@ -1,6 +1,0 @@
-framework module GadgetKit {
-  umbrella header "GadgetKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

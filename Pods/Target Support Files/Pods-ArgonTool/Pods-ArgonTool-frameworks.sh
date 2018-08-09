@@ -141,19 +141,6 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework"
-fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

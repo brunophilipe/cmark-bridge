@@ -14,3 +14,10 @@ target 'ArgonPro' do
     # Pods for testing
   end
 end
+
+target 'ArgonTool' do
+  pod 'GadgetKit', :path => 'Dependencies/GadgetKit'
+  pod 'ArgonModel', :path => 'Dependencies/ArgonModel'
+  pod 'Tokamak', :path => 'Dependencies/Tokamak'
+  pod 'Yams'
+end

@@ -1,6 +1,0 @@
-framework module ArgonModel {
-  umbrella header "ArgonModel-umbrella.h"
-
-  export *
-  module * { export * }
-}

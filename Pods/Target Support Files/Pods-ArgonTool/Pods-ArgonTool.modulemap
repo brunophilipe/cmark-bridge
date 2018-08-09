@@ -1,0 +1,6 @@
+module Pods_ArgonTool {
+  umbrella header "Pods-ArgonTool-umbrella.h"
+
+  export *
+  module * { export * }
+}
