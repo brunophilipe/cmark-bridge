@@ -37,7 +37,15 @@ class Document: UIDocument
 			throw Errors.unsupportedFile
 		}
 
-		loadState = .loaded(try Vial(from: bundleWrapper))
+		do
+		{
+			loadState = .loaded(try Vial(from: bundleWrapper))
+		}
+		catch
+		{
+			NSLog("Got error: \(error)")
+			throw error
+		}
     }
 
 	private enum LoadState
