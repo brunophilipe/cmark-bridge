@@ -11,9 +11,13 @@ import ArgonModel
 
 extension UIImage
 {
-	static func image(forFilename filename: String) -> UIImage
+	static func image(forFilename filename: String?) -> UIImage
 	{
-		guard let ext = filename.lastExtension, let fileImage = UIImage(named: "file_\(ext)") else
+		guard
+			let filename = filename,
+			let ext = filename.lastExtension,
+			let fileImage = UIImage(named: "file_\(ext)")
+		else
 		{
 			return #imageLiteral(resourceName: "page.pdf")
 		}
