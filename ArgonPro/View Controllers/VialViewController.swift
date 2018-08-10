@@ -11,6 +11,8 @@ import ArgonModel
 
 class VialViewController: UITableViewController
 {
+	var nodeKeys: [String]? = nil
+
 	var document: Document?
 	{
 		return documentViewController?.document
@@ -71,12 +73,7 @@ class VialViewController: UITableViewController
 			return vial.collections.count + 1
 
 		case 2:
-			guard let vial = document?.vial else
-			{
-				return 0
-			}
-
-			return vial.nodes.count + 1
+			return nodeKeys?.count ?? 0 + 1
 
 		default:
 			return 0
@@ -136,15 +133,21 @@ class VialViewController: UITableViewController
 			cell.imageView?.image = #imageLiteral(resourceName: "page_new.pdf")
 
 		case (2, let row):
-			let node = vial.nodes[row]
-			let reuseIdentifier = (node is Vial.Directory) ? "rightdetail_icon_discl" : "title_icon_discl"
-			cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-			cell.textLabel?.text = node.name
-			cell.imageView?.image = (node is Vial.Page) ? UIImage.image(forFilename: node.name) : #imageLiteral(resourceName: "directory.pdf")
-
-			if let directory = node as? Vial.Directory
+			if let nodeKey = nodeKeys?[row], let node = vial.nodes[nodeKey]
 			{
-				cell.detailTextLabel?.text = directory.itemsDescription
+				let reuseIdentifier = node.isDirectory ? "rightdetail_icon_discl" : "title_icon_discl"
+				cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+				cell.textLabel?.text = node.filename
+				cell.imageView?.image = node.isRegularFile ? UIImage.image(forFilename: node.filename) : #imageLiteral(resourceName: "directory.pdf")
+
+				if node.isDirectory, let count = node.fileWrappers?.count
+				{
+					cell.detailTextLabel?.text = count == 1 ? "1 item" : "\(count) items"
+				}
+			}
+			else
+			{
+				cell = UITableViewCell()
 			}
 
 		default:
@@ -159,6 +162,15 @@ extension VialViewController: DocumentChildViewController
 {
 	func documentDidOpen()
 	{
+		if let keys = document?.vial?.nodes.keys.sorted(by: { $0.localizedCaseInsensitiveCompare($1) == .orderedAscending })
+		{
+			nodeKeys = Array(keys)
+		}
+		else
+		{
+			nodeKeys = nil
+		}
+
 		title = document?.vial?.title ?? ""
 		tableView.reloadData()
 	}
