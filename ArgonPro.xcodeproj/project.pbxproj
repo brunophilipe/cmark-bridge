@@ -19,6 +19,11 @@
 		1514671821166D1000B41F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1514671621166D1000B41F88 /* LaunchScreen.storyboard */; };
 		1514672321166D1000B41F88 /* ArgonProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514672221166D1000B41F88 /* ArgonProTests.swift */; };
 		151FE13C211CDB0E00A13E7B /* ColoredPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */; };
+		152600EF211E43F200DD26F1 /* Collection+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152600EE211E43F200DD26F1 /* Collection+Sorting.swift */; };
+		152600F1211E47AF00DD26F1 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152600F0211E47AF00DD26F1 /* FileTableViewCell.xib */; };
+		152600F3211E490200DD26F1 /* String+Formats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152600F2211E490200DD26F1 /* String+Formats.swift */; };
+		152600F6211E4BC500DD26F1 /* FilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152600F4211E4BC500DD26F1 /* FilesTableViewController.swift */; };
+		152600F7211E4BC500DD26F1 /* FilesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152600F5211E4BC500DD26F1 /* FilesTableViewController.xib */; };
 		1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88A2118C59A003F0D75 /* AppTheming.swift */; };
 		1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */; };
 		1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1526C88C2118C59A003F0D75 /* AppTheme.swift */; };
@@ -79,6 +84,11 @@
 		1514672221166D1000B41F88 /* ArgonProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgonProTests.swift; sourceTree = "<group>"; };
 		1514672421166D1000B41F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredPlaceholderTextField.swift; sourceTree = "<group>"; };
+		152600EE211E43F200DD26F1 /* Collection+Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Sorting.swift"; sourceTree = "<group>"; };
+		152600F0211E47AF00DD26F1 /* FileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
+		152600F2211E490200DD26F1 /* String+Formats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Formats.swift"; sourceTree = "<group>"; };
+		152600F4211E4BC500DD26F1 /* FilesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewController.swift; sourceTree = "<group>"; };
+		152600F5211E4BC500DD26F1 /* FilesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesTableViewController.xib; sourceTree = "<group>"; };
 		1526C88A2118C59A003F0D75 /* AppTheming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheming.swift; sourceTree = "<group>"; };
 		1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Theming.swift"; sourceTree = "<group>"; };
 		1526C88C2118C59A003F0D75 /* AppTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
@@ -151,6 +161,7 @@
 			children = (
 				151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */,
 				150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */,
+				152600F0211E47AF00DD26F1 /* FileTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +254,8 @@
 				15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */,
 				15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */,
 				15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */,
+				152600EE211E43F200DD26F1 /* Collection+Sorting.swift */,
+				152600F2211E490200DD26F1 /* String+Formats.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +266,8 @@
 				1514670B21166D0F00B41F88 /* DocumentBrowserViewController.swift */,
 				1514670D21166D0F00B41F88 /* DocumentViewController.swift */,
 				150DB3CD2118D819005BB11E /* VialViewController.swift */,
+				152600F4211E4BC500DD26F1 /* FilesTableViewController.swift */,
+				152600F5211E4BC500DD26F1 /* FilesTableViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -443,7 +458,9 @@
 				1514671821166D1000B41F88 /* LaunchScreen.storyboard in Resources */,
 				1526C8982118CE3B003F0D75 /* Document.storyboard in Resources */,
 				1514671521166D1000B41F88 /* Assets.xcassets in Resources */,
+				152600F7211E4BC500DD26F1 /* FilesTableViewController.xib in Resources */,
 				1514671321166D0F00B41F88 /* Main.storyboard in Resources */,
+				152600F1211E47AF00DD26F1 /* FileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,8 +571,10 @@
 				1526C8932118C59A003F0D75 /* UIResponder+Theming.swift in Sources */,
 				1514671021166D0F00B41F88 /* Document.swift in Sources */,
 				150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */,
+				152600F3211E490200DD26F1 /* String+Formats.swift in Sources */,
 				1514670E21166D0F00B41F88 /* DocumentViewController.swift in Sources */,
 				15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */,
+				152600EF211E43F200DD26F1 /* Collection+Sorting.swift in Sources */,
 				1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */,
 				1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */,
 				1514670C21166D0F00B41F88 /* DocumentBrowserViewController.swift in Sources */,
@@ -564,6 +583,7 @@
 				150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */,
 				151FE13C211CDB0E00A13E7B /* ColoredPlaceholderTextField.swift in Sources */,
 				1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */,
+				152600F6211E4BC500DD26F1 /* FilesTableViewController.swift in Sources */,
 				15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */,
 				1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */,
 			);

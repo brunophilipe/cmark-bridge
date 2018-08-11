@@ -9,10 +9,8 @@
 import UIKit
 import ArgonModel
 
-class VialViewController: UITableViewController
+class VialViewController: FilesTableViewController
 {
-	var nodeKeys: [String]? = nil
-
 	var document: Document?
 	{
 		return documentViewController?.document
@@ -28,6 +26,11 @@ class VialViewController: UITableViewController
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+
+	override var sectionForFileRows: Int
+	{
+		return 2
+	}
 
 	@IBAction private func closeDocument(_ sender: Any?)
 	{
@@ -50,7 +53,7 @@ class VialViewController: UITableViewController
 			return "Collections"
 
 		case 2:
-			return "Pages"
+			return "Files"
 
 		default:
 			return nil
@@ -73,7 +76,7 @@ class VialViewController: UITableViewController
 			return vial.collections.count + 1
 
 		case 2:
-			return nodeKeys?.count ?? 0 + 1
+			return numberOfFileItems
 
 		default:
 			return 0
@@ -133,22 +136,7 @@ class VialViewController: UITableViewController
 			cell.imageView?.image = #imageLiteral(resourceName: "page_new.pdf")
 
 		case (2, let row):
-			if let nodeKey = nodeKeys?[row], let node = vial.nodes[nodeKey]
-			{
-				let reuseIdentifier = node.isDirectory ? "rightdetail_icon_discl" : "title_icon_discl"
-				cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-				cell.textLabel?.text = node.filename
-				cell.imageView?.image = node.isRegularFile ? UIImage.image(forFilename: node.filename) : #imageLiteral(resourceName: "directory.pdf")
-
-				if node.isDirectory, let count = node.fileWrappers?.count
-				{
-					cell.detailTextLabel?.text = count == 1 ? "1 item" : "\(count) items"
-				}
-			}
-			else
-			{
-				cell = UITableViewCell()
-			}
+			return super.dequeueTableViewCell(forFileWith: row)
 
 		default:
 			cell = UITableViewCell()
@@ -156,19 +144,31 @@ class VialViewController: UITableViewController
 
 		return cell
 	}
+
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+	{
+		switch (indexPath.section, indexPath.row)
+		{
+		case (2, let row):
+			super.didSelectFile(with: row)
+
+		default:
+			tableView.deselectRow(at: indexPath, animated: true)
+		}
+	}
 }
 
 extension VialViewController: DocumentChildViewController
 {
 	func documentDidOpen()
 	{
-		if let keys = document?.vial?.nodes.keys.sorted(by: { $0.localizedCaseInsensitiveCompare($1) == .orderedAscending })
+		if let nodes = document?.vial?.nodes
 		{
-			nodeKeys = Array(keys)
+			fileWrapper = FileWrapper(directoryWithFileWrappers: nodes)
 		}
 		else
 		{
-			nodeKeys = nil
+			fileWrapper = nil
 		}
 
 		title = document?.vial?.title ?? ""
