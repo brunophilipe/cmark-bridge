@@ -29,7 +29,7 @@ class VialViewController: FilesTableViewController
 
 	override var sectionForFileRows: Int
 	{
-		return 2
+		return Sections.files.rawValue
 	}
 
 	@IBAction private func closeDocument(_ sender: Any?)
@@ -39,62 +39,67 @@ class VialViewController: FilesTableViewController
 
 	override func numberOfSections(in tableView: UITableView) -> Int
 	{
-		return 3
+		return 4
 	}
 
 	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
 	{
+		guard let section = Sections(rawValue: section) else
+		{
+			return nil
+		}
+
 		switch section
 		{
-		case 0:
+		case .config:
 			return "Vial"
 
-		case 1:
+		case .posts:
+			return "Blog Posts"
+
+		case .collections:
 			return "Collections"
 
-		case 2:
+		case .files:
 			return "Files"
-
-		default:
-			return nil
 		}
 	}
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
 	{
+		guard let vial = document?.vial, let section = Sections(rawValue: section) else
+		{
+			return 0
+		}
+
 		switch section
 		{
-		case 0:
+		case .config:
 			return 3
 
-		case 1:
-			guard let vial = document?.vial else
-			{
-				return 0
-			}
+		case .posts:
+			return vial.drafts.count > 0 ? 3 : 2
 
+		case .collections:
 			return vial.collections.count + 1
 
-		case 2:
+		case .files:
 			return numberOfFileItems
-
-		default:
-			return 0
 		}
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
 	{
-		guard let vial = document?.vial else
+		guard let vial = document?.vial, let section = Sections(rawValue: indexPath.section) else
 		{
 			return UITableViewCell()
 		}
 
 		let cell: UITableViewCell
 
-		switch (indexPath.section, indexPath.row)
+		switch (section, indexPath.row)
 		{
-		case (0, 0):
+		case (.config, 0):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_input", for: indexPath)
 			if let inputCell = cell as? InputTableViewCell
 			{
@@ -102,7 +107,7 @@ class VialViewController: FilesTableViewController
 				inputCell.textField.text = vial.title
 			}
 
-		case (0, 1):
+		case (.config, 1):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_input", for: indexPath)
 			if let inputCell = cell as? InputTableViewCell
 			{
@@ -110,7 +115,7 @@ class VialViewController: FilesTableViewController
 				inputCell.textField.text = vial.description
 			}
 
-		case (0, 2):
+		case (.config, 2):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_input", for: indexPath)
 			if let inputCell = cell as? InputTableViewCell
 			{
@@ -118,24 +123,42 @@ class VialViewController: FilesTableViewController
 				inputCell.textField.text = vial.baseUrl
 			}
 
-		case (1, vial.collections.count):
+		case (.posts, 0):
+			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
+			cell.textLabel?.text = "Posts"
+			cell.imageView?.image = #imageLiteral(resourceName: "post.pdf")
+			cell.detailTextLabel?.text = "\(vial.posts.count)"
+
+		case (.posts, 1) where vial.drafts.count > 0:
+			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
+			cell.textLabel?.text = "Drafts"
+			cell.imageView?.image = #imageLiteral(resourceName: "draft.pdf")
+			cell.detailTextLabel?.text = "\(vial.drafts.count)"
+
+		case (.posts, _):
+			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)
+			cell.textLabel?.text = "New Post…"
+			cell.imageView?.image = #imageLiteral(resourceName: "post_new.pdf")
+
+		case (.collections, vial.collections.count):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)
 			cell.textLabel?.text = "New Collection…"
 			cell.imageView?.image = #imageLiteral(resourceName: "collection_new.pdf")
 
-		case (1, let row):
+		case (.collections, let row):
 			let collection = vial.collections[vial.collectionKeys[row]]
 			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
 			cell.textLabel?.text = vial.collectionKeys[row]
 			cell.imageView?.image = #imageLiteral(resourceName: "collection.pdf")
-			cell.detailTextLabel?.text = collection?.entriesDescription
+			cell.detailTextLabel?.text = String(quantity: collection?.entries.count,
+												singular: "entry", plural: "entries")
 
-		case (2, vial.nodes.count):
+		case (.files, vial.nodes.count):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)
 			cell.textLabel?.text = "New…"
 			cell.imageView?.image = #imageLiteral(resourceName: "page_new.pdf")
 
-		case (2, let row):
+		case (.files, let row):
 			return super.dequeueTableViewCell(forFileWith: row)
 
 		default:
@@ -147,14 +170,19 @@ class VialViewController: FilesTableViewController
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 	{
-		switch (indexPath.section, indexPath.row)
+		switch (Sections(rawValue: indexPath.section)!, indexPath.row)
 		{
-		case (2, let row):
+		case (Sections.files, let row):
 			super.didSelectFile(with: row)
 
 		default:
 			tableView.deselectRow(at: indexPath, animated: true)
 		}
+	}
+
+	private enum Sections: Int
+	{
+		case config, posts, collections, files
 	}
 }
 
@@ -178,23 +206,5 @@ extension VialViewController: DocumentChildViewController
 	func documentWillClose()
 	{
 
-	}
-}
-
-extension Vial.Collection
-{
-	var entriesDescription: String
-	{
-		let count = entries.count
-		return count == 1 ? "1 entry" : "\(count) entries"
-	}
-}
-
-extension Vial.Directory
-{
-	var itemsDescription: String
-	{
-		let count = children.count
-		return count == 1 ? "1 item" : "\(count) items"
 	}
 }

@@ -52,4 +52,9 @@ extension String
 
 		self.init("\(byteSize) bytes")
 	}
+
+	init(quantity: Int?, singular: String, plural: String)
+	{
+		self.init(quantity ?? 0 == 1 ? "1 \(singular)" : "\(quantity ?? 0) \(plural)")
+	}
 }
