@@ -1,0 +1,6 @@
+framework module Pods_CommonMarkTests {
+  umbrella header "Pods-CommonMarkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

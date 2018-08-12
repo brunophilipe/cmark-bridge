@@ -37,11 +37,22 @@
 		15421E3F211BC20200082456 /* DropSourceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E3E211BC20200082456 /* DropSourceImageView.swift */; };
 		15421E41211BC4E400082456 /* DragProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E40211BC4E400082456 /* DragProductImageView.swift */; };
 		15421E43211BCB6900082456 /* NSImage+BestImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E42211BCB6900082456 /* NSImage+BestImage.swift */; };
+		155519C12120CC8900EFCD3F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155519C02120CC8800EFCD3F /* CoreServices.framework */; };
+		158A683A211F9FA900302936 /* CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; };
+		158A6846211F9FA900302936 /* CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; };
+		158A6847211F9FA900302936 /* CommonMark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		158A6853211F9FDE00302936 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A684E211F9FDE00302936 /* Node.swift */; };
+		158A6854211F9FDE00302936 /* ASTOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A684F211F9FDE00302936 /* ASTOperations.swift */; };
+		158A6855211F9FDE00302936 /* SwiftAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A6850211F9FDE00302936 /* SwiftAST.swift */; };
+		158A6856211F9FDE00302936 /* CommonMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 158A6851211F9FDE00302936 /* CommonMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		158A685A211F9FEB00302936 /* CommonMarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A6858211F9FEB00302936 /* CommonMarkTests.swift */; };
 		15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */; };
 		15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */; };
 		15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */; };
+		60084ACE091A68E606479EB8 /* Pods_CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52E4C06C8DB981AE17A0C5 /* Pods_CommonMark.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
 		C375B5E204BFFDE583F68A18 /* libPods-ArgonTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F35E866DEF690A3AB9E15B /* libPods-ArgonTool.a */; };
+		D90CDADA79CB67418818E438 /* Pods_CommonMarkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 644FD89737F40188569251FD /* Pods_CommonMarkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +63,27 @@
 			remoteGlobalIDString = 1514670521166D0F00B41F88;
 			remoteInfo = ArgonPro;
 		};
+		158A683B211F9FA900302936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158A6830211F9FA900302936;
+			remoteInfo = CommonMark;
+		};
+		158A683D211F9FA900302936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1514670521166D0F00B41F88;
+			remoteInfo = ArgonPro;
+		};
+		158A6844211F9FA900302936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 151466FE21166D0F00B41F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 158A6830211F9FA900302936;
+			remoteInfo = CommonMark;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				158A6847211F9FA900302936 /* CommonMark.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,24 +139,38 @@
 		15421E3E211BC20200082456 /* DropSourceImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropSourceImageView.swift; sourceTree = "<group>"; };
 		15421E40211BC4E400082456 /* DragProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragProductImageView.swift; sourceTree = "<group>"; };
 		15421E42211BCB6900082456 /* NSImage+BestImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+BestImage.swift"; sourceTree = "<group>"; };
+		155519C02120CC8800EFCD3F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		158A6831211F9FA900302936 /* CommonMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		158A6839211F9FA900302936 /* CommonMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		158A684E211F9FDE00302936 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Dependencies/CommonMark/CommonMark/Node.swift; sourceTree = SOURCE_ROOT; };
+		158A684F211F9FDE00302936 /* ASTOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASTOperations.swift; path = Dependencies/CommonMark/CommonMark/ASTOperations.swift; sourceTree = SOURCE_ROOT; };
+		158A6850211F9FDE00302936 /* SwiftAST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftAST.swift; path = Dependencies/CommonMark/CommonMark/SwiftAST.swift; sourceTree = SOURCE_ROOT; };
+		158A6851211F9FDE00302936 /* CommonMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonMark.h; path = Dependencies/CommonMark/CommonMark/CommonMark.h; sourceTree = SOURCE_ROOT; };
+		158A6852211F9FDE00302936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Dependencies/CommonMark/CommonMark/Info.plist; sourceTree = SOURCE_ROOT; };
+		158A6858211F9FEB00302936 /* CommonMarkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonMarkTests.swift; path = Dependencies/CommonMark/CommonMarkTests/CommonMarkTests.swift; sourceTree = SOURCE_ROOT; };
+		158A6859211F9FEB00302936 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Dependencies/CommonMark/CommonMarkTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		15AA24A621184DFE00A49C50 /* UIViewController+ContextBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ContextBus.swift"; sourceTree = "<group>"; };
 		15AA24A721184DFE00A49C50 /* UIViewController+Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Segues.swift"; sourceTree = "<group>"; };
 		15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FileIcon.swift"; sourceTree = "<group>"; };
+		1E7A290A852249EF5E4292D3 /* Pods-CommonMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonMark/Pods-CommonMark.debug.xcconfig"; sourceTree = "<group>"; };
 		42367F9BFFB063B8799FFA2C /* Pods_argontool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_argontool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B996D955C5B36B8CC10AD61 /* Pods_Tokamak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tokamak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		644FD89737F40188569251FD /* Pods_CommonMarkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonMarkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.release.xcconfig"; sourceTree = "<group>"; };
 		75F35E866DEF690A3AB9E15B /* libPods-ArgonTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArgonTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A2267EEE879DB45F961A41 /* Pods-CommonMark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonMark.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonMark/Pods-CommonMark.release.xcconfig"; sourceTree = "<group>"; };
 		86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884449429A325D9EBB34D8AA /* Pods-CommonMarkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonMarkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonMarkTests/Pods-CommonMarkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D4BF4FA3EF6DBD2D32A4A41 /* Pods-argontool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-argontool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-argontool/Pods-argontool.debug.xcconfig"; sourceTree = "<group>"; };
 		9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonProModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2593BECED94BA87637F9319 /* Pods-Tokomak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokomak.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tokomak/Pods-Tokomak.debug.xcconfig"; sourceTree = "<group>"; };
+		9D52E4C06C8DB981AE17A0C5 /* Pods_CommonMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCCC29A215C97CB816FFDF /* Pods-argontool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-argontool.release.xcconfig"; path = "Pods/Target Support Files/Pods-argontool/Pods-argontool.release.xcconfig"; sourceTree = "<group>"; };
 		AC0E438FFAAB9483655D6F33 /* Pods-ArgonTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonTool/Pods-ArgonTool.debug.xcconfig"; sourceTree = "<group>"; };
 		B332C412F6E2ECC513E91E02 /* Pods-ArgonProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonProTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonProTests/Pods-ArgonProTests.release.xcconfig"; sourceTree = "<group>"; };
 		B363675A80A8DC1CC844C051 /* Pods_Tokomak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tokomak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B55F554578D9B3DC9FBC5EBA /* Pods-Tokomak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokomak.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tokomak/Pods-Tokomak.release.xcconfig"; sourceTree = "<group>"; };
 		D96BBA828BCA820A74A21FA7 /* Pods-ArgonPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro.debug.xcconfig"; sourceTree = "<group>"; };
+		F09AA30B0288B8E1F97FF381 /* Pods-CommonMarkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonMarkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonMarkTests/Pods-CommonMarkTests.release.xcconfig"; sourceTree = "<group>"; };
 		FBEE33EACD2DD6ACCEF230D6 /* Pods_ArgonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArgonPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155519C12120CC8900EFCD3F /* CoreServices.framework in Frameworks */,
+				158A6846211F9FA900302936 /* CommonMark.framework in Frameworks */,
 				07CCEDDBCB35DE035B3FE5BA /* Pods_ArgonPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +199,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C375B5E204BFFDE583F68A18 /* libPods-ArgonTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158A682E211F9FA900302936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60084ACE091A68E606479EB8 /* Pods_CommonMark.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158A6836211F9FA900302936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158A683A211F9FA900302936 /* CommonMark.framework in Frameworks */,
+				D90CDADA79CB67418818E438 /* Pods_CommonMarkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +238,8 @@
 				1514670821166D0F00B41F88 /* ArgonPro */,
 				1514672121166D1000B41F88 /* ArgonProTests */,
 				15421E2E211BB3C200082456 /* ArgonTool */,
+				158A6832211F9FA900302936 /* CommonMark */,
+				158A683F211F9FA900302936 /* CommonMarkTests */,
 				1514670721166D0F00B41F88 /* Products */,
 				E709D57DD1E863DB08BA2B55 /* Pods */,
 				5E718F6C8F29F0F7DF36B321 /* Frameworks */,
@@ -184,6 +252,8 @@
 				1514670621166D0F00B41F88 /* ArgonPro.app */,
 				1514671E21166D1000B41F88 /* ArgonProTests.xctest */,
 				15421E2D211BB3C200082456 /* ArgonTool.app */,
+				158A6831211F9FA900302936 /* CommonMark.framework */,
+				158A6839211F9FA900302936 /* CommonMarkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +316,27 @@
 				15421E40211BC4E400082456 /* DragProductImageView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		158A6832211F9FA900302936 /* CommonMark */ = {
+			isa = PBXGroup;
+			children = (
+				158A684F211F9FDE00302936 /* ASTOperations.swift */,
+				158A6851211F9FDE00302936 /* CommonMark.h */,
+				158A6852211F9FDE00302936 /* Info.plist */,
+				158A684E211F9FDE00302936 /* Node.swift */,
+				158A6850211F9FDE00302936 /* SwiftAST.swift */,
+			);
+			path = CommonMark;
+			sourceTree = "<group>";
+		};
+		158A683F211F9FA900302936 /* CommonMarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				158A6858211F9FEB00302936 /* CommonMarkTests.swift */,
+				158A6859211F9FEB00302936 /* Info.plist */,
+			);
+			path = CommonMarkTests;
 			sourceTree = "<group>";
 		};
 		15AA24A521184DE800A49C50 /* Extensions */ = {
@@ -311,6 +402,7 @@
 		5E718F6C8F29F0F7DF36B321 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				155519C02120CC8800EFCD3F /* CoreServices.framework */,
 				FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */,
 				9BC1099444C310705F4AAE74 /* Pods_ArgonProModel.framework */,
 				86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */,
@@ -319,6 +411,8 @@
 				5B996D955C5B36B8CC10AD61 /* Pods_Tokamak.framework */,
 				42367F9BFFB063B8799FFA2C /* Pods_argontool.framework */,
 				75F35E866DEF690A3AB9E15B /* libPods-ArgonTool.a */,
+				9D52E4C06C8DB981AE17A0C5 /* Pods_CommonMark.framework */,
+				644FD89737F40188569251FD /* Pods_CommonMarkTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -330,17 +424,30 @@
 				6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */,
 				56338D2193A50361C573002E /* Pods-ArgonProTests.debug.xcconfig */,
 				B332C412F6E2ECC513E91E02 /* Pods-ArgonProTests.release.xcconfig */,
-				A2593BECED94BA87637F9319 /* Pods-Tokomak.debug.xcconfig */,
-				B55F554578D9B3DC9FBC5EBA /* Pods-Tokomak.release.xcconfig */,
 				8D4BF4FA3EF6DBD2D32A4A41 /* Pods-argontool.debug.xcconfig */,
 				A7BCCC29A215C97CB816FFDF /* Pods-argontool.release.xcconfig */,
 				AC0E438FFAAB9483655D6F33 /* Pods-ArgonTool.debug.xcconfig */,
 				06DE166B86DFA5121B33B888 /* Pods-ArgonTool.release.xcconfig */,
+				1E7A290A852249EF5E4292D3 /* Pods-CommonMark.debug.xcconfig */,
+				83A2267EEE879DB45F961A41 /* Pods-CommonMark.release.xcconfig */,
+				884449429A325D9EBB34D8AA /* Pods-CommonMarkTests.debug.xcconfig */,
+				F09AA30B0288B8E1F97FF381 /* Pods-CommonMarkTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		158A682C211F9FA900302936 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158A6856211F9FDE00302936 /* CommonMark.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1514670521166D0F00B41F88 /* ArgonPro */ = {
@@ -357,6 +464,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				158A6845211F9FA900302936 /* PBXTargetDependency */,
 			);
 			name = ArgonPro;
 			productName = ArgonPro;
@@ -400,6 +508,46 @@
 			productReference = 15421E2D211BB3C200082456 /* ArgonTool.app */;
 			productType = "com.apple.product-type.application";
 		};
+		158A6830211F9FA900302936 /* CommonMark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158A6848211F9FA900302936 /* Build configuration list for PBXNativeTarget "CommonMark" */;
+			buildPhases = (
+				C171AF062A57BCD286898798 /* [CP] Check Pods Manifest.lock */,
+				158A682C211F9FA900302936 /* Headers */,
+				158A682D211F9FA900302936 /* Sources */,
+				158A682E211F9FA900302936 /* Frameworks */,
+				158A682F211F9FA900302936 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonMark;
+			productName = CommonMark;
+			productReference = 158A6831211F9FA900302936 /* CommonMark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		158A6838211F9FA900302936 /* CommonMarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 158A684B211F9FA900302936 /* Build configuration list for PBXNativeTarget "CommonMarkTests" */;
+			buildPhases = (
+				E02DF653F5D074A3F9A7F8A6 /* [CP] Check Pods Manifest.lock */,
+				158A6835211F9FA900302936 /* Sources */,
+				158A6836211F9FA900302936 /* Frameworks */,
+				158A6837211F9FA900302936 /* Resources */,
+				756B36EF073521FA91F70397 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				158A683C211F9FA900302936 /* PBXTargetDependency */,
+				158A683E211F9FA900302936 /* PBXTargetDependency */,
+			);
+			name = CommonMarkTests;
+			productName = CommonMarkTests;
+			productReference = 158A6839211F9FA900302936 /* CommonMarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -428,6 +576,15 @@
 					15421E2C211BB3C200082456 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					158A6830211F9FA900302936 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					158A6838211F9FA900302936 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 1514670521166D0F00B41F88;
+					};
 				};
 			};
 			buildConfigurationList = 1514670121166D0F00B41F88 /* Build configuration list for PBXProject "ArgonPro" */;
@@ -446,6 +603,8 @@
 				1514670521166D0F00B41F88 /* ArgonPro */,
 				1514671D21166D1000B41F88 /* ArgonProTests */,
 				15421E2C211BB3C200082456 /* ArgonTool */,
+				158A6830211F9FA900302936 /* CommonMark */,
+				158A6838211F9FA900302936 /* CommonMarkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -477,6 +636,20 @@
 			files = (
 				15421E32211BB3C400082456 /* Assets.xcassets in Resources */,
 				15421E35211BB3C400082456 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158A682F211F9FA900302936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158A6837211F9FA900302936 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +692,60 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		756B36EF073521FA91F70397 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CommonMarkTests/Pods-CommonMarkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark_bridge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonMarkTests/Pods-CommonMarkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C171AF062A57BCD286898798 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonMark-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E02DF653F5D074A3F9A7F8A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommonMarkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E29C9B67A75B95172BBCB276 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +775,7 @@
 				"${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework",
 				"${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework",
+				"${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -555,6 +783,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GadgetKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tokamak.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yams.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark_bridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -609,6 +838,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		158A682D211F9FA900302936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158A6854211F9FDE00302936 /* ASTOperations.swift in Sources */,
+				158A6853211F9FDE00302936 /* Node.swift in Sources */,
+				158A6855211F9FDE00302936 /* SwiftAST.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		158A6835211F9FA900302936 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158A685A211F9FEB00302936 /* CommonMarkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -616,6 +863,21 @@
 			isa = PBXTargetDependency;
 			target = 1514670521166D0F00B41F88 /* ArgonPro */;
 			targetProxy = 1514671F21166D1000B41F88 /* PBXContainerItemProxy */;
+		};
+		158A683C211F9FA900302936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158A6830211F9FA900302936 /* CommonMark */;
+			targetProxy = 158A683B211F9FA900302936 /* PBXContainerItemProxy */;
+		};
+		158A683E211F9FA900302936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1514670521166D0F00B41F88 /* ArgonPro */;
+			targetProxy = 158A683D211F9FA900302936 /* PBXContainerItemProxy */;
+		};
+		158A6845211F9FA900302936 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 158A6830211F9FA900302936 /* CommonMark */;
+			targetProxy = 158A6844211F9FA900302936 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -769,6 +1031,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D96BBA828BCA820A74A21FA7 /* Pods-ArgonPro.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ArgonPro/ArgonPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -789,6 +1052,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A96453AC48C34EF5AA9D88D /* Pods-ArgonPro.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ArgonPro/ArgonPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -895,6 +1159,116 @@
 			};
 			name = Release;
 		};
+		158A6849211F9FA900302936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7A290A852249EF5E4292D3 /* Pods-CommonMark.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = Dependencies/CommonMark/CommonMark;
+				INFOPLIST_FILE = "$(SRCROOT)/Dependencies/CommonMark/CommonMark/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMark;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		158A684A211F9FA900302936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A2267EEE879DB45F961A41 /* Pods-CommonMark.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R85D3K8ATT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = Dependencies/CommonMark/CommonMark;
+				INFOPLIST_FILE = "$(SRCROOT)/Dependencies/CommonMark/CommonMark/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMark;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		158A684C211F9FA900302936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884449429A325D9EBB34D8AA /* Pods-CommonMarkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dependencies/CommonMark/CommonMarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgonPro.app/ArgonPro";
+			};
+			name = Debug;
+		};
+		158A684D211F9FA900302936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09AA30B0288B8E1F97FF381 /* Pods-CommonMarkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dependencies/CommonMark/CommonMarkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArgonPro.app/ArgonPro";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -930,6 +1304,24 @@
 			buildConfigurations = (
 				15421E38211BB3C400082456 /* Debug */,
 				15421E39211BB3C400082456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158A6848211F9FA900302936 /* Build configuration list for PBXNativeTarget "CommonMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158A6849211F9FA900302936 /* Debug */,
+				158A684A211F9FA900302936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		158A684B211F9FA900302936 /* Build configuration list for PBXNativeTarget "CommonMarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				158A684C211F9FA900302936 /* Debug */,
+				158A684D211F9FA900302936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

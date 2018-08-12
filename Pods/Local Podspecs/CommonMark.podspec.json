@@ -1,0 +1,27 @@
+{
+  "name": "CommonMark",
+  "version": "1.0",
+  "homepage": "https://github.com/brunophilipe/",
+  "source": {
+    "path": "."
+  },
+  "authors": {
+    "Bruno Philipe": "me@bruno.ph"
+  },
+  "summary": "Assortment of reusable classes.",
+  "license": {
+    "type": "Closed Source"
+  },
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.12"
+  },
+  "ios": {
+    "frameworks": "Foundation"
+  },
+  "osx": {
+    "frameworks": "Foundation"
+  },
+  "source_files": "CommonMark/*.swift",
+  "module_name": "CommonMark"
+}

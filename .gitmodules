@@ -7,3 +7,9 @@
 [submodule "Dependencies/ArgonModel"]
 	path = Dependencies/ArgonModel
 	url = bruno@nix.bruno.ph:git/ArgonModel.git
+[submodule "Dependencies/CommonMark"]
+	path = Dependencies/CommonMark
+	url = bruno@nix.bruno.ph:git/CommonMark.git
+[submodule "Dependencies/cmark-bridge"]
+	path = Dependencies/cmark-bridge
+	url = https://github.com/brunophilipe/cmark-bridge.git

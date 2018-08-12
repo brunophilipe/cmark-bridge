@@ -15,6 +15,19 @@ target 'ArgonPro' do
   end
 end
 
+target 'CommonMark' do
+    use_frameworks!
+    platform :ios, 12.0
+    
+    # Pods for CommonMark
+    pod 'cmark-bridge', :path => 'Dependencies/cmark-bridge'
+    
+    target 'CommonMarkTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+end
+
 target 'ArgonTool' do
   pod 'GadgetKit', :path => 'Dependencies/GadgetKit'
   pod 'ArgonModel', :path => 'Dependencies/ArgonModel'
