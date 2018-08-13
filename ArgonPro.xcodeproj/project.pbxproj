@@ -11,6 +11,7 @@
 		15056B862122095A00DF6310 /* TextPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15056B842122095A00DF6310 /* TextPreviewViewController.swift */; };
 		15056B872122095A00DF6310 /* TextPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15056B852122095A00DF6310 /* TextPreviewViewController.xib */; };
 		15056B8B21220D9B00DF6310 /* FileWrapperPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */; };
+		15056B9121221E8E00DF6310 /* UIViewController+Pusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15056B9021221E8E00DF6310 /* UIViewController+Pusher.swift */; };
 		150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3CD2118D819005BB11E /* VialViewController.swift */; };
 		150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */; };
 		1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670921166D0F00B41F88 /* AppDelegate.swift */; };
@@ -109,6 +110,7 @@
 		15056B842122095A00DF6310 /* TextPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPreviewViewController.swift; sourceTree = "<group>"; };
 		15056B852122095A00DF6310 /* TextPreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextPreviewViewController.xib; sourceTree = "<group>"; };
 		15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWrapperPreviewer.swift; sourceTree = "<group>"; };
+		15056B9021221E8E00DF6310 /* UIViewController+Pusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Pusher.swift"; sourceTree = "<group>"; };
 		150DB3CD2118D819005BB11E /* VialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VialViewController.swift; sourceTree = "<group>"; };
 		150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		1514670621166D0F00B41F88 /* ArgonPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgonPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,6 +369,7 @@
 				15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */,
 				152600EE211E43F200DD26F1 /* Collection+Sorting.swift */,
 				152600F2211E490200DD26F1 /* String+Formats.swift */,
+				15056B9021221E8E00DF6310 /* UIViewController+Pusher.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -841,6 +844,7 @@
 				152600F6211E4BC500DD26F1 /* FilesTableViewController.swift in Sources */,
 				15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */,
 				1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */,
+				15056B9121221E8E00DF6310 /* UIViewController+Pusher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

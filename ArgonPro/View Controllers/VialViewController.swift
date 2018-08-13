@@ -26,15 +26,20 @@ class VialViewController: FilesTableViewController
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+	
+	@IBAction private func closeDocument(_ sender: Any?)
+	{
+		documentViewController?.closeDocumentViewController()
+	}
+	
+	override var urlForCurrentFileWrapper: URL?
+	{
+		return document?.fileURL
+	}
 
 	override var sectionForFileRows: Int
 	{
 		return Sections.files.rawValue
-	}
-
-	@IBAction private func closeDocument(_ sender: Any?)
-	{
-		documentViewController?.closeDocumentViewController()
 	}
 
 	override func numberOfSections(in tableView: UITableView) -> Int

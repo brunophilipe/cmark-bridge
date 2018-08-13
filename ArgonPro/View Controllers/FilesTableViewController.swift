@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuickLook
 
 class FilesTableViewController: UITableViewController
 {
@@ -46,6 +47,19 @@ class FilesTableViewController: UITableViewController
 		// self.navigationItem.rightBarButtonItem = self.editButtonItem
 
 		tableView.register(UINib(nibName: "FileTableViewCell", bundle: .main), forCellReuseIdentifier: "cell_file")
+	}
+	
+	var urlForCurrentFileWrapper: URL?
+	{
+		guard
+			let currentFilename = fileWrapper?.filename,
+			let pusherViewController = pusherViewController as? FilesTableViewController
+		else
+		{
+			return nil
+		}
+		
+		return pusherViewController.urlForCurrentFileWrapper?.appendingPathComponent(currentFilename)
 	}
 
 	var numberOfFileItems: Int
@@ -114,7 +128,7 @@ class FilesTableViewController: UITableViewController
 			return
 		}
 		
-		let fileWrapperPreviewer: FileWrapperPreviewer?
+		let fileWrapperPreviewer: UIViewController?
 		
 		if node.fileUTI(conformsTo: "public.image")
 		{
@@ -129,16 +143,28 @@ class FilesTableViewController: UITableViewController
 		{
 			fileWrapperPreviewer = TextPreviewViewController()
 		}
+		else if let nodeFilename = node.filename,
+			let nodeUrl = urlForCurrentFileWrapper?.appendingPathComponent(nodeFilename) as NSURL?,
+			QLPreviewController.canPreview(nodeUrl)
+		{
+			let quickLookController = QLPreviewController()
+			quickLookController.dataSource = self
+			fileWrapperPreviewer = quickLookController
+		}
 		else
 		{
 			// TODO: Show generic previewer
 			fileWrapperPreviewer = nil
 		}
 		
-		if let previewer = fileWrapperPreviewer as? (UIViewController & FileWrapperPreviewer)
+		if let previewer = fileWrapperPreviewer as? FileWrapperPreviewer
 		{
 			previewer.setPreviewing(fileWrapper: node)
-			show(previewer, sender: self)
+		}
+		
+		if let viewController = fileWrapperPreviewer
+		{
+			show(viewController, sender: self)
 		}
 	}
 
@@ -166,5 +192,22 @@ class FilesTableViewController: UITableViewController
 			didSelectFile(with: indexPath.row)
 		}
 	}
+}
 
+extension FilesTableViewController: QLPreviewControllerDataSource
+{
+	func numberOfPreviewItems(in controller: QLPreviewController) -> Int
+	{
+		return tableView.indexPathsForSelectedRows?.count ?? 0
+	}
+	
+	func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem
+	{
+		// Force unwraps are used here because this code path should only be accessible if everything unwrapped below
+		// is properly setup.
+		let selectedRows = tableView!.indexPathsForSelectedRows!
+		let fileWrappers = fileWrapper!.fileWrappers!
+		let nodeFilename = fileWrappers[itemKeys![selectedRows[index].row]]!.filename!
+		return urlForCurrentFileWrapper!.appendingPathComponent(nodeFilename) as NSURL
+	}
 }
