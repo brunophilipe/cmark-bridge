@@ -114,12 +114,31 @@ class FilesTableViewController: UITableViewController
 			return
 		}
 		
+		let fileWrapperPreviewer: FileWrapperPreviewer?
+		
 		if node.fileUTI(conformsTo: "public.image")
 		{
-			let imagePreviewController = ImagePreviewViewController()
-			imagePreviewController.setImage(with: node)
-			
-			show(imagePreviewController, sender: self)
+			fileWrapperPreviewer = ImagePreviewViewController()
+		}
+		else if node.fileUTI(conformsTo: "com.adobe.pdf")
+		{
+			// TODO: Handle PDF
+			fileWrapperPreviewer = nil
+		}
+		else if node.fileUTI(conformsTo: "public.text")
+		{
+			fileWrapperPreviewer = TextPreviewViewController()
+		}
+		else
+		{
+			// TODO: Show generic previewer
+			fileWrapperPreviewer = nil
+		}
+		
+		if let previewer = fileWrapperPreviewer as? (UIViewController & FileWrapperPreviewer)
+		{
+			previewer.setPreviewing(fileWrapper: node)
+			show(previewer, sender: self)
 		}
 	}
 

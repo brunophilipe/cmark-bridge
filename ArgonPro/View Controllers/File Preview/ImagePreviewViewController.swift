@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImagePreviewViewController: UIViewController
+class ImagePreviewViewController: UIViewController, FileWrapperPreviewer
 {
 	@IBOutlet weak var imageView: UIImageView!
 	
@@ -48,7 +48,7 @@ class ImagePreviewViewController: UIViewController
 		}
 	}
 
-	func setImage(with fileWrapper: FileWrapper)
+	func setPreviewing(fileWrapper: FileWrapper)
 	{
 		guard fileWrapper.isRegularFile, let contents = fileWrapper.regularFileContents else
 		{

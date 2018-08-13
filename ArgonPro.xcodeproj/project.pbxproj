@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07CCEDDBCB35DE035B3FE5BA /* Pods_ArgonPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA36CD8278676B7A8CD2FB5 /* Pods_ArgonPro.framework */; };
+		15056B862122095A00DF6310 /* TextPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15056B842122095A00DF6310 /* TextPreviewViewController.swift */; };
+		15056B872122095A00DF6310 /* TextPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15056B852122095A00DF6310 /* TextPreviewViewController.xib */; };
+		15056B8B21220D9B00DF6310 /* FileWrapperPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */; };
 		150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3CD2118D819005BB11E /* VialViewController.swift */; };
 		150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */; };
 		1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514670921166D0F00B41F88 /* AppDelegate.swift */; };
@@ -103,6 +106,9 @@
 
 /* Begin PBXFileReference section */
 		06DE166B86DFA5121B33B888 /* Pods-ArgonTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArgonTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArgonTool/Pods-ArgonTool.release.xcconfig"; sourceTree = "<group>"; };
+		15056B842122095A00DF6310 /* TextPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPreviewViewController.swift; sourceTree = "<group>"; };
+		15056B852122095A00DF6310 /* TextPreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextPreviewViewController.xib; sourceTree = "<group>"; };
+		15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWrapperPreviewer.swift; sourceTree = "<group>"; };
 		150DB3CD2118D819005BB11E /* VialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VialViewController.swift; sourceTree = "<group>"; };
 		150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		1514670621166D0F00B41F88 /* ArgonPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArgonPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +296,9 @@
 			children = (
 				151E3EFA2121F96300BA1486 /* ImagePreviewViewController.swift */,
 				151E3EFB2121F96300BA1486 /* ImagePreviewViewController.xib */,
+				15056B842122095A00DF6310 /* TextPreviewViewController.swift */,
+				15056B852122095A00DF6310 /* TextPreviewViewController.xib */,
+				15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */,
 			);
 			path = "File Preview";
 			sourceTree = "<group>";
@@ -630,6 +639,7 @@
 				1526C8982118CE3B003F0D75 /* Document.storyboard in Resources */,
 				1514671521166D1000B41F88 /* Assets.xcassets in Resources */,
 				152600F7211E4BC500DD26F1 /* FilesTableViewController.xib in Resources */,
+				15056B872122095A00DF6310 /* TextPreviewViewController.xib in Resources */,
 				1514671321166D0F00B41F88 /* Main.storyboard in Resources */,
 				152600F1211E47AF00DD26F1 /* FileTableViewCell.xib in Resources */,
 				151E3EFD2121F96300BA1486 /* ImagePreviewViewController.xib in Resources */,
@@ -810,12 +820,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15056B862122095A00DF6310 /* TextPreviewViewController.swift in Sources */,
 				1526C8932118C59A003F0D75 /* UIResponder+Theming.swift in Sources */,
 				1514671021166D0F00B41F88 /* Document.swift in Sources */,
 				150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */,
 				152600F3211E490200DD26F1 /* String+Formats.swift in Sources */,
 				1514670E21166D0F00B41F88 /* DocumentViewController.swift in Sources */,
 				15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */,
+				15056B8B21220D9B00DF6310 /* FileWrapperPreviewer.swift in Sources */,
 				152600EF211E43F200DD26F1 /* Collection+Sorting.swift in Sources */,
 				1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */,
 				1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */,
