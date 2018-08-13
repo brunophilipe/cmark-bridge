@@ -3,7 +3,7 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Yams"
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ArgonModel-library" "${PODS_CONFIGURATION_BUILD_DIR}/GadgetKit-library" "${PODS_CONFIGURATION_BUILD_DIR}/Tokamak-library" "${PODS_CONFIGURATION_BUILD_DIR}/Yams-library"
 OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ArgonModel-library/ArgonModel.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/GadgetKit-library/GadgetKit.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Tokamak-library/Tokamak.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Yams-library/Yams.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Yams"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"ArgonModel-library" -l"GadgetKit-library" -l"Tokamak-library" -l"Yams-library" -framework "Foundation"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"ArgonModel-library" -l"GadgetKit-library" -l"Tokamak-library" -l"Yams-library" -framework "CoreServices" -framework "Foundation"
 OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/ArgonModel-library/ArgonModel.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/GadgetKit-library/GadgetKit.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Tokamak-library/Tokamak.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Yams-library/Yams.modulemap" $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -20,7 +20,10 @@
     "frameworks": "Foundation"
   },
   "osx": {
-    "frameworks": "Foundation"
+    "frameworks": [
+      "Foundation",
+      "CoreServices"
+    ]
   },
   "source_files": "*.{h,m,swift,xib}",
   "module_name": "GadgetKit",
