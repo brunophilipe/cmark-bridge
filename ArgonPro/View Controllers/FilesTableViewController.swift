@@ -101,6 +101,26 @@ class FilesTableViewController: UITableViewController
 			let fileIndexPath = IndexPath(row: fileIndex, section: sectionForFileRows)
 			show(filesViewController, sender: tableView.cellForRow(at: fileIndexPath))
 		}
+        else if node.isRegularFile
+        {
+			presentFile(for: node)
+        }
+	}
+	
+	func presentFile(for node: FileWrapper)
+	{
+		guard node.isRegularFile else
+		{
+			return
+		}
+		
+		if node.fileUTI(conformsTo: "public.image")
+		{
+			let imagePreviewController = ImagePreviewViewController()
+			imagePreviewController.setImage(with: node)
+			
+			show(imagePreviewController, sender: self)
+		}
 	}
 
 	// MARK: - Table view data source

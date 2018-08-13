@@ -18,6 +18,8 @@
 		1514671521166D1000B41F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1514671421166D1000B41F88 /* Assets.xcassets */; };
 		1514671821166D1000B41F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1514671621166D1000B41F88 /* LaunchScreen.storyboard */; };
 		1514672321166D1000B41F88 /* ArgonProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1514672221166D1000B41F88 /* ArgonProTests.swift */; };
+		151E3EFC2121F96300BA1486 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E3EFA2121F96300BA1486 /* ImagePreviewViewController.swift */; };
+		151E3EFD2121F96300BA1486 /* ImagePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151E3EFB2121F96300BA1486 /* ImagePreviewViewController.xib */; };
 		151FE13C211CDB0E00A13E7B /* ColoredPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */; };
 		152600EF211E43F200DD26F1 /* Collection+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152600EE211E43F200DD26F1 /* Collection+Sorting.swift */; };
 		152600F1211E47AF00DD26F1 /* FileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152600F0211E47AF00DD26F1 /* FileTableViewCell.xib */; };
@@ -37,7 +39,6 @@
 		15421E3F211BC20200082456 /* DropSourceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E3E211BC20200082456 /* DropSourceImageView.swift */; };
 		15421E41211BC4E400082456 /* DragProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E40211BC4E400082456 /* DragProductImageView.swift */; };
 		15421E43211BCB6900082456 /* NSImage+BestImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E42211BCB6900082456 /* NSImage+BestImage.swift */; };
-		155519C12120CC8900EFCD3F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155519C02120CC8800EFCD3F /* CoreServices.framework */; };
 		158A683A211F9FA900302936 /* CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; };
 		158A6846211F9FA900302936 /* CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; };
 		158A6847211F9FA900302936 /* CommonMark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -116,6 +117,8 @@
 		1514671E21166D1000B41F88 /* ArgonProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgonProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1514672221166D1000B41F88 /* ArgonProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgonProTests.swift; sourceTree = "<group>"; };
 		1514672421166D1000B41F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		151E3EFA2121F96300BA1486 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		151E3EFB2121F96300BA1486 /* ImagePreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePreviewViewController.xib; sourceTree = "<group>"; };
 		151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredPlaceholderTextField.swift; sourceTree = "<group>"; };
 		152600EE211E43F200DD26F1 /* Collection+Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Sorting.swift"; sourceTree = "<group>"; };
 		152600F0211E47AF00DD26F1 /* FileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileTableViewCell.xib; sourceTree = "<group>"; };
@@ -180,7 +183,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				155519C12120CC8900EFCD3F /* CoreServices.framework in Frameworks */,
 				158A6846211F9FA900302936 /* CommonMark.framework in Frameworks */,
 				07CCEDDBCB35DE035B3FE5BA /* Pods_ArgonPro.framework in Frameworks */,
 			);
@@ -283,6 +285,15 @@
 			path = ArgonProTests;
 			sourceTree = "<group>";
 		};
+		151E3EF92121F91100BA1486 /* File Preview */ = {
+			isa = PBXGroup;
+			children = (
+				151E3EFA2121F96300BA1486 /* ImagePreviewViewController.swift */,
+				151E3EFB2121F96300BA1486 /* ImagePreviewViewController.xib */,
+			);
+			path = "File Preview";
+			sourceTree = "<group>";
+		};
 		1526C8892118C59A003F0D75 /* Theming */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +370,7 @@
 				150DB3CD2118D819005BB11E /* VialViewController.swift */,
 				152600F4211E4BC500DD26F1 /* FilesTableViewController.swift */,
 				152600F5211E4BC500DD26F1 /* FilesTableViewController.xib */,
+				151E3EF92121F91100BA1486 /* File Preview */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -620,6 +632,7 @@
 				152600F7211E4BC500DD26F1 /* FilesTableViewController.xib in Resources */,
 				1514671321166D0F00B41F88 /* Main.storyboard in Resources */,
 				152600F1211E47AF00DD26F1 /* FileTableViewCell.xib in Resources */,
+				151E3EFD2121F96300BA1486 /* ImagePreviewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,6 +820,7 @@
 				1526C8912118C59A003F0D75 /* AppTheme.swift in Sources */,
 				1526C8902118C59A003F0D75 /* UIKit+Theming.swift in Sources */,
 				1514670C21166D0F00B41F88 /* DocumentBrowserViewController.swift in Sources */,
+				151E3EFC2121F96300BA1486 /* ImagePreviewViewController.swift in Sources */,
 				1526C8952118C669003F0D75 /* Preferences.swift in Sources */,
 				15AA24A821184DFE00A49C50 /* UIViewController+ContextBus.swift in Sources */,
 				150DB3D32118FE8B005BB11E /* InputTableViewCell.swift in Sources */,
