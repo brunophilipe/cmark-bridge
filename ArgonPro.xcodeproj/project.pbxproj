@@ -296,11 +296,11 @@
 		151E3EF92121F91100BA1486 /* File Preview */ = {
 			isa = PBXGroup;
 			children = (
+				15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */,
 				151E3EFA2121F96300BA1486 /* ImagePreviewViewController.swift */,
 				151E3EFB2121F96300BA1486 /* ImagePreviewViewController.xib */,
 				15056B842122095A00DF6310 /* TextPreviewViewController.swift */,
 				15056B852122095A00DF6310 /* TextPreviewViewController.xib */,
-				15056B8A21220D9B00DF6310 /* FileWrapperPreviewer.swift */,
 			);
 			path = "File Preview";
 			sourceTree = "<group>";

@@ -161,7 +161,14 @@ class FilesTableViewController: UITableViewController
 		
 		if let viewController = fileWrapperPreviewer
 		{
-			show(viewController, sender: self)
+			if splitViewController != nil
+			{
+				showDetailViewController(ThemedNavigationController(rootViewController: viewController), sender: self)
+			}
+			else
+			{
+				show(viewController, sender: self)
+			}
 		}
 	}
 

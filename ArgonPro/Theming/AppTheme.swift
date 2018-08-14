@@ -20,6 +20,11 @@ import UIKit
 
 	/// Color used as for controls that display placeholder text.
 	var placeholderText: UIColor { get }
+	
+	// MARK: Split View
+	
+	/// The background color, which shows as the separator between the two split views.
+	var splitViewBackground: UIColor { get }
 
 	// MARK: Navigation
 
@@ -110,6 +115,7 @@ class DarkTheme: NSObject, AppTheme
 	var text: UIColor { return .lightText }
 	var placeholderText: UIColor { return #colorLiteral(red: 0.2785187943, green: 0.2785686486, blue: 0.2785125302, alpha: 1) }
 	var controlBackground: UIColor { return #colorLiteral(red: 0.1098284498, green: 0.1097278222, blue: 0.1140929684, alpha: 1) }
+	var splitViewBackground: UIColor { return #colorLiteral(red: 0.05655267835, green: 0.05655267835, blue: 0.05655267835, alpha: 1) }
 	var navigationBarStyle: UIBarStyle { return .blackOpaque }
 	var navigationBarTransluscent: Bool { return false }
 	var navigationViewBackground: UIColor { return #colorLiteral(red: 0.1098284498, green: 0.1097278222, blue: 0.1140929684, alpha: 1) }
@@ -138,6 +144,7 @@ class LightTheme: NSObject, AppTheme
 	var text: UIColor { return .darkText }
 	var placeholderText: UIColor { return #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1) }
 	var controlBackground: UIColor { return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }
+	var splitViewBackground: UIColor { return #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1) }
 	var navigationBarStyle: UIBarStyle { return .default }
 	var navigationBarTransluscent: Bool { return false }
 	var navigationViewBackground: UIColor { return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }

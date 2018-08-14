@@ -8,6 +8,36 @@
 
 import UIKit
 
+// MARK: - UISplitViewController
+
+extension UISplitViewController
+{
+	func themeDidChange(_ theme: AppTheme)
+	{
+		view.backgroundColor = theme.splitViewBackground
+		view.tintColor = theme.tintColor
+		
+		setNeedsStatusBarAppearanceUpdate()
+	}
+	
+	open override var preferredStatusBarStyle: UIStatusBarStyle
+	{
+		return AppTheming.instance.currentMode == .dark ? .lightContent : .default
+	}
+}
+
+class ThemedSplitViewController: UISplitViewController
+{
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		
+		registerForThemeChanges()
+	}
+}
+
+// MARK: - UINavigationController
+
 extension UINavigationController
 {
 	func themeDidChange(_ theme: AppTheme)
