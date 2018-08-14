@@ -17,7 +17,7 @@ class FilesTableViewController: UITableViewController
 		{
 			if let fileWrapperKeys = fileWrapper?.fileWrappers?.keys
 			{
-				itemKeys = Array(fileWrapperKeys).sortedNaturally()
+				itemKeys = Array(fileWrapperKeys).filter({ !$0.hasPrefix(".") }).sortedNaturally()
 			}
 			else
 			{
