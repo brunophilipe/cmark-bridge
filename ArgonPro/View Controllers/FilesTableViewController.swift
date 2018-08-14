@@ -136,8 +136,7 @@ class FilesTableViewController: UITableViewController
 		}
 		else if node.fileUTI(conformsTo: "com.adobe.pdf")
 		{
-			// TODO: Handle PDF
-			fileWrapperPreviewer = nil
+			fileWrapperPreviewer = QLPreviewController(dataSource: self)
 		}
 		else if node.fileUTI(conformsTo: "public.text")
 		{
@@ -147,9 +146,7 @@ class FilesTableViewController: UITableViewController
 			let nodeUrl = urlForCurrentFileWrapper?.appendingPathComponent(nodeFilename) as NSURL?,
 			QLPreviewController.canPreview(nodeUrl)
 		{
-			let quickLookController = QLPreviewController()
-			quickLookController.dataSource = self
-			fileWrapperPreviewer = quickLookController
+			fileWrapperPreviewer = QLPreviewController(dataSource: self)
 		}
 		else
 		{
@@ -209,5 +206,14 @@ extension FilesTableViewController: QLPreviewControllerDataSource
 		let fileWrappers = fileWrapper!.fileWrappers!
 		let nodeFilename = fileWrappers[itemKeys![selectedRows[index].row]]!.filename!
 		return urlForCurrentFileWrapper!.appendingPathComponent(nodeFilename) as NSURL
+	}
+}
+
+extension QLPreviewController
+{
+	convenience init(dataSource: QLPreviewControllerDataSource)
+	{
+		self.init()
+		self.dataSource = dataSource
 	}
 }
