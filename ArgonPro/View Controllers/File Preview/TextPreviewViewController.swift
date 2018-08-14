@@ -35,6 +35,7 @@ class TextPreviewViewController: UIViewController, FileWrapperPreviewer
 			return
 		}
 		
+		title = fileWrapper.filename
 		text = String(data: contents, encoding: .utf8)
 	}
 }
