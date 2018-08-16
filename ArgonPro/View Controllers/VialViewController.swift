@@ -175,9 +175,22 @@ class VialViewController: FilesTableViewController
 
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 	{
-		switch (Sections(rawValue: indexPath.section)!, indexPath.row)
+		guard let vial = document?.vial, let section = Sections(rawValue: indexPath.section) else
 		{
-		case (Sections.files, let row):
+			return
+		}
+		
+		switch (section, indexPath.row)
+		{
+		case (.collections, vial.collections.count):
+			break
+			
+		case (.collections, let row):
+			let collectionViewController = CollectionTableViewController()
+			collectionViewController.collection = vial.collections[vial.sortedCollectionKeys[row]]!
+			show(collectionViewController, sender: tableView.cellForRow(at: indexPath))
+		
+		case (.files, let row):
 			super.didSelectFile(with: row)
 
 		default:
