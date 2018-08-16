@@ -132,23 +132,27 @@ class VialViewController: FilesTableViewController
 			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
 			cell.textLabel?.text = "Posts"
 			cell.imageView?.image = #imageLiteral(resourceName: "post.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "post_selected.pdf")
 			cell.detailTextLabel?.text = "\(vial.posts.count)"
 
 		case (.posts, 1) where vial.drafts.count > 0:
 			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
 			cell.textLabel?.text = "Drafts"
 			cell.imageView?.image = #imageLiteral(resourceName: "draft.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "draft_selected.pdf")
 			cell.detailTextLabel?.text = "\(vial.drafts.count)"
 
 		case (.posts, _):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)
 			cell.textLabel?.text = "New Post…"
 			cell.imageView?.image = #imageLiteral(resourceName: "post_new.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "new_selected.pdf")
 
 		case (.collections, vial.collections.count):
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)
 			cell.textLabel?.text = "New Collection…"
 			cell.imageView?.image = #imageLiteral(resourceName: "collection_new.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "new_selected.pdf")
 
 		case (.collections, let row):
 			let collection = vial.collections[vial.collectionKeys[row]]
@@ -162,6 +166,7 @@ class VialViewController: FilesTableViewController
 			cell = tableView.dequeueReusableCell(withIdentifier: "title_icon_discl", for: indexPath)
 			cell.textLabel?.text = "New…"
 			cell.imageView?.image = #imageLiteral(resourceName: "page_new.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "new_selected.pdf")
 
 		case (.files, let row):
 			return super.dequeueTableViewCell(forFileWith: row)
@@ -184,7 +189,7 @@ class VialViewController: FilesTableViewController
 		{
 		case (.posts, 0):
 			let postsViewController = PostsTableViewController()
-			postsViewController.posts = vial.posts
+			postsViewController.posts = vial.posts.sorted(by: { $0.date > $1.date })
 			show(postsViewController, sender: tableView.cellForRow(at: indexPath))
 			
 		case (.posts, 1) where vial.drafts.count > 0:

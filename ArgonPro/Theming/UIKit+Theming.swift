@@ -65,7 +65,7 @@ extension UITableView
 {
 	func themeDidChange(_ theme: AppTheme)
 	{
-		backgroundColor = theme.tableBackground
+		backgroundColor = style == .grouped ? theme.tableBackground : theme.tableCellBackground
 		separatorColor = theme.tableSeparator
 		sectionIndexColor = theme.tableSectionIndex
 		sectionIndexBackgroundColor = theme.tableSectionBackground
