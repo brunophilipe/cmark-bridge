@@ -50,6 +50,7 @@ class CollectionTableViewController: UITableViewController
 		{
 			cell.textLabel?.text = entry.slug
 			cell.imageView?.image = #imageLiteral(resourceName: "collection_entry.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "collection_entry_selected.pdf")
 		}
 
 		return cell

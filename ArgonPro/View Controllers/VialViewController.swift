@@ -159,6 +159,7 @@ class VialViewController: FilesTableViewController
 			cell = tableView.dequeueReusableCell(withIdentifier: "rightdetail_icon_discl", for: indexPath)
 			cell.textLabel?.text = vial.collectionKeys[row]
 			cell.imageView?.image = #imageLiteral(resourceName: "collection.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "collection_selected.pdf")
 			cell.detailTextLabel?.text = String(quantity: collection?.entries.count,
 												singular: "entry", plural: "entries")
 
