@@ -182,6 +182,20 @@ class VialViewController: FilesTableViewController
 		
 		switch (section, indexPath.row)
 		{
+		case (.posts, 0):
+			let postsViewController = PostsTableViewController()
+			postsViewController.posts = vial.posts
+			show(postsViewController, sender: tableView.cellForRow(at: indexPath))
+			
+		case (.posts, 1) where vial.drafts.count > 0:
+			let postsViewController = PostsTableViewController()
+			postsViewController.posts = vial.drafts
+			show(postsViewController, sender: tableView.cellForRow(at: indexPath))
+			
+		case (.posts, _):
+			// TODO: Create new post
+			break
+			
 		case (.collections, vial.collections.count):
 			break
 			
