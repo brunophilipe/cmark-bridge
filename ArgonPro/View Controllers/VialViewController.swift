@@ -188,6 +188,7 @@ class VialViewController: FilesTableViewController
 		case (.collections, let row):
 			let collectionViewController = CollectionTableViewController()
 			collectionViewController.collection = vial.collections[vial.sortedCollectionKeys[row]]!
+			collectionViewController.title = vial.sortedCollectionKeys[row]
 			show(collectionViewController, sender: tableView.cellForRow(at: indexPath))
 		
 		case (.files, let row):
