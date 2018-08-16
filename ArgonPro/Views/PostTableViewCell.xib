@@ -11,34 +11,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fxt-JN-Yzk" detailTextLabel="IrD-AE-7qz" imageView="DGi-4A-JZG" style="IBUITableViewCellStyleSubtitle" id="Xtm-og-78A" customClass="ThemedTableViewCell" customModule="ArgonPro" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="Xtm-og-78A" customClass="PostTableViewCell" customModule="ArgonPro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xtm-og-78A" id="C50-33-ZSb">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="48.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fxt-JN-Yzk">
-                        <rect key="frame" x="60" y="5" width="33.5" height="20.5"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="249" insetsLayoutMarginsFromSafeArea="NO" text="This is a Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L19-tA-sxZ">
+                        <rect key="frame" x="60" y="4" width="299" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IrD-AE-7qz">
-                        <rect key="frame" x="60" y="25.5" width="44" height="14.5"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" insetsLayoutMarginsFromSafeArea="NO" image="branding" translatesAutoresizingMaskIntoConstraints="NO" id="nQ1-sx-kRw">
+                        <rect key="frame" x="16" y="10" width="29" height="29"/>
+                    </imageView>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2000-00-00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAb-ZC-P5Z">
+                        <rect key="frame" x="60" y="27.5" width="77" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="branding" id="DGi-4A-JZG">
-                        <rect key="frame" x="16" y="7" width="29" height="29"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="wAb-ZC-P5Z" firstAttribute="firstBaseline" secondItem="L19-tA-sxZ" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="BXH-Xz-dW4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L19-tA-sxZ" secondAttribute="trailing" id="M6h-Sv-xxM"/>
+                    <constraint firstItem="nQ1-sx-kRw" firstAttribute="leading" secondItem="C50-33-ZSb" secondAttribute="leadingMargin" id="Z05-kY-ljV"/>
+                    <constraint firstItem="L19-tA-sxZ" firstAttribute="top" secondItem="C50-33-ZSb" secondAttribute="top" constant="4" id="anf-S9-roi"/>
+                    <constraint firstItem="nQ1-sx-kRw" firstAttribute="centerY" secondItem="C50-33-ZSb" secondAttribute="centerY" id="dSV-iU-pVu"/>
+                    <constraint firstAttribute="bottom" secondItem="wAb-ZC-P5Z" secondAttribute="bottom" constant="5" id="f51-dT-sq4"/>
+                    <constraint firstItem="wAb-ZC-P5Z" firstAttribute="leading" secondItem="L19-tA-sxZ" secondAttribute="leading" id="oLr-lM-05A"/>
+                    <constraint firstItem="L19-tA-sxZ" firstAttribute="leading" secondItem="nQ1-sx-kRw" secondAttribute="trailing" constant="15" id="sBU-O2-ZBi"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-2" y="162"/>
+            <connections>
+                <outlet property="dateLabel" destination="wAb-ZC-P5Z" id="E7A-2f-t3X"/>
+                <outlet property="iconView" destination="nQ1-sx-kRw" id="jG0-7d-I8y"/>
+                <outlet property="titleLabel" destination="L19-tA-sxZ" id="wfx-PC-xEu"/>
+                <outletCollection property="themedLabels" destination="wAb-ZC-P5Z" collectionClass="NSMutableArray" id="EAH-PN-zlY"/>
+            </connections>
+            <point key="canvasLocation" x="-2.3999999999999999" y="158.77061469265368"/>
         </tableViewCell>
     </objects>
     <resources>

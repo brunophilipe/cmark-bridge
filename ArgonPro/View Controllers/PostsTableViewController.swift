@@ -53,13 +53,19 @@ class PostsTableViewController: UITableViewController
 		{
 			cell = tableView.dequeueReusableCell(withIdentifier: "cell_post", for: indexPath)
 			cell.imageView?.image = #imageLiteral(resourceName: "post.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "post_selected.pdf")
 			cell.textLabel?.text = post.title
-			cell.detailTextLabel?.text = post.name
+			
+			if let postCell = cell as? PostTableViewCell
+			{
+				postCell.dateLabel.text = DateFormatter.longDate.string(from: post.date)
+			}
 		}
 		else if let draft = posts?[indexPath.row] as? Vial.Page
 		{
 			cell = tableView.dequeueReusableCell(withIdentifier: "cell_draft", for: indexPath)
 			cell.imageView?.image = #imageLiteral(resourceName: "draft.pdf")
+			cell.imageView?.highlightedImage = #imageLiteral(resourceName: "draft_selected.pdf")
 			cell.textLabel?.text = draft.name
 		}
 		else

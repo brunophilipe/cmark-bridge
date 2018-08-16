@@ -60,6 +60,7 @@
 		15C801CB2125AAE200E8152C /* PostsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C801C92125AAE200E8152C /* PostsTableViewController.xib */; };
 		15C801CD2125ABDC00E8152C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C801CC2125ABDC00E8152C /* PostTableViewCell.xib */; };
 		15C801CF2125ADA300E8152C /* DraftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C801CE2125ADA300E8152C /* DraftTableViewCell.xib */; };
+		15C801D62125F51400E8152C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C801D52125F51400E8152C /* PostTableViewCell.swift */; };
 		15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */; };
 		60084ACE091A68E606479EB8 /* Pods_CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D52E4C06C8DB981AE17A0C5 /* Pods_CommonMark.framework */; };
 		80DD9178460C574CA7652F0F /* Pods_ArgonProTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E63BF50969E253C64ABE21 /* Pods_ArgonProTests.framework */; };
@@ -176,6 +177,7 @@
 		15C801C92125AAE200E8152C /* PostsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsTableViewController.xib; sourceTree = "<group>"; };
 		15C801CC2125ABDC00E8152C /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		15C801CE2125ADA300E8152C /* DraftTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DraftTableViewCell.xib; sourceTree = "<group>"; };
+		15C801D52125F51400E8152C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		15F0614C211A5B92004DAE25 /* UIImage+FileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FileIcon.swift"; sourceTree = "<group>"; };
 		1E7A290A852249EF5E4292D3 /* Pods-CommonMark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonMark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonMark/Pods-CommonMark.debug.xcconfig"; sourceTree = "<group>"; };
 		42367F9BFFB063B8799FFA2C /* Pods_argontool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_argontool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +255,7 @@
 				151FE13B211CDB0D00A13E7B /* ColoredPlaceholderTextField.swift */,
 				152600F0211E47AF00DD26F1 /* FileTableViewCell.xib */,
 				150DB3D22118FE8B005BB11E /* InputTableViewCell.swift */,
+				15C801D52125F51400E8152C /* PostTableViewCell.swift */,
 				15C801CC2125ABDC00E8152C /* PostTableViewCell.xib */,
 				15C801CE2125ADA300E8152C /* DraftTableViewCell.xib */,
 			);
@@ -856,6 +859,7 @@
 				150DB3CE2118D819005BB11E /* VialViewController.swift in Sources */,
 				152600F3211E490200DD26F1 /* String+Formats.swift in Sources */,
 				1514670E21166D0F00B41F88 /* DocumentViewController.swift in Sources */,
+				15C801D62125F51400E8152C /* PostTableViewCell.swift in Sources */,
 				15AA24A921184DFE00A49C50 /* UIViewController+Segues.swift in Sources */,
 				15056B8B21220D9B00DF6310 /* FileWrapperPreviewer.swift in Sources */,
 				152600EF211E43F200DD26F1 /* Collection+Sorting.swift in Sources */,
