@@ -75,4 +75,21 @@ class PostsTableViewController: UITableViewController
 
 		return cell
 	}
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+	{
+		guard let post = posts?[indexPath.row] else
+		{
+			return
+		}
+		
+		let codeEditorController = CodeEditorViewController()
+		codeEditorController.loadViewIfNeeded()
+		codeEditorController.editorView?.text = post.contents
+		codeEditorController.title = (post as? Vial.Post)?.name ?? (post as? Vial.Page)?.name
+		codeEditorController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+		
+		showDetailViewController(ThemedNavigationController(rootViewController: codeEditorController),
+								 sender: tableView.cellForRow(at: indexPath))
+	}
 }

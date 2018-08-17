@@ -8,6 +8,7 @@ target 'ArgonPro' do
   pod 'ArgonModel', :path => 'Dependencies/ArgonModel'
   pod 'Tokamak', :path => 'Dependencies/Tokamak'
   pod 'Yams'
+  pod 'SavannaKit'
 
   target 'ArgonProTests' do
     inherit! :search_paths

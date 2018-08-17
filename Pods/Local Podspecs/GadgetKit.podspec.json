@@ -17,7 +17,10 @@
     "osx": "10.12"
   },
   "ios": {
-    "frameworks": "Foundation"
+    "frameworks": [
+      "Foundation",
+      "CoreServices"
+    ]
   },
   "osx": {
     "frameworks": [
