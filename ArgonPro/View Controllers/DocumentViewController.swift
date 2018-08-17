@@ -36,6 +36,14 @@ class DocumentViewController: ThemedNavigationController
 			}
 		}
 	}
+	
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+		
+		splitViewController?.delegate = self
+		splitViewController?.preferredDisplayMode = .allVisible
+	}
     
     func closeDocumentViewController()
 	{
@@ -67,7 +75,7 @@ extension UIViewController
 {
 	var documentViewController: DocumentViewController?
 	{
-		return navigationController as? DocumentViewController
+		return parent as? DocumentViewController ?? parent?.documentViewController
 	}
 }
 
@@ -75,4 +83,12 @@ protocol DocumentChildViewController
 {
 	func documentDidOpen()
 	func documentWillClose()
+}
+
+extension DocumentViewController: UISplitViewControllerDelegate
+{
+	func targetDisplayModeForAction(in splitViewController: UISplitViewController) -> UISplitViewController.DisplayMode
+	{
+		return splitViewController.displayMode == .allVisible ? .primaryHidden : .allVisible
+	}
 }
