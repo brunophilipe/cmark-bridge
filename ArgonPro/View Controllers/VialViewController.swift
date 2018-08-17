@@ -191,11 +191,13 @@ class VialViewController: FilesTableViewController
 		case (.posts, 0):
 			let postsViewController = PostsTableViewController()
 			postsViewController.posts = vial.posts.sorted(by: { $0.date > $1.date })
+			postsViewController.title = "Posts"
 			show(postsViewController, sender: tableView.cellForRow(at: indexPath))
 			
 		case (.posts, 1) where vial.drafts.count > 0:
 			let postsViewController = PostsTableViewController()
 			postsViewController.posts = vial.drafts
+			postsViewController.title = "Drafts"
 			show(postsViewController, sender: tableView.cellForRow(at: indexPath))
 			
 		case (.posts, _):
