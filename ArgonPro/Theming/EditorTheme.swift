@@ -16,12 +16,12 @@ public class LightEditorTheme: DefaultSourceEditorTheme
 {
 	public override var lineNumbersStyle: LineNumbersStyle?
 	{
-		return LineNumbersStyle(font: editorFont, textColor: #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1))
+		return LineNumbersStyle(font: editorFont.withSize(editorFont.pointSize * 0.85), textColor: #colorLiteral(red: 0.6567457318, green: 0.6567457318, blue: 0.6567457318, alpha: 1))
 	}
 	
 	public override var gutterStyle: GutterStyle
 	{
-		return GutterStyle(backgroundColor: backgroundColor, minimumWidth: 40.0)
+		return GutterStyle(backgroundColor: #colorLiteral(red: 0.9300000072, green: 0.9300000072, blue: 0.9300000072, alpha: 1), minimumWidth: 44.0, gutterMargin: 8.0)
 	}
 	
 	public override var font: Font
