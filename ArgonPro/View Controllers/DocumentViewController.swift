@@ -89,6 +89,13 @@ extension DocumentViewController: UISplitViewControllerDelegate
 {
 	func targetDisplayModeForAction(in splitViewController: UISplitViewController) -> UISplitViewController.DisplayMode
 	{
-		return splitViewController.displayMode == .allVisible ? .primaryHidden : .allVisible
+		if traitCollection.horizontalSizeClass == .regular
+		{
+			return splitViewController.displayMode == .allVisible ? .primaryHidden : .allVisible
+		}
+		else
+		{
+			return .automatic
+		}
 	}
 }

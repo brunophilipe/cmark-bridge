@@ -86,9 +86,10 @@ class PostsTableViewController: UITableViewController
 		let codeEditorController = CodeEditorViewController()
 		codeEditorController.loadViewIfNeeded()
 		codeEditorController.editorView?.text = post.contents
-		codeEditorController.title = (post as? Vial.Post)?.name ?? (post as? Vial.Page)?.name
+		codeEditorController.title = (post as? Vial.Post)?.title ?? (post as? Vial.Page)?.name
 		codeEditorController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-		
+		codeEditorController.navigationItem.leftItemsSupplementBackButton = true
+
 		showDetailViewController(ThemedNavigationController(rootViewController: codeEditorController),
 								 sender: tableView.cellForRow(at: indexPath))
 	}
