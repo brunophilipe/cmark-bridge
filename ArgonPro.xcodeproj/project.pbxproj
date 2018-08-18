@@ -43,6 +43,7 @@
 		15421E3F211BC20200082456 /* DropSourceImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E3E211BC20200082456 /* DropSourceImageView.swift */; };
 		15421E41211BC4E400082456 /* DragProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E40211BC4E400082456 /* DragProductImageView.swift */; };
 		15421E43211BCB6900082456 /* NSImage+BestImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15421E42211BCB6900082456 /* NSImage+BestImage.swift */; };
+		1552FBA721265B9C00A482F9 /* EditorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1552FBA621265B9C00A482F9 /* EditorTheme.swift */; };
 		158A683A211F9FA900302936 /* CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; };
 		158A6846211F9FA900302936 /* CommonMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; };
 		158A6847211F9FA900302936 /* CommonMark.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 158A6831211F9FA900302936 /* CommonMark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -161,6 +162,7 @@
 		15421E3E211BC20200082456 /* DropSourceImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropSourceImageView.swift; sourceTree = "<group>"; };
 		15421E40211BC4E400082456 /* DragProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragProductImageView.swift; sourceTree = "<group>"; };
 		15421E42211BCB6900082456 /* NSImage+BestImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+BestImage.swift"; sourceTree = "<group>"; };
+		1552FBA621265B9C00A482F9 /* EditorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTheme.swift; sourceTree = "<group>"; };
 		155519C02120CC8800EFCD3F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		158A6831211F9FA900302936 /* CommonMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		158A6839211F9FA900302936 /* CommonMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +341,7 @@
 				1526C88B2118C59A003F0D75 /* UIKit+Theming.swift */,
 				1526C88C2118C59A003F0D75 /* AppTheme.swift */,
 				1526C88E2118C59A003F0D75 /* UIResponder+Theming.swift */,
+				1552FBA621265B9C00A482F9 /* EditorTheme.swift */,
 			);
 			path = Theming;
 			sourceTree = "<group>";
@@ -839,6 +842,7 @@
 				"${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework",
 				"${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework",
 				"${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework",
 				"${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework",
 				"${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework",
@@ -848,6 +852,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArgonModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GadgetKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SavannaKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SourceEditor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tokamak.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yams.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark_bridge.framework",
@@ -886,6 +891,7 @@
 				151FE13C211CDB0E00A13E7B /* ColoredPlaceholderTextField.swift in Sources */,
 				1526C88F2118C59A003F0D75 /* AppTheming.swift in Sources */,
 				152600F6211E4BC500DD26F1 /* FilesTableViewController.swift in Sources */,
+				1552FBA721265B9C00A482F9 /* EditorTheme.swift in Sources */,
 				15F0614D211A5B92004DAE25 /* UIImage+FileIcon.swift in Sources */,
 				1514670A21166D0F00B41F88 /* AppDelegate.swift in Sources */,
 				15C801D821260B5D00E8152C /* PillStackView.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import SavannaKit
+import SourceEditor
 
 class CodeEditorViewController: UIViewController
 {
@@ -21,6 +22,8 @@ class CodeEditorViewController: UIViewController
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		editorView?.theme = LightEditorTheme()
+		editorView?.delegate = self
     }
 
 
@@ -33,5 +36,22 @@ class CodeEditorViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension CodeEditorViewController: SyntaxTextViewDelegate
+{
+	func didChangeText(_ syntaxTextView: SyntaxTextView)
+	{
+		
+	}
+	
+	func didChangeSelectedRange(_ syntaxTextView: SyntaxTextView, selectedRange: NSRange)
+	{
+	
+	}
+	
+	func lexerForSource(_ source: String) -> Lexer
+	{
+		return MarkdownLexer()
+	}
 }
