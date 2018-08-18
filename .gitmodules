@@ -16,3 +16,6 @@
 [submodule "Dependencies/source-editor"]
 	path = Dependencies/source-editor
 	url = git@github.com:brunophilipe/source-editor.git
+[submodule "Dependencies/SavannaKit"]
+	path = Dependencies/SavannaKit
+	url = git@github.com:brunophilipe/savannakit.git

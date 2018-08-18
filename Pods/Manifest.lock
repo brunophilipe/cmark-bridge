@@ -16,14 +16,13 @@ DEPENDENCIES:
   - ArgonModel (from `Dependencies/ArgonModel`)
   - cmark-bridge (from `Dependencies/cmark-bridge`)
   - GadgetKit (from `Dependencies/GadgetKit`)
-  - SavannaKit
+  - SavannaKit (from `Dependencies/SavannaKit`)
   - SourceEditor (from `Dependencies/source-editor`)
   - Tokamak (from `Dependencies/Tokamak`)
   - Yams
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SavannaKit
     - Yams
 
 EXTERNAL SOURCES:
@@ -33,6 +32,8 @@ EXTERNAL SOURCES:
     :path: Dependencies/cmark-bridge
   GadgetKit:
     :path: Dependencies/GadgetKit
+  SavannaKit:
+    :path: Dependencies/SavannaKit
   SourceEditor:
     :path: Dependencies/source-editor
   Tokamak:
@@ -42,11 +43,11 @@ SPEC CHECKSUMS:
   ArgonModel: 70d610ae2eb35ec56e3b4bc8bb8259b436a6fd1d
   cmark-bridge: 45c24dac6f273cd13f5b83dad86065f107cd76e1
   GadgetKit: 8b15fdc6652a8a5b4c35db90af1a9b2aa9428e4d
-  SavannaKit: 920c240bde011900df8156200a960dad3ee5edfd
+  SavannaKit: 307efa0be63cad347853b468880915a3090c336e
   SourceEditor: c789f5a0c5147a2b6ce2492696d00743b61e128d
   Tokamak: d4dd779d9498b508505d81a8dc3cbb13b818e97a
   Yams: a01cdee527b3a82a3e192255b34ad5aacdf96b8c
 
-PODFILE CHECKSUM: 2fce1b9590f077c337384e74ec13b6a2505ce2b1
+PODFILE CHECKSUM: b5447ebc3a9a39fe6233848339e721a241152158
 
 COCOAPODS: 1.5.3

@@ -8,7 +8,7 @@ target 'ArgonPro' do
   pod 'ArgonModel', :path => 'Dependencies/ArgonModel'
   pod 'Tokamak', :path => 'Dependencies/Tokamak'
   pod 'Yams'
-  pod 'SavannaKit'
+  pod 'SavannaKit', :path => 'Dependencies/SavannaKit'
   pod 'SourceEditor', :path => 'Dependencies/source-editor'
 
   target 'ArgonProTests' do
