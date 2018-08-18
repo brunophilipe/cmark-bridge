@@ -22,20 +22,10 @@ class CodeEditorViewController: UIViewController
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+		editorView?.contentTextView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
 		editorView?.theme = LightEditorTheme()
 		editorView?.delegate = self
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
 
 extension CodeEditorViewController: SyntaxTextViewDelegate
