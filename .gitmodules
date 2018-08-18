@@ -13,3 +13,6 @@
 [submodule "Dependencies/cmark-bridge"]
 	path = Dependencies/cmark-bridge
 	url = https://github.com/brunophilipe/cmark-bridge.git
+[submodule "Dependencies/source-editor"]
+	path = Dependencies/source-editor
+	url = git@github.com:brunophilipe/source-editor.git
