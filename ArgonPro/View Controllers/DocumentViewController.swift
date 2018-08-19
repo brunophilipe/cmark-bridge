@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import ArgonModel
+import Tokamak
+import CommonMark
 
 class DocumentViewController: ThemedNavigationController
 {
@@ -28,6 +31,8 @@ class DocumentViewController: ThemedNavigationController
 				if success
 				{
 					self?.children.forEach({ ($0 as? DocumentChildViewController)?.documentDidOpen() })
+
+					self?._compile()
 				}
 				else
 				{
@@ -54,6 +59,12 @@ class DocumentViewController: ThemedNavigationController
             self.document?.close(completionHandler: nil)
         }
     }
+
+	func _compile()
+	{
+		let tokamak = Tokamak(delegate: self, defaultConfig: DefaultConfiguration())
+		try! tokamak.compile(vial: document!.vial!, vialUrl: document!.fileURL)
+	}
 
 	override func broadcastContext(_ context: Any)
 	{
@@ -97,5 +108,38 @@ extension DocumentViewController: UISplitViewControllerDelegate
 		{
 			return .automatic
 		}
+	}
+}
+
+extension DocumentViewController: TokamakDelegate
+{
+	func tokamak(_ tokamak: Tokamak, willSartCompiling: Vial)
+	{
+
+	}
+
+	func tokamak(_ tokamak: Tokamak, producedWarning: Error, whileCompilingVial: Vial)
+	{
+
+	}
+
+	func tokamak(_ tokamak: Tokamak, markupCompilerFor markup: Markup) -> MarkupCompiler?
+	{
+		switch markup
+		{
+		case .markdown:
+			return CommonMark()
+
+		default:
+			return nil
+		}
+	}
+}
+
+class CommonMark: MarkupCompiler
+{
+	func compile(markup: String) -> String
+	{
+		return markdownToHtml(string: markup)
 	}
 }
