@@ -31,6 +31,10 @@
 		1299864AE528D730053CFC159BD2BE14 /* SyntaxTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02252D605758A5253FCC851702680D51 /* SyntaxTextView.swift */; };
 		132C6EAC8FE40F3038831EA96210DDF5 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E8FB00F55AC31397394811E8F269D01 /* blocks.c */; };
 		1543218D52ACA0F3757F676ACD3E01E7 /* FrontMatterFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC208B7BA394466C6185FC107172E8 /* FrontMatterFile.swift */; };
+		15DF73582128A16800D83B42 /* String+Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF735421289FA500D83B42 /* String+Transformations.swift */; };
+		15DF73592128A16900D83B42 /* String+Transformations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF735421289FA500D83B42 /* String+Transformations.swift */; };
+		15DF735A2128A16E00D83B42 /* Tokamak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93030C2A2D78F5F69791704D45ECCA63 /* Tokamak.swift */; };
+		15DF735B2128A16F00D83B42 /* Tokamak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93030C2A2D78F5F69791704D45ECCA63 /* Tokamak.swift */; };
 		1768179A0C0CAB3724099816A3EC8112 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F481929B13C3BCC36FDB69A11190830 /* writer.c */; };
 		17B58F27D06E826B1B43F13D469EF20E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768C1CAD4AD1B3C4724185A24B672DF /* Token.swift */; };
 		18D57607AE21709E4C7F0CA6EF197BC6 /* SwiftLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008AA6DBB7D0E3F55AC2A8C639F7E802 /* SwiftLexer.swift */; };
@@ -184,7 +188,6 @@
 		D1AF63A2F35B7220AAA4680107BC97A1 /* Pods-CommonMarkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D88E9E450D9F7F9D76815BCBF75C75DB /* Pods-CommonMarkTests-dummy.m */; };
 		D2932ABC4CD55C8FD97ED253E6CAF535 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8060CEA652110D39A9778445F964E9 /* Page.swift */; };
 		D5F33FBC254E1D4672ABD5CB412A7128 /* String+FrontMatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D659D369E6E86B8D182C7915665F5 /* String+FrontMatter.swift */; };
-		DA224E1540BD8655466ABD9B7AFCD8A8 /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93030C2A2D78F5F69791704D45ECCA63 /* Tokomak.swift */; };
 		DAED60314A1D8B8282D13EE18E4001F2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523D05F671F37503EFD78C0A3CEE4603 /* Node.swift */; };
 		DBF53DEE286D74ACC09848596182CA03 /* Pods-CommonMark-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94C99E86779F742E75436004848278 /* Pods-CommonMark-dummy.m */; };
 		DBFBC35478740802C0BC0068F3E6A8EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CDE85599224F11CB91A67AAB841CABF /* Foundation.framework */; };
@@ -198,7 +201,6 @@
 		E1BD5922305AB61A316CE6B61C1EBB80 /* NSTextView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED72D85B0DA7CF5A2066F15014BA44F /* NSTextView+UIKit.swift */; };
 		E3102AC290280155F48730A4B60B919C /* GadgetKit-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C440FDA14A64AB0F500E57FAD44BCC /* GadgetKit-framework-dummy.m */; };
 		E39F6B9B7449BCEF1ACC74160E8018BC /* RegexLexer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA6314356A317BB837A0ED15F17A352 /* RegexLexer+Helpers.swift */; };
-		E3D01561AF590A00D1FE51D31049B40C /* Tokomak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93030C2A2D78F5F69791704D45ECCA63 /* Tokomak.swift */; };
 		E640AAA72FF06B83852E6F0CBFC31322 /* Tokamak-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA24F8FD003BDCD62B66B2F7545741C7 /* Tokamak-framework-dummy.m */; };
 		E77E6C51794F0734C4F7E6F29DF97D71 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D973C625AC790E9A93DE8BBCC925F2C3 /* Encoder.swift */; };
 		E7B6440183C0BFA6F6CECEF0D011E985 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A16F9B42E354F1650E93E25C9C5CE7B /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -453,6 +455,7 @@
 		122120C3DC6C735A1A3B7E19B7DDCD8F /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
 		12FA411214298F359712ED3585F4C989 /* Tokamak-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Tokamak-framework.modulemap"; sourceTree = "<group>"; };
 		14D60D8F696174C1BF758D651A673773 /* SavannaKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SavannaKit-dummy.m"; sourceTree = "<group>"; };
+		15DF735421289FA500D83B42 /* String+Transformations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Transformations.swift"; sourceTree = "<group>"; };
 		1650F5275413381FB591AEF9FCE33C68 /* Pods-ArgonTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonTool.debug.xcconfig"; sourceTree = "<group>"; };
 		177E51F2C032CBE87266592B404E64BF /* Emitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emitter.swift; path = Sources/Yams/Emitter.swift; sourceTree = "<group>"; };
 		17BCE7ACBF1467D1E959309D6D2006AC /* cmark-bridge.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "cmark-bridge.xcconfig"; sourceTree = "<group>"; };
@@ -579,7 +582,7 @@
 		8D8D4B334990D9137FDAC04E88F19A22 /* ArgonModel-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ArgonModel-library-prefix.pch"; path = "../ArgonModel-library/ArgonModel-library-prefix.pch"; sourceTree = "<group>"; };
 		8E5ACB057915F521490F7DD2C3750E21 /* DefaultSourceCodeTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultSourceCodeTheme.swift; sourceTree = "<group>"; };
 		8F6ADFD5DFD295E1AA3395587971EA91 /* ArgonModel-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ArgonModel-framework.modulemap"; sourceTree = "<group>"; };
-		93030C2A2D78F5F69791704D45ECCA63 /* Tokomak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tokomak.swift; sourceTree = "<group>"; };
+		93030C2A2D78F5F69791704D45ECCA63 /* Tokamak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tokamak.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DE53CC85E2077E2BC4428F145F439F /* Mark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mark.swift; path = Sources/Yams/Mark.swift; sourceTree = "<group>"; };
 		9543A1C42384DEDCABD40866BAE81447 /* Vial+Examples.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Vial+Examples.swift"; sourceTree = "<group>"; };
@@ -885,6 +888,7 @@
 			children = (
 				B42711F244865291B6DCAD856E1C7F58 /* Data+FileWrapperCodable.swift */,
 				288330A2FB350A300943B8B0B71077D9 /* TemplateConfig.swift */,
+				15DF735421289FA500D83B42 /* String+Transformations.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -1473,7 +1477,7 @@
 			children = (
 				3875E641112CD73FD2C86657DA79F793 /* MarkupCompiler.swift */,
 				C27F3BC6B89694DD347032C6A0B5A8DC /* Template.swift */,
-				93030C2A2D78F5F69791704D45ECCA63 /* Tokomak.swift */,
+				93030C2A2D78F5F69791704D45ECCA63 /* Tokamak.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -2103,7 +2107,8 @@
 				9E504734AAF9C7F67C0B572436D70761 /* Template.swift in Sources */,
 				707C0CDC9905DB62DC877DD256E900AA /* TemplateConfig.swift in Sources */,
 				E640AAA72FF06B83852E6F0CBFC31322 /* Tokamak-framework-dummy.m in Sources */,
-				E3D01561AF590A00D1FE51D31049B40C /* Tokomak.swift in Sources */,
+				15DF735B2128A16F00D83B42 /* Tokamak.swift in Sources */,
+				15DF73592128A16900D83B42 /* String+Transformations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2141,7 +2146,8 @@
 				2271EBF685CD61A3439CFFDFE3D61CE9 /* Template.swift in Sources */,
 				48407616ACF2DE631A7524E886725402 /* TemplateConfig.swift in Sources */,
 				3BE33222C7F23FB00C47A15AD9EE9D80 /* Tokamak-library-dummy.m in Sources */,
-				DA224E1540BD8655466ABD9B7AFCD8A8 /* Tokomak.swift in Sources */,
+				15DF735A2128A16E00D83B42 /* Tokamak.swift in Sources */,
+				15DF73582128A16800D83B42 /* String+Transformations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
