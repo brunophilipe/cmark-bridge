@@ -48,7 +48,7 @@ SPEC CHECKSUMS:
   ArgonModel: 70d610ae2eb35ec56e3b4bc8bb8259b436a6fd1d
   cmark-bridge: 45c24dac6f273cd13f5b83dad86065f107cd76e1
   GadgetKit: 8b15fdc6652a8a5b4c35db90af1a9b2aa9428e4d
-  liquid-swift: 0d2b36015fe93f0fddf1a110096636e9d757ec21
+  liquid-swift: 3b0779e0704511d222c22cd653f787b5d4a7da15
   SavannaKit: 307efa0be63cad347853b468880915a3090c336e
   SourceEditor: c789f5a0c5147a2b6ce2492696d00743b61e128d
   Tokamak: 4539113d278c9c8592240ad7967a09d38987eeeb

@@ -28,6 +28,6 @@
       "CoreServices"
     ]
   },
-  "source_files": "Sources/Liquid/*.swift",
+  "source_files": "Sources/Liquid/*.{h,m,swift}",
   "module_name": "Liquid"
 }
