@@ -1,0 +1,33 @@
+{
+  "name": "liquid-swift",
+  "version": "1.0",
+  "homepage": "https://github.com/brunophilipe/liquid-swift",
+  "source": {
+    "path": "."
+  },
+  "authors": {
+    "郭宇翔": "yourtion@gmail.com"
+  },
+  "summary": "Liquid syntax template engine for Swift.",
+  "license": {
+    "type": "MIT"
+  },
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.12"
+  },
+  "ios": {
+    "frameworks": [
+      "Foundation",
+      "CoreServices"
+    ]
+  },
+  "osx": {
+    "frameworks": [
+      "Foundation",
+      "CoreServices"
+    ]
+  },
+  "source_files": "Sources/Liquid/*.swift",
+  "module_name": "Liquid"
+}

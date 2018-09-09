@@ -4,18 +4,21 @@ PODS:
   - cmark-bridge (1.0.1)
   - GadgetKit (1.0):
     - Yams
+  - liquid-swift (1.0)
   - SavannaKit (0.9.0)
   - SourceEditor (1.0.1):
     - SavannaKit (~> 0.9)
   - Tokamak (1.0):
     - ArgonModel
     - GadgetKit
+    - liquid-swift
   - Yams (1.0.0)
 
 DEPENDENCIES:
   - ArgonModel (from `Dependencies/ArgonModel`)
   - cmark-bridge (from `Dependencies/cmark-bridge`)
   - GadgetKit (from `Dependencies/GadgetKit`)
+  - liquid-swift (from `Dependencies/liquid-swift`)
   - SavannaKit (from `Dependencies/SavannaKit`)
   - SourceEditor (from `Dependencies/source-editor`)
   - Tokamak (from `Dependencies/Tokamak`)
@@ -32,6 +35,8 @@ EXTERNAL SOURCES:
     :path: Dependencies/cmark-bridge
   GadgetKit:
     :path: Dependencies/GadgetKit
+  liquid-swift:
+    :path: Dependencies/liquid-swift
   SavannaKit:
     :path: Dependencies/SavannaKit
   SourceEditor:
@@ -43,11 +48,12 @@ SPEC CHECKSUMS:
   ArgonModel: 70d610ae2eb35ec56e3b4bc8bb8259b436a6fd1d
   cmark-bridge: 45c24dac6f273cd13f5b83dad86065f107cd76e1
   GadgetKit: 8b15fdc6652a8a5b4c35db90af1a9b2aa9428e4d
+  liquid-swift: 0d2b36015fe93f0fddf1a110096636e9d757ec21
   SavannaKit: 307efa0be63cad347853b468880915a3090c336e
   SourceEditor: c789f5a0c5147a2b6ce2492696d00743b61e128d
-  Tokamak: d4dd779d9498b508505d81a8dc3cbb13b818e97a
+  Tokamak: 4539113d278c9c8592240ad7967a09d38987eeeb
   Yams: a01cdee527b3a82a3e192255b34ad5aacdf96b8c
 
-PODFILE CHECKSUM: b5447ebc3a9a39fe6233848339e721a241152158
+PODFILE CHECKSUM: 00b470abe75efdfb53f6cb6a97a65469755c6066
 
 COCOAPODS: 1.5.3

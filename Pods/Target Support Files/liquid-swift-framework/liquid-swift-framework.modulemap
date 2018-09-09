@@ -1,0 +1,6 @@
+framework module Liquid {
+  umbrella header "liquid-swift-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

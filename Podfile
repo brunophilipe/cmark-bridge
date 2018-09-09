@@ -10,6 +10,7 @@ target 'ArgonPro' do
   pod 'Yams'
   pod 'SavannaKit', :path => 'Dependencies/SavannaKit'
   pod 'SourceEditor', :path => 'Dependencies/source-editor'
+  pod 'liquid-swift', :path => 'Dependencies/liquid-swift'
 
   target 'ArgonProTests' do
     inherit! :search_paths

@@ -149,6 +149,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/liquid-swift-framework/Liquid.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -158,6 +159,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/liquid-swift-framework/Liquid.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
