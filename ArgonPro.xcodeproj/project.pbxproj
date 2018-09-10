@@ -845,6 +845,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework",
 				"${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework",
+				"${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework",
+				"${BUILT_PRODUCTS_DIR}/STRFTimeFormatter-framework/STRFTimeFormatter.framework",
 				"${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework",
 				"${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework",
@@ -856,6 +858,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArgonModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GadgetKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLEntities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STRFTimeFormatter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SavannaKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SourceEditor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tokamak.framework",

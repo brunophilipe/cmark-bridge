@@ -4,10 +4,14 @@ PODS:
   - cmark-bridge (1.0.1)
   - GadgetKit (1.0):
     - Yams
-  - liquid-swift (1.0)
+  - HTMLEntities (3.0.10)
+  - liquid-swift (1.0):
+    - HTMLEntities
+    - STRFTimeFormatter
   - SavannaKit (0.9.0)
   - SourceEditor (1.0.1):
     - SavannaKit (~> 0.9)
+  - STRFTimeFormatter (1.1)
   - Tokamak (1.0):
     - ArgonModel
     - GadgetKit
@@ -18,9 +22,11 @@ DEPENDENCIES:
   - ArgonModel (from `Dependencies/ArgonModel`)
   - cmark-bridge (from `Dependencies/cmark-bridge`)
   - GadgetKit (from `Dependencies/GadgetKit`)
+  - HTMLEntities (from `https://github.com/IBM-Swift/swift-html-entities.git`)
   - liquid-swift (from `Dependencies/liquid-swift`)
   - SavannaKit (from `Dependencies/SavannaKit`)
   - SourceEditor (from `Dependencies/source-editor`)
+  - STRFTimeFormatter (from `https://github.com/brunophilipe/STRFTimeFormatter.git`)
   - Tokamak (from `Dependencies/Tokamak`)
   - Yams
 
@@ -35,25 +41,39 @@ EXTERNAL SOURCES:
     :path: Dependencies/cmark-bridge
   GadgetKit:
     :path: Dependencies/GadgetKit
+  HTMLEntities:
+    :git: https://github.com/IBM-Swift/swift-html-entities.git
   liquid-swift:
     :path: Dependencies/liquid-swift
   SavannaKit:
     :path: Dependencies/SavannaKit
   SourceEditor:
     :path: Dependencies/source-editor
+  STRFTimeFormatter:
+    :git: https://github.com/brunophilipe/STRFTimeFormatter.git
   Tokamak:
     :path: Dependencies/Tokamak
+
+CHECKOUT OPTIONS:
+  HTMLEntities:
+    :commit: 2f582d1f927824045cbbcc5d72614799a8e7f35a
+    :git: https://github.com/IBM-Swift/swift-html-entities.git
+  STRFTimeFormatter:
+    :commit: 964d9e072153d35ac33b4be6451670818f104e4e
+    :git: https://github.com/brunophilipe/STRFTimeFormatter.git
 
 SPEC CHECKSUMS:
   ArgonModel: 70d610ae2eb35ec56e3b4bc8bb8259b436a6fd1d
   cmark-bridge: 45c24dac6f273cd13f5b83dad86065f107cd76e1
   GadgetKit: 8b15fdc6652a8a5b4c35db90af1a9b2aa9428e4d
-  liquid-swift: 3b0779e0704511d222c22cd653f787b5d4a7da15
+  HTMLEntities: 3d89d72a9aa3b6ad095c584bc2f1383bbed4581c
+  liquid-swift: 7f7e362ed2b5b7e71cf830f280d9d4bb9368afb7
   SavannaKit: 307efa0be63cad347853b468880915a3090c336e
   SourceEditor: c789f5a0c5147a2b6ce2492696d00743b61e128d
+  STRFTimeFormatter: 9d13f33cfd392b5ca1445a912691398bc4b73be6
   Tokamak: 4539113d278c9c8592240ad7967a09d38987eeeb
   Yams: a01cdee527b3a82a3e192255b34ad5aacdf96b8c
 
-PODFILE CHECKSUM: 00b470abe75efdfb53f6cb6a97a65469755c6066
+PODFILE CHECKSUM: 495ddf9ba6e63fa52e8f2367cf3bbccd790696f9
 
 COCOAPODS: 1.5.3

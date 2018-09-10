@@ -145,6 +145,8 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/STRFTimeFormatter-framework/STRFTimeFormatter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
@@ -155,6 +157,8 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/STRFTimeFormatter-framework/STRFTimeFormatter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"

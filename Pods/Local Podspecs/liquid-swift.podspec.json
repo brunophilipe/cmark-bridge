@@ -18,16 +18,22 @@
   },
   "ios": {
     "frameworks": [
-      "Foundation",
-      "CoreServices"
+      "Foundation"
     ]
   },
   "osx": {
     "frameworks": [
-      "Foundation",
-      "CoreServices"
+      "Foundation"
     ]
   },
   "source_files": "Sources/Liquid/*.{h,m,swift}",
-  "module_name": "Liquid"
+  "module_name": "Liquid",
+  "dependencies": {
+    "HTMLEntities": [
+
+    ],
+    "STRFTimeFormatter": [
+
+    ]
+  }
 }

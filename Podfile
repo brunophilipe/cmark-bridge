@@ -1,3 +1,5 @@
+use_modular_headers!
+
 target 'ArgonPro' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
@@ -11,6 +13,8 @@ target 'ArgonPro' do
   pod 'SavannaKit', :path => 'Dependencies/SavannaKit'
   pod 'SourceEditor', :path => 'Dependencies/source-editor'
   pod 'liquid-swift', :path => 'Dependencies/liquid-swift'
+  pod 'HTMLEntities', :git => 'https://github.com/IBM-Swift/swift-html-entities.git'
+  pod 'STRFTimeFormatter', :git => 'https://github.com/brunophilipe/STRFTimeFormatter.git'
 
   target 'ArgonProTests' do
     inherit! :search_paths
