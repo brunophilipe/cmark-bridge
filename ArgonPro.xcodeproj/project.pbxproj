@@ -380,7 +380,8 @@
 				158A684E211F9FDE00302936 /* Node.swift */,
 				158A6850211F9FDE00302936 /* SwiftAST.swift */,
 			);
-			path = CommonMark;
+			path = Dependencies/CommonMark/CommonMark;
+			name = CommonMark;
 			sourceTree = "<group>";
 		};
 		158A683F211F9FA900302936 /* CommonMarkTests */ = {
@@ -389,7 +390,8 @@
 				158A6858211F9FEB00302936 /* CommonMarkTests.swift */,
 				158A6859211F9FEB00302936 /* Info.plist */,
 			);
-			path = CommonMarkTests;
+			path = Dependencies/CommonMark/CommonMarkTests;
+			name = CommonMarkTests;
 			sourceTree = "<group>";
 		};
 		15AA24A521184DE800A49C50 /* Extensions */ = {
