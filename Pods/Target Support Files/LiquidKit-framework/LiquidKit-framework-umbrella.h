@@ -1,5 +1,5 @@
 #ifdef __OBJC__
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "Liquid.h"
+#import "LiquidKit.h"
 
-FOUNDATION_EXPORT double LiquidVersionNumber;
-FOUNDATION_EXPORT const unsigned char LiquidVersionString[];
+FOUNDATION_EXPORT double LiquidKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char LiquidKitVersionString[];
 

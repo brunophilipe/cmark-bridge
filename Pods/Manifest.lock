@@ -5,7 +5,7 @@ PODS:
   - GadgetKit (1.0):
     - Yams
   - HTMLEntities (3.0.10)
-  - liquid-swift (1.0):
+  - LiquidKit (1.0):
     - HTMLEntities
     - STRFTimeFormatter
   - SavannaKit (0.9.0)
@@ -15,7 +15,7 @@ PODS:
   - Tokamak (1.0):
     - ArgonModel
     - GadgetKit
-    - liquid-swift
+    - LiquidKit
   - Yams (1.0.0)
 
 DEPENDENCIES:
@@ -23,7 +23,7 @@ DEPENDENCIES:
   - cmark-bridge (from `Dependencies/cmark-bridge`)
   - GadgetKit (from `Dependencies/GadgetKit`)
   - HTMLEntities (from `https://github.com/IBM-Swift/swift-html-entities.git`)
-  - liquid-swift (from `Dependencies/liquid-swift`)
+  - LiquidKit (from `Dependencies/LiquidKit`)
   - SavannaKit (from `Dependencies/SavannaKit`)
   - SourceEditor (from `Dependencies/source-editor`)
   - STRFTimeFormatter (from `https://github.com/brunophilipe/STRFTimeFormatter.git`)
@@ -43,8 +43,8 @@ EXTERNAL SOURCES:
     :path: Dependencies/GadgetKit
   HTMLEntities:
     :git: https://github.com/IBM-Swift/swift-html-entities.git
-  liquid-swift:
-    :path: Dependencies/liquid-swift
+  LiquidKit:
+    :path: Dependencies/LiquidKit
   SavannaKit:
     :path: Dependencies/SavannaKit
   SourceEditor:
@@ -67,13 +67,13 @@ SPEC CHECKSUMS:
   cmark-bridge: 45c24dac6f273cd13f5b83dad86065f107cd76e1
   GadgetKit: 8b15fdc6652a8a5b4c35db90af1a9b2aa9428e4d
   HTMLEntities: 3d89d72a9aa3b6ad095c584bc2f1383bbed4581c
-  liquid-swift: 7f7e362ed2b5b7e71cf830f280d9d4bb9368afb7
+  LiquidKit: 644a485268aa5c373537b4cb9ff3f8cbb263fc8a
   SavannaKit: 307efa0be63cad347853b468880915a3090c336e
   SourceEditor: c789f5a0c5147a2b6ce2492696d00743b61e128d
   STRFTimeFormatter: 9d13f33cfd392b5ca1445a912691398bc4b73be6
-  Tokamak: 4539113d278c9c8592240ad7967a09d38987eeeb
+  Tokamak: 0609a1bcaa0972872e3f0101ff25326203f45fc5
   Yams: a01cdee527b3a82a3e192255b34ad5aacdf96b8c
 
-PODFILE CHECKSUM: 495ddf9ba6e63fa52e8f2367cf3bbccd790696f9
+PODFILE CHECKSUM: c84da6b52537dc4e9487e4ec6cf2b9ac554dcc94
 
 COCOAPODS: 1.5.3

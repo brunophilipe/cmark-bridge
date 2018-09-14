@@ -146,24 +146,24 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LiquidKit-framework/LiquidKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/STRFTimeFormatter-framework/STRFTimeFormatter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/liquid-swift-framework/Liquid.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LiquidKit-framework/LiquidKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/STRFTimeFormatter-framework/STRFTimeFormatter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/liquid-swift-framework/Liquid.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

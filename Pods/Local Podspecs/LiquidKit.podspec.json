@@ -1,0 +1,39 @@
+{
+  "name": "LiquidKit",
+  "version": "1.0",
+  "homepage": "https://github.com/brunophilipe/LiquidKit",
+  "source": {
+    "path": "."
+  },
+  "authors": {
+    "Bruno Philipe": "git@bruno.ph"
+  },
+  "summary": "Liquid template language parser engine in Swift.",
+  "license": {
+    "type": "MIT"
+  },
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.12"
+  },
+  "ios": {
+    "frameworks": [
+      "Foundation"
+    ]
+  },
+  "osx": {
+    "frameworks": [
+      "Foundation"
+    ]
+  },
+  "source_files": "Sources/LiquidKit/*.{h,m,swift}",
+  "module_name": "LiquidKit",
+  "dependencies": {
+    "HTMLEntities": [
+
+    ],
+    "STRFTimeFormatter": [
+
+    ]
+  }
+}

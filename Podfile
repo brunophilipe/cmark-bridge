@@ -12,7 +12,7 @@ target 'ArgonPro' do
   pod 'Yams'
   pod 'SavannaKit', :path => 'Dependencies/SavannaKit'
   pod 'SourceEditor', :path => 'Dependencies/source-editor'
-  pod 'liquid-swift', :path => 'Dependencies/liquid-swift'
+  pod 'LiquidKit', :path => 'Dependencies/LiquidKit'
   pod 'HTMLEntities', :git => 'https://github.com/IBM-Swift/swift-html-entities.git'
   pod 'STRFTimeFormatter', :git => 'https://github.com/brunophilipe/STRFTimeFormatter.git'
 

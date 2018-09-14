@@ -1,6 +1,0 @@
-module Liquid {
-  umbrella header "liquid-swift-library-umbrella.h"
-
-  export *
-  module * { export * }
-}

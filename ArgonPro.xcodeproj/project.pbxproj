@@ -846,12 +846,12 @@
 				"${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework",
 				"${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework",
 				"${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework",
+				"${BUILT_PRODUCTS_DIR}/LiquidKit-framework/LiquidKit.framework",
 				"${BUILT_PRODUCTS_DIR}/STRFTimeFormatter-framework/STRFTimeFormatter.framework",
 				"${BUILT_PRODUCTS_DIR}/SavannaKit/SavannaKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SourceEditor/SourceEditor.framework",
 				"${BUILT_PRODUCTS_DIR}/Tokamak-framework/Tokamak.framework",
 				"${BUILT_PRODUCTS_DIR}/Yams-framework/Yams.framework",
-				"${BUILT_PRODUCTS_DIR}/liquid-swift-framework/Liquid.framework",
 				"${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -859,12 +859,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArgonModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GadgetKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLEntities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiquidKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STRFTimeFormatter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SavannaKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SourceEditor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tokamak.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Yams.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Liquid.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark_bridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

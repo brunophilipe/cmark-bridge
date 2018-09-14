@@ -1,0 +1,6 @@
+module LiquidKit {
+  umbrella header "LiquidKit-library-umbrella.h"
+
+  export *
+  module * { export * }
+}
