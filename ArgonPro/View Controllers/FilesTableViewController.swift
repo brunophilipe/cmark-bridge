@@ -164,6 +164,7 @@ class FilesTableViewController: UITableViewController
 			if splitViewController != nil
 			{
 				viewController.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+				viewController.navigationItem.leftItemsSupplementBackButton = true
 				showDetailViewController(ThemedNavigationController(rootViewController: viewController), sender: self)
 			}
 			else
