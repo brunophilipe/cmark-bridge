@@ -61,7 +61,7 @@
 		2A8A9ADF1F8918B9DD86A8A737C473B0 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A0A3DCFC0A9DD518FD56E7FB30F1D /* Context.swift */; };
 		2C52ECF4B6BC381BA3B576DE1DF29B61 /* Pods-ArgonPro-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2746530EC89FC1A78B22947CD050FC9 /* Pods-ArgonPro-dummy.m */; };
 		2C9FE06C0FE4B0366259B1365E8DF14D /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = 07C41DB8CA170A7EDC93A7916DF350F0 /* Yams.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CC5E9B519F57BCC9634E09E5B02BBE8 /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Extractors.swift */; };
+		2CC5E9B519F57BCC9634E09E5B02BBE8 /* String+Substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Substrings.swift */; };
 		2E3D29424C6477361AA37371C8D7DFCC /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BCCB09B675066A8EC9B950244607A4 /* Constructor.swift */; };
 		3005C4E22224B45098DC67E50665A4F0 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502C51EED8B71FCBE7F006306E88407E /* String+Yams.swift */; };
 		30761DBBE3697824B17D7488048EF18A /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 2620D2A8C188BA07082EB5F139EB4B6F /* houdini_html_e.c */; };
@@ -287,7 +287,7 @@
 		F6E36568F2ADE2705072A5F403E74F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF169DE37FC6295E6ED1A91DAC56134F /* Foundation.framework */; };
 		F8D3BEDE260DF17C7C8C31340A63039C /* Tokamak-library-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D46410A62503757AB91C3300601CA8B /* Tokamak-library-dummy.m */; };
 		FA4A6D8F901AA20DEEFA7FF1AC8DE531 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73397F730E9C17DD120D7E62F00A15D0 /* Directory.swift */; };
-		FA9731A44CCDB401E42072AECFEF4A12 /* String+Extractors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Extractors.swift */; };
+		FA9731A44CCDB401E42072AECFEF4A12 /* String+Substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Substrings.swift */; };
 		FBB1A5605E80BD6B2D5067FAB93932B2 /* FileWrapper+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744069DF31D787537851B23472A1A741 /* FileWrapper+KeyPath.swift */; };
 		FC33ECF1623E1A694864A87233FED1A8 /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F66106B827955BC88BD16C96C515834 /* commonmark.c */; };
 		FC3CEE5B29EA603C5F75C040B58EBEFB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13546B42FF884CF2BEEABD7E0F10F962 /* Cocoa.framework */; };
@@ -686,7 +686,7 @@
 		31DFCBBF3E0668653FEF4740D68E705C /* Pods-CommonMark-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CommonMark-acknowledgements.markdown"; sourceTree = "<group>"; };
 		32D069DDD4C39F8B988409574637876E /* RegexLexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegexLexer.swift; sourceTree = "<group>"; };
 		33FFFD5B194059146A1245FDDC41481B /* ArgonModel-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ArgonModel-library-prefix.pch"; path = "../ArgonModel-library/ArgonModel-library-prefix.pch"; sourceTree = "<group>"; };
-		350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Extractors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Extractors.swift"; sourceTree = "<group>"; };
+		350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Substrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Substrings.swift"; sourceTree = "<group>"; };
 		355C306575BC422BA55F66626B0E8C01 /* STRFTimeFormatter-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "STRFTimeFormatter-framework.xcconfig"; sourceTree = "<group>"; };
 		35BB994E85DC0A2D3B11B821B0C5941F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		35C8F153C2A233241684AFF7E1F84424 /* Pods-ArgonProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArgonProTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1294,7 +1294,7 @@
 				744069DF31D787537851B23472A1A741 /* FileWrapper+KeyPath.swift */,
 				F9B7E588592D27495E184E04AE655E30 /* FrontMatterFile.swift */,
 				0A4BDF6A95D2DBC144AE2D47AC7AB981 /* NSRegularExpression+FrontMatter.swift */,
-				350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Extractors.swift */,
+				350A4BF8056AA2FBC0F9FA80C49D24B8 /* String+Substrings.swift */,
 				9B9CD2233D0562EFBF4975AA77DA678D /* String+FrontMatter.swift */,
 				3E2208AD564EA6E9B1D3428F97579F8C /* ThrowUnwrap.swift */,
 				0763C5CE140422D78D606FF481E120FE /* Pod */,
@@ -2851,7 +2851,7 @@
 				5EC88EC8430EDAC7194B937053FA6A0A /* FrontMatterFile.swift in Sources */,
 				5E59248BC27E48BB5073BC4B16D90E86 /* GadgetKit-library-dummy.m in Sources */,
 				81222571DD56800259BE4A1EAAB53F18 /* NSRegularExpression+FrontMatter.swift in Sources */,
-				FA9731A44CCDB401E42072AECFEF4A12 /* String+Extractors.swift in Sources */,
+				FA9731A44CCDB401E42072AECFEF4A12 /* String+Substrings.swift in Sources */,
 				F3E049A49CC107D450874F6F83E0776F /* String+FrontMatter.swift in Sources */,
 				B934A48CC0B0A5EECB1536503EC1C70D /* ThrowUnwrap.swift in Sources */,
 			);
@@ -3058,7 +3058,7 @@
 				99D8BC7EC73A96157F3D877BB2185487 /* FrontMatterFile.swift in Sources */,
 				E3102AC290280155F48730A4B60B919C /* GadgetKit-framework-dummy.m in Sources */,
 				267D9570EC1BC26A0CEDAA48324BEA46 /* NSRegularExpression+FrontMatter.swift in Sources */,
-				2CC5E9B519F57BCC9634E09E5B02BBE8 /* String+Extractors.swift in Sources */,
+				2CC5E9B519F57BCC9634E09E5B02BBE8 /* String+Substrings.swift in Sources */,
 				3BC8E4EE7FB44FCBE2ED4AC2ACDB9A5E /* String+FrontMatter.swift in Sources */,
 				482F75E406C20C81C765CCB5E6196A19 /* ThrowUnwrap.swift in Sources */,
 			);
