@@ -380,8 +380,8 @@
 				158A684E211F9FDE00302936 /* Node.swift */,
 				158A6850211F9FDE00302936 /* SwiftAST.swift */,
 			);
-			path = Dependencies/CommonMark/CommonMark;
 			name = CommonMark;
+			path = Dependencies/CommonMark/CommonMark;
 			sourceTree = "<group>";
 		};
 		158A683F211F9FA900302936 /* CommonMarkTests */ = {
@@ -390,8 +390,8 @@
 				158A6858211F9FEB00302936 /* CommonMarkTests.swift */,
 				158A6859211F9FEB00302936 /* Info.plist */,
 			);
-			path = Dependencies/CommonMark/CommonMarkTests;
 			name = CommonMarkTests;
+			path = Dependencies/CommonMark/CommonMarkTests;
 			sourceTree = "<group>";
 		};
 		15AA24A521184DE800A49C50 /* Extensions */ = {
@@ -524,6 +524,7 @@
 				1514670321166D0F00B41F88 /* Frameworks */,
 				1514670421166D0F00B41F88 /* Resources */,
 				1514673E2116919A00B41F88 /* Embed Frameworks */,
+				15F4F6222159360F0082405C /* [BUGFIX] Touch Pods frameworks shell script */,
 				F9F3E9DDB13B75A28E653710 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -730,6 +731,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15F4F6222159360F0082405C /* [BUGFIX] Touch Pods frameworks shell script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[BUGFIX] Touch Pods frameworks shell script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"${SRCROOT}/Pods\" -type f -name *frameworks.sh -exec bash -c \"touch \\\"{}\\\"\" \\;\n";
+		};
 		3C23B0339D27C8CACD67247E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1131,7 +1150,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = "$(SRCROOT)/ArgonPro/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.ArgonPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1149,7 +1171,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = "$(SRCROOT)/ArgonPro/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.ArgonPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1166,7 +1191,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = ArgonProTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.ArgonProTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1184,7 +1213,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = ArgonProTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.ArgonProTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -1204,7 +1237,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = ArgonTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.ArgonTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1224,7 +1260,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
 				INFOPLIST_FILE = ArgonTool/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = app.argonpro.ArgonTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1249,7 +1288,11 @@
 				HEADER_SEARCH_PATHS = Dependencies/CommonMark/CommonMark;
 				INFOPLIST_FILE = "$(SRCROOT)/Dependencies/CommonMark/CommonMark/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMark;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1277,7 +1320,11 @@
 				HEADER_SEARCH_PATHS = Dependencies/CommonMark/CommonMark;
 				INFOPLIST_FILE = "$(SRCROOT)/Dependencies/CommonMark/CommonMark/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMark;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1297,7 +1344,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Dependencies/CommonMark/CommonMarkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMarkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1316,7 +1367,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Dependencies/CommonMark/CommonMarkTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ph.bruno.CommonMarkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
