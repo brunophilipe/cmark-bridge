@@ -1,0 +1,6 @@
+module GadgetKit {
+  umbrella header "GadgetKit-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

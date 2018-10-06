@@ -1,17 +1,1 @@
-#ifdef __OBJC__
-#import <Cocoa/Cocoa.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
-
-#import "STRFTimeFormatter.h"
-
-FOUNDATION_EXPORT double STRFTimeFormatterVersionNumber;
-FOUNDATION_EXPORT const unsigned char STRFTimeFormatterVersionString[];
-
+/Users/Bruno/Workspace/ArgonPro/Pods/Target Support Files/STRFTimeFormatter-library/STRFTimeFormatter-library-umbrella.h

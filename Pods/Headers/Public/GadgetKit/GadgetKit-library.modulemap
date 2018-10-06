@@ -1,6 +1,1 @@
-module GadgetKit {
-  umbrella header "GadgetKit-library-umbrella.h"
-
-  export *
-  module * { export * }
-}
+/Users/Bruno/Workspace/ArgonPro/Pods/Target Support Files/GadgetKit-library/GadgetKit-library.modulemap

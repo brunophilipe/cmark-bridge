@@ -1,6 +1,1 @@
-module HTMLEntities {
-  umbrella header "HTMLEntities-library-umbrella.h"
-
-  export *
-  module * { export * }
-}
+/Users/Bruno/Workspace/ArgonPro/Pods/Target Support Files/HTMLEntities-library/HTMLEntities-library.modulemap

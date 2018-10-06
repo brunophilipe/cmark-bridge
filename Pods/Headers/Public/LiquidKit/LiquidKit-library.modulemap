@@ -1,6 +1,1 @@
-module LiquidKit {
-  umbrella header "LiquidKit-library-umbrella.h"
-
-  export *
-  module * { export * }
-}
+/Users/Bruno/Workspace/ArgonPro/Pods/Target Support Files/LiquidKit-library/LiquidKit-library.modulemap

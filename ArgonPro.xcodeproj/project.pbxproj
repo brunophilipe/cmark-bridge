@@ -601,7 +601,6 @@
 				158A6835211F9FA900302936 /* Sources */,
 				158A6836211F9FA900302936 /* Frameworks */,
 				158A6837211F9FA900302936 /* Resources */,
-				756B36EF073521FA91F70397 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -785,24 +784,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		756B36EF073521FA91F70397 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CommonMarkTests/Pods-CommonMarkTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/cmark-bridge/cmark_bridge.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark_bridge.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommonMarkTests/Pods-CommonMarkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C171AF062A57BCD286898798 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -863,7 +844,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ArgonPro/Pods-ArgonPro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ArgonModel-framework/ArgonModel.framework",
 				"${BUILT_PRODUCTS_DIR}/GadgetKit-framework/GadgetKit.framework",
 				"${BUILT_PRODUCTS_DIR}/HTMLEntities-framework/HTMLEntities.framework",
@@ -890,7 +871,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArgonPro/Pods-ArgonPro-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArgonPro/Pods-ArgonPro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

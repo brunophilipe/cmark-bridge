@@ -1,6 +1,1 @@
-module STRFTimeFormatter {
-  umbrella header "STRFTimeFormatter-library-umbrella.h"
-
-  export *
-  module * { export * }
-}
+/Users/Bruno/Workspace/ArgonPro/Pods/Target Support Files/STRFTimeFormatter-library/STRFTimeFormatter-library.modulemap

@@ -1,6 +1,1 @@
-module ArgonModel {
-  umbrella header "ArgonModel-library-umbrella.h"
-
-  export *
-  module * { export * }
-}
+/Users/Bruno/Workspace/ArgonPro/Pods/Target Support Files/ArgonModel-library/ArgonModel-library.modulemap
