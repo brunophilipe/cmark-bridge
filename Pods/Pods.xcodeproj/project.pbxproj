@@ -27,6 +27,10 @@
 		0F89E9C04B2B929EDC6CB2B185DC45CC /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF13F5113569577CE05ABD1D339F525 /* Lexer.swift */; };
 		124A7C987497B5784350D628DEA27AFC /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = F636267642CF4DD313F42F286E56F523 /* references.c */; };
 		12AE6AAD3EDB91782DF2B34B5A536551 /* MarkdownLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1526E08D2C6EC55BD484519810566 /* MarkdownLexer.swift */; };
+		15D984F02175552100E4C125 /* TokamakContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D984EF2175552100E4C125 /* TokamakContext.swift */; };
+		15D984F12175552100E4C125 /* TokamakContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D984EF2175552100E4C125 /* TokamakContext.swift */; };
+		15D984F32175563100E4C125 /* TokamakParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D984F22175563100E4C125 /* TokamakParser.swift */; };
+		15D984F42175563100E4C125 /* TokamakParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D984F22175563100E4C125 /* TokamakParser.swift */; };
 		168DCB21CF52ECABC48FFFE1C663B8E1 /* RegexLexer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7955FFEC13AB8FE2C80A518C6CEADA /* RegexLexer+Helpers.swift */; };
 		1734D8AFCD1002732FD4E65AA369F28D /* GadgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AE270A6D99554F934FA203B282E8FC /* GadgetKit.framework */; };
 		17B211A40A388D771C47E4FB8405ACB8 /* LiquidKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6733530026CD4C8C214ED11BE4140F6A /* LiquidKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -564,6 +568,8 @@
 		11A7A2B165267EDC5E594A18B3101AD9 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		11AF5ABC10C7FFAF86AC4131389C8648 /* GadgetKit-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GadgetKit-framework.xcconfig"; sourceTree = "<group>"; };
 		12C3892014F9FBF93B2D01F6F3F4D752 /* SourceCodeTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceCodeTheme.swift; path = Sources/SourceCodeTheme.swift; sourceTree = "<group>"; };
+		15D984EF2175552100E4C125 /* TokamakContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokamakContext.swift; sourceTree = "<group>"; };
+		15D984F22175563100E4C125 /* TokamakParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokamakParser.swift; sourceTree = "<group>"; };
 		15D99FF4E43F7527D811A87B96D98AAB /* Node.Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Sequence.swift; path = Sources/Yams/Node.Sequence.swift; sourceTree = "<group>"; };
 		1602B03417AB4D6B85740859569FFA9C /* ArgonModel-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ArgonModel-framework.xcconfig"; sourceTree = "<group>"; };
 		178A2303200410934C730BC71D806C3B /* Node.Scalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Scalar.swift; path = Sources/Yams/Node.Scalar.swift; sourceTree = "<group>"; };
@@ -1050,6 +1056,8 @@
 				643356F6BC0BBCCBAF0B93F615A30526 /* NSRegularExpression+Expressions.swift */,
 				87E08B88C01393D548569AFF5217C733 /* String+Transformations.swift */,
 				8AF874CCBD119D8538E357F1AD6888C6 /* TemplateConfig.swift */,
+				15D984EF2175552100E4C125 /* TokamakContext.swift */,
+				15D984F22175563100E4C125 /* TokamakParser.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -2982,11 +2990,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6FE9869FA2D0506E947437AFAC850E /* Data+FileWrapperCodable.swift in Sources */,
+				15D984F32175563100E4C125 /* TokamakParser.swift in Sources */,
 				DADC853DAA9A4D962EDE370133FA5953 /* MarkupCompiler.swift in Sources */,
 				18A7317D5FE07ACE6967F68019285272 /* NSRegularExpression+Expressions.swift in Sources */,
 				B994D99778E9AD2823DFF40D6F4A6802 /* String+Transformations.swift in Sources */,
 				F70B08A09816B50E444AC9DABDC09F2C /* Template.swift in Sources */,
 				182DA2457838F97B44A7F983ADF135D1 /* TemplateConfig.swift in Sources */,
+				15D984F02175552100E4C125 /* TokamakContext.swift in Sources */,
 				46213C3A6D90517B2BE286F31508E37E /* Tokamak-framework-dummy.m in Sources */,
 				C0FA1F7A5386244474FADD90D84EF101 /* Tokamak.swift in Sources */,
 			);
@@ -3081,11 +3091,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06EFCC7C13806D3A11E3C24D761C85F /* Data+FileWrapperCodable.swift in Sources */,
+				15D984F42175563100E4C125 /* TokamakParser.swift in Sources */,
 				676D196A23EC529195DA96B2A5DDD7ED /* MarkupCompiler.swift in Sources */,
 				207223F8A20BCE610FE9778C689FCC57 /* NSRegularExpression+Expressions.swift in Sources */,
 				0898F3087F71A4A81E1AAA3E544FA559 /* String+Transformations.swift in Sources */,
 				259F1B8AFE02D530D12509657816696A /* Template.swift in Sources */,
 				9D95EDADEF2F5F356B4390E283BCA024 /* TemplateConfig.swift in Sources */,
+				15D984F12175552100E4C125 /* TokamakContext.swift in Sources */,
 				DD6FD7B5CE0F238466C4DB361E36FFFE /* Tokamak-library-dummy.m in Sources */,
 				18A2248619EE3408C8047EE64853B448 /* Tokamak.swift in Sources */,
 			);
