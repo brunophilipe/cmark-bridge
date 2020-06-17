@@ -620,7 +620,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Bruno Philipe";
 				TargetAttributes = {
 					1514670521166D0F00B41F88 = {
@@ -1217,6 +1217,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ArgonTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1240,6 +1241,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = R85D3K8ATT;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ArgonTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
